@@ -28,44 +28,54 @@ import Store from "./pages/Store";
 
 class App extends Component {
   state = {
-    cartTotal: 0
+    cartTotal: 0,
+    shippingCharge: 5,
+    finalTotal: 5    
   };
 
   componentDidMount() {
-    let total = 0;
-    if (sessionStorage.getItem("wristbands-youth")) {
-      total += (3 * sessionStorage.getItem("wristbands-youth"));
-    }
-    if (sessionStorage.getItem("wristbands-adult")) {
-      total += (3 * sessionStorage.getItem("wristbands-adult"));
-    }
-    if (sessionStorage.getItem("keychains")) {
-      total += (4 * sessionStorage.getItem("keychains"));
-    }
-    if (sessionStorage.getItem("patches")) {
-      total += (4 * sessionStorage.getItem("patches"));
-    }
-    if (sessionStorage.getItem("tshirts-youth-small")) {
-      total += (15 * sessionStorage.getItem("tshirts-youth-small"));
-    }
-    if (sessionStorage.getItem("tshirts-youth-medium")) {
-      total += (15 * sessionStorage.getItem("tshirts-youth-medium"));
-    }
-    if (sessionStorage.getItem("tshirts-youth-large")) {
-      total += (15 * sessionStorage.getItem("tshirts-youth-large"));
-    }
-    if (sessionStorage.getItem("tshirts-youth-xtra")) {
-      total += (15 * sessionStorage.getItem("tshirts-youth-xtra"));
-    }
-    if (sessionStorage.getItem("tshirts-adult-small")) {
-      total += (20 * sessionStorage.getItem("tshirts-adult-small"));
-    }
-    this.setState({ cartTotal: total });
+    this.createNewTotal();
   }
 
-  updateCartTotal = (newAmount) => {
-    this.setState({cartTotal: newAmount});
-  }
+  createNewTotal = () => {
+    let total = 0;
+    if (sessionStorage.getItem("wristbands-youth")) {
+      total += 3 * sessionStorage.getItem("wristbands-youth");
+    }
+    if (sessionStorage.getItem("wristbands-adult")) {
+      total += 3 * sessionStorage.getItem("wristbands-adult");
+    }
+    if (sessionStorage.getItem("keychains")) {
+      total += 4 * sessionStorage.getItem("keychains");
+    }
+    if (sessionStorage.getItem("patches")) {
+      total += 4 * sessionStorage.getItem("patches");
+    }
+    if (sessionStorage.getItem("tshirts-youth-small")) {
+      total += 15 * sessionStorage.getItem("tshirts-youth-small");
+    }
+    if (sessionStorage.getItem("tshirts-youth-medium")) {
+      total += 15 * sessionStorage.getItem("tshirts-youth-medium");
+    }
+    if (sessionStorage.getItem("tshirts-youth-large")) {
+      total += 15 * sessionStorage.getItem("tshirts-youth-large");
+    }
+    if (sessionStorage.getItem("tshirts-youth-xtra")) {
+      total += 15 * sessionStorage.getItem("tshirts-youth-xtra");
+    }
+    if (sessionStorage.getItem("tshirts-adult-small")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-small");
+    }
+    this.setState({ cartTotal: total });
+    this.updateCartTotal(total);
+  };
+
+  updateCartTotal = newAmount => {
+    let newShippingCharge = 5;
+    newShippingCharge += Math.floor(newAmount / 50) * 5;
+    let total = newAmount + newShippingCharge;
+    this.setState({ cartTotal: newAmount, shippingCharge: newShippingCharge, finalTotal: total });
+  };
 
   render() {
     return (
@@ -77,7 +87,19 @@ class App extends Component {
             <Route path="/applications" component={Applications} />
             <Route path="/callforleaders" component={Callforleaders} />
             <Route path="/campers" component={Campers} />
-            <Route path="/cart" render={(props) => <Cart {...props} updateCartTotal={this.updateCartTotal} cartTotal={this.state.cartTotal} />} />
+            <Route
+              path="/cart"
+              render={props => (
+                <Cart
+                  {...props}
+                  updateCartTotal={this.updateCartTotal}
+                  cartTotal={this.state.cartTotal}
+                  createNewTotal={this.createNewTotal}
+                  shippingCharge={this.state.shippingCharge}
+                  finalTotal={this.state.finalTotal}
+                />
+              )}
+            />
             <Route path="/contact" component={Contact} />
             <Route path="/cost" component={Cost} />
             <Route path="/counselors" component={Counselors} />
@@ -92,7 +114,16 @@ class App extends Component {
             <Route path="/photos" component={Photos} />
             <Route path="/resources" component={Resources} />
             <Route path="/sponsorship" component={Sponsorship} />
-            <Route path="/store" render={(props) => <Store {...props} updateCartTotal={this.updateCartTotal} cartTotal={this.state.cartTotal} />} />
+            <Route
+              path="/store"
+              render={props => (
+                <Store
+                  {...props}
+                  updateCartTotal={this.updateCartTotal}
+                  cartTotal={this.state.cartTotal}
+                />
+              )}
+            />
             {/* when none of the above match, <NoMatch> will be rendered */}
             <Route component={Home} />
           </Switch>
