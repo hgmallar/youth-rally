@@ -48,7 +48,11 @@ class Cart extends Component {
   };
 
   handleChange = evt => {
-    this.setState({ [evt.target.name]: parseInt(evt.target.value) });
+    if (evt.target.value) {
+      this.setState({ [evt.target.name]: parseInt(evt.target.value) });
+    } else {
+      this.setState({ [evt.target.name]: 0 });
+    }
     console.log(evt.target.name);
     console.log(evt.target.value);
   };
