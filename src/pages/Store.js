@@ -9,17 +9,19 @@ class Store extends Component {
     braceletSize: "Size",
     tshirtSize: "Size",
     dropdownBorderA: "no-border",
-    dropdownBorderB: "no-border"
+    dropdownBorderB: "no-border",
+    errorMessage1: "",
+    errorMessage2: ""
   };
 
   updateBraceletOptions = (size, evt) => {
     evt.preventDefault();
-    this.setState({ dropdownBorderA: "no-border", braceletSize: size });
+    this.setState({ dropdownBorderA: "no-border", braceletSize: size, errorMessage1: "" });
   };
 
   updateTshirtOptions = (size, evt) => {
     evt.preventDefault();
-    this.setState({ dropdownBorderB: "no-border", tshirtSize: size });
+    this.setState({ dropdownBorderB: "no-border", tshirtSize: size, errorMessage2: ""  });
   };
 
   addItemToCart(itemName, price, evt) {
@@ -44,7 +46,7 @@ class Store extends Component {
       } else if (this.state.braceletSize === "Adult") {
         this.addItemToCart("wristbands-adult", 3, evt);
       } else {
-        this.setState({dropdownBorderA: "red-border"});
+        this.setState({dropdownBorderA: "red-border", errorMessage1: "*Please Select Your Size*"});
       }
     } else if (itemType === "tshirt") {
       if (this.state.tshirtSize === "Youth Small $15") {
@@ -58,7 +60,7 @@ class Store extends Component {
       } else if (this.state.tshirtSize === "Adult Small $20") {
         this.addItemToCart("tshirts-adult-small", 20, evt);
       } else {
-        this.setState({dropdownBorderB: "red-border"});
+        this.setState({dropdownBorderB: "red-border", errorMessage2: "*Please Select Your Size*"});
       }
     }
   }
@@ -151,6 +153,7 @@ class Store extends Component {
                       Add to Cart
                     </button>
                   </div>
+                  <div className="red-text">{this.state.errorMessage1}</div>
                 </div>
               </div>
             </div>
@@ -309,6 +312,7 @@ class Store extends Component {
                       Add to Cart
                     </button>
                   </div>
+                  <div className="red-text">{this.state.errorMessage2}</div>
                 </div>
               </div>
             </div>
