@@ -1,36 +1,39 @@
 import React from "react";
+import "./style.css";
 
-export default () => (
-  <div
-    className="modal fade"
-    id="myModal"
-    tabIndex="-1"
-    role="dialog"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div className="modal-dialog" role="document">
+function Modal(props) {
+  const showHideStyle = props.show ? "block" : "none";
+  return (
+    <div className="modal" role="dialog" style={{ display: showHideStyle }}>
       <div className="modal-content">
-        <div className="modal-header purpleButton text-white">
-          <h5 className="modal-title">Purchase Complete</h5>
+        <div className="modal-header">
+          <h5 className="modal-title">{props.title}</h5>
           <button
-            type="button"
+            type="button text-white"
             className="close"
+            onClick={props.handleClose}
             data-dismiss="modal"
             aria-label="Close"
           >
-            <span aria-hidden="true">&times;</span>
+            <span className="white" aria-hidden="true">&times;</span>
           </button>
         </div>
         <div className="modal-body">
-          <p>Thank you for making a purchase and supporting The Youth Rally!</p>
+          <h5>{props.message}</h5>
         </div>
         <div className="modal-footer">
-          <button type="button" className="btn btn-primary" data-dismiss="modal">
+          <button
+            type="button"
+            className="btn btn-secondary text-white mb-2"
+            onClick={props.handleClose}
+            data-dismiss="modal"
+          >
             Close
           </button>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+}
+
+export default Modal;

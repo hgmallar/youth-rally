@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import PaypalExpressBtn from "react-paypal-express-checkout";
 
 import Modal from "../components/Modal";
 import Navbar from "./../components/Navbar";
@@ -17,13 +18,24 @@ class Cart extends Component {
     tshirtsYouthMedium: sessionStorage.getItem("tshirts-youth-medium"),
     tshirtsYouthLarge: sessionStorage.getItem("tshirts-youth-large"),
     tshirtsYouthXtra: sessionStorage.getItem("tshirts-youth-xtra"),
-    tshirtsAdultSmall: sessionStorage.getItem("tshirts-adult-small")
+    tshirtsAdultSmall: sessionStorage.getItem("tshirts-adult-small"),
+    show: false,
+    title: "",
+    message: ""
   };
 
   componentDidMount() {
     this.createArray();
     this.props.createNewTotal();
   }
+
+  handleClose = () => {
+    this.setState({ show: false });
+  };
+
+  handleOpen = () => {
+    this.setState({ show: true });
+  };
 
   updateCart(evt) {
     evt.preventDefault();
@@ -254,7 +266,130 @@ class Cart extends Component {
     this.setState({ itemArray: itemsArray });
   }
 
+  createItemsArray() {
+    var items = [];
+    if (sessionStorage.getItem("wristbands-youth")) {
+      items.push({
+        name: "wristband",
+        description: "Youth Wristband",
+        quantity: sessionStorage.getItem("wristbands-youth"),
+        price: "3",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("wristbands-adult")) {
+      items.push({
+        name: "wristband",
+        description: "Adult Wristband",
+        quantity: sessionStorage.getItem("wristbands-adult"),
+        price: "3",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("keychains")) {
+      items.push({
+        name: "keychain",
+        description: "Keychain",
+        quantity: sessionStorage.getItem("keychains"),
+        price: "4",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("patches")) {
+      items.push({
+        name: "patch",
+        description: "Patch",
+        quantity: sessionStorage.getItem("patches"),
+        price: "4",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-youth-small")) {
+      items.push({
+        name: "tshirts",
+        description: "Youth Small Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-small"),
+        price: "15",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-youth-medium")) {
+      items.push({
+        name: "tshirts",
+        description: "Youth Medium Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-medium"),
+        price: "15",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-youth-large")) {
+      items.push({
+        name: "tshirts",
+        description: "Youth Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-large"),
+        price: "15",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-youth-xtra")) {
+      items.push({
+        name: "tshirts",
+        description: "Youth Xtra-Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-xtra"),
+        price: "15",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-small")) {
+      items.push({
+        name: "tshirts",
+        description: "Adult Small Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-small"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    return items;
+  }
+
   render() {
+    let env = "production";
+    const client = {
+      sandbox: process.env.REACT_APP_PAYPAL_CLIENT_ID_SANDBOX,
+      production: process.env.REACT_APP_PAYPAL_CLIENT_ID_PRODUCTION
+    };
+    const onSuccess = payment => {
+      // Congratulation, it came here means everything's fine!
+      console.log("The payment was succeeded!", payment);
+      this.setState({
+        show: true,
+        title: "Payment Successful",
+        message: `The payment was successful. Thank you ${
+          payment.address.recipient_name
+        } for your payment!`
+      });
+      sessionStorage.clear();
+      this.props.updateCartTotal(0);
+      this.createArray();
+    };
+
+    const onCancel = data => {
+      // User pressed "cancel" or close Paypal's popup!
+      console.log("The payment was cancelled!", data);
+      this.setState({
+        show: true,
+        title: "Payment Cancelled",
+        message: `The payment was cancelled!`
+      });    
+    };
+
+    const onError = err => {
+      // The main Paypal's script cannot be loaded or somethings block the loading of that script!
+      console.log("Error!", err);
+      // Because the Paypal's main script is loaded asynchronously from "https://www.paypalobjects.com/api/checkout.js"
+      // => sometimes it may take about 0.5 second for everything to get set, or for the button to appear
+    };
+    
     return (
       <div>
         <Navbar />
@@ -336,14 +471,58 @@ class Cart extends Component {
                   </Link>
                 </div>
                 <div className="col-md-6 text-center">
-                  <div id="paypal-button" className="mb-2 float-md-right" />
+                  <div className="mb-2 float-md-right">
+                    <PaypalExpressBtn
+                      env={env}
+                      client={client}
+                      currency={"USD"}
+                      total={this.props.finalTotal}
+                      onError={onError}
+                      onSuccess={onSuccess}
+                      onCancel={onCancel}
+                      paymentOptions={{
+                        redirect_urls: {
+                          cancel_url: "https://youthrally.org/cart"
+                        },
+                        transactions: [
+                          {
+                            amount: {
+                              total: this.props.finalTotal,
+                              currency: "USD",
+                              details: {
+                                subtotal: this.props.cartTotal,
+                                tax: "0.00",
+                                shipping: this.props.shippingCharge,
+                                handling_fee: "0.00",
+                                shipping_discount: "0.00",
+                                insurance: "0.00"
+                              }
+                            },
+                            description: "Youth Rally Store Order.",
+                            payment_options: {
+                              allowed_payment_method: "INSTANT_FUNDING_SOURCE"
+                            },
+                            item_list: {
+                              items: this.createItemsArray()
+                            }
+                          }
+                        ],
+                        note_to_payer:
+                          "Contact info@youthrally.org for any questions on your order."
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <Modal />
+        <Modal
+          show={this.state.show}
+          handleClose={this.handleClose}
+          title={this.state.title}
+          message={this.state.message}
+        />
       </div>
     );
   }
