@@ -127,6 +127,7 @@ export default () => (
         <div className="row">
           <div className="col mb-md-5">
             <h5 className="topBotBorder text-center">EVENTS</h5>
+            <p>June 9th, 2019 Pineapple's 2019 a'WEAR'ness Event</p>
             <p>July 8th - 13th, 2019 Youth Rally in Seattle, WA</p>
           </div>
         </div>

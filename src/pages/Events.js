@@ -6,13 +6,46 @@ import Header from "./../components/Header";
 export default () => (
   <div>
     <Navbar />
-    
+
     <Header title="Events" />
 
     <div id="events-page">
       <div className="row">
         <div className="col-md-10 mx-auto">
           <div className="row d-block">
+            <h2 className="text-center">
+              June 9th, 2019 Pineapple's 2019 a'WEAR'ness Event
+            </h2>
+            <p>
+              Formally Pineapple's Cruise for Crohn's & Colitis, this year's
+              A"WEAR"NESS event will happen again at <a href="https://www.thewestyisabar.com/">The Westy</a> (516 W State St, Ithaca, New York). The Westy's
+              opening the doors to kids for this event (they might even put out
+              the water table!!!) on June 9th from 1PM - 4PM. </p>
+              <p className="font-weight-bold">$20 ticket price at the door includes:</p>
+              <ul>
+              <li>Live music: Notorious Stringbusters </li>
+              <li>Catered snacks: Red's Place </li>
+              <li>Draft beer: Bacchus Brewing (+ cash bar OPEN) </li>
+              <li>Infamous Silent Auction </li>
+              </ul>
+              <p>Kids 12 & under - $10 </p>
+              <p>Kids 4 & under - FREE </p>
+              <p>Once again, all proceeds will benefit the 2019 Youth Rally - a week
+              long summer camp for youth ages 11-17 living with congenital birth
+              defects, chronic illness, and others who have been victims of
+              physical trauma, many of whom WEAR ostomies or other surgical
+              openings as a result of life-saving/sustaining surgery. </p>
+              <p>What each Youth Rally participant shares in common is some
+              disruption/diversion to their bowel and/or bladder system(s) and a
+              yearning to feel accepted among their peers. The Youth Rally is
+              particularly unique in that the volunteer counselors live with the
+              same conditions as the youth participants - (including Ithaca's
+              favorite Pineapple, Ostomate extraordinaire!!!) creating an
+              environment of mentor-ship and self-advocacy where these children
+              of varying physical abilities gain independence and self-esteem
+              while having fun and without fear of being ostracized for their
+              medical/physical differences. </p>
+              <p>Mark your calendar for this Sunday FUNday and JOIN US! </p>
             <h2 className="text-center">
               July 8th - 13th, 2019 Youth Rally in Seattle, WA
             </h2>
@@ -49,8 +82,8 @@ export default () => (
               day of celebration for all those who "wear" ostomies and those
               living with conditions that may someday lead to bowel/bladder
               diversion surgery!  All proceeds to benefit{" "}
-              <span className="font-weight-bold">2018 Youth Rally</span> programming
-              and camper sponsorship!
+              <span className="font-weight-bold">2018 Youth Rally</span>{" "}
+              programming and camper sponsorship!
             </p>
             <p className="text-center">
               <span className="font-weight-bold">
@@ -207,7 +240,9 @@ export default () => (
               Your creation is yours to take home and proudly display! Come and
               have fun while supporting an amazing cause!
             </p>
-            <p className="text-center">***FREE PARKING, KID & FAMILY FRIENDLY***</p>
+            <p className="text-center">
+              ***FREE PARKING, KID & FAMILY FRIENDLY***
+            </p>
             <p className="text-center">Date: Saturday, April 21st, 2018</p>
             <p className="text-center">
               Time: 11:15am-2:30pm (bar opens at 11:30am)
