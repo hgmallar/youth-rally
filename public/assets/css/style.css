@@ -39,6 +39,10 @@ i {
   font-weight: bolder;
 }
 
+.flyer-image {
+  max-width: 100%;
+}
+
 .btn,
 .btn:hover,
 .btn:active {
