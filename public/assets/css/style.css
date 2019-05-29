@@ -10,6 +10,10 @@ a:active {
   border: none !important;
 }
 
+.no-underline:hover {
+  text-decoration: none;
+}
+
 head {
   font-family: "Roboto", sans-serif;
 }
