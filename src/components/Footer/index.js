@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 export default () => (
   <div className="text-center p-2 banner">
@@ -127,8 +127,11 @@ export default () => (
         <div className="row">
           <div className="col mb-md-5">
             <h5 className="topBotBorder text-center">EVENTS</h5>
-            <p>June 9th, 2019 Pineapple's 2019 a'WEAR'ness Event</p>
             <p>July 8th - 13th, 2019 Youth Rally in Seattle, WA</p>
+            <p>
+              January 1st, 2020 Applications for 2020 Youth Rally available{" "}
+            </p>
+            <p>July 8th - 13th, 2020 Youth Rally in San Diego, CA</p>
           </div>
         </div>
 
@@ -160,6 +163,15 @@ export default () => (
                   </a>
                 </div>
                 <div className="carousel-item">
+                  <a href="https://www.convatec.com/">
+                    <img
+                      className="d-block w-100"
+                      src="/assets/images/sponsor logos/slideshow/Convatec.jpg"
+                      alt="Convatec"
+                    />
+                  </a>
+                </div>
+                <div className="carousel-item">
                   <img
                     className="d-block w-100"
                     src="/assets/images/sponsor logos/slideshow/paulhastings.png"
@@ -172,15 +184,6 @@ export default () => (
                     src="/assets/images/sponsor logos/slideshow/cherylebb.png"
                     alt="UOAA New London"
                   />
-                </div>
-                <div className="carousel-item">
-                  <a href="https://www.convatec.com/">
-                    <img
-                      className="d-block w-100"
-                      src="/assets/images/sponsor logos/slideshow/Convatec.jpg"
-                      alt="Convatec"
-                    />
-                  </a>
                 </div>
                 <div className="carousel-item">
                   <a href="http://www.coloplast.com/">
@@ -243,4 +246,4 @@ export default () => (
       </a>
     </div>
   </div>
-)
+);

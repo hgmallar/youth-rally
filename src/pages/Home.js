@@ -5,12 +5,12 @@ import Navbar from "./../components/Navbar";
 export default () => (
   <div>
     <Navbar />
-    
+
     <div id="content">
       <div className="row">
         <div className="col-md-10 mx-auto">
           <div id="home-page">
-            <div className="row justify-content-center text-center">
+            {/* <div className="row justify-content-center text-center">
               <div className="card col-md-3 mt-2 mx-1">
                 <div className="text-center">
                   <img
@@ -77,30 +77,64 @@ export default () => (
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="row justify-content-center text-center">
-              <div className="card col-md-2 mx-1 mt-2">
+              <div className="card col-md-3 mx-1 my-2">
                 <div className="card-body">
-                  <h5 className="card-title">
-                    Now Available - The 2019 Youth Rally Brochure
+                  <h5 className="card-title purpleText">
+                    Thanks to our 2019 Platinum Level Community Partners:
                   </h5>
-                  <span className="greenText">
-                    <a
-                      href="/assets/documents/2019-BROCHURE_1.jpg"
-                      className="card-link"
-                    >
-                      front/back
+                  <p className="text-center">
+                    <a href="http://www.hollister.com/" className="card-link ml-0">
+                      Hollister
                     </a>
-                    <a
-                      href="/assets/documents/2019-BROCHURE_2.jpg"
-                      className="card-link"
-                    >
-                      center content
+                    {", "}
+                    <a href="http://www.gilead.com/" className="card-link ml-0">
+                      Gilead Sciences
                     </a>
-                  </span>
+                    , and{" "}
+                    <a href="https://www.convatec.com/" className="card-link ml-0">
+                      Convatec!
+                    </a>
+                  </p>
+                  <div
+                    id="carouselExampleSlidesOnly"
+                    className="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <div className="carousel-inner">
+                      <div className="carousel-item active">
+                        <a href="http://www.hollister.com/">
+                          <img
+                            className="d-block w-75 mx-auto"
+                            src="/assets/images/sponsor logos/slideshow/Hollister.jpg"
+                            alt="Hollister"
+                          />
+                        </a>
+                      </div>
+                      <div className="carousel-item">
+                        <a href="http://www.gilead.com/">
+                          <img
+                            className="d-block w-75 mx-auto"
+                            src="/assets/images/sponsor logos/slideshow/gilead.png"
+                            alt="Gilead"
+                          />
+                        </a>
+                      </div>
+                      <div className="carousel-item">
+                        <a href="https://www.convatec.com/">
+                          <img
+                            className="d-block w-75 mx-auto"
+                            src="/assets/images/sponsor logos/slideshow/Convatec.jpg"
+                            alt="Convatec"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="card col-md-5 mx-1 mt-2 my-auto no-border">
+              <div className="card col-md-5 my-1 mt-2 my-auto no-border">
                 <div className="card-body">
                   <video controls>
                     <source
@@ -111,17 +145,23 @@ export default () => (
                 </div>
                 <h5>Youth Rally Video</h5>
               </div>
-              <div className="card col-md-2 mx-1 mt-2">
+              <div className="card col-md-3 mx-1 my-2">
                 <div className="card-body">
-                  <h5 className="card-title">
-                    Check out the 2018 Youth Rally Photos and Videos!
+                  <h5 className="card-title purpleText">
+                    <a href="https://youthrallyphotos.smugmug.com/" className="no-underline">
+                      CLICK HERE to view photos of the 2019 Youth Rally!
+                    </a>
                   </h5>
+                  <p>
+                    Pictures will be posted daily after camper arrival on July
+                    8th!
+                  </p>
                   <span className="greenText">
                     <a
-                      href="https://youthrally.smugmug.com/"
+                      href="https://youthrallyphotos.smugmug.com/"
                       className="card-link"
                     >
-                      2018 Photos and Video
+                      2019 Photos
                     </a>
                   </span>
                 </div>

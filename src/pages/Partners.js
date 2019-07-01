@@ -45,15 +45,6 @@ export default () => (
               alt="gilead"
             />
           </a>
-          <h3 className="greenText font-weight-bold mb-md-1">
-            Paul Hastings - Friends & Family
-          </h3>
-          <h3 className="greenText font-weight-bold mb-md-1">
-            UOAA - New London ASG (In loving memory of Cheryl Ebbinghaus)
-          </h3>
-          <h2 className="text-left mb-md-1" id="gold">
-            2018 GOLD Level Partners:
-          </h2>
           <a href="https://www.convatec.com/">
             <img
               className="partner-img-lg mx-auto d-block mb-md-1"
@@ -61,6 +52,16 @@ export default () => (
               alt="convatec"
             />
           </a>
+          <h3 className="greenText font-weight-bold mb-md-1">
+            Paul Hastings - Friends & Family
+          </h3>
+          <h3 className="greenText font-weight-bold mb-md-1">
+            UOAA - New London ASG (In loving memory of Cheryl Ebbinghaus)
+          </h3>
+          <h2 className="text-left mb-md-1" id="gold">
+            GOLD Level Partners:
+          </h2>
+          
           <a href="https://www.coloplast.com/">
             <img
               className="partner-img-lg mx-auto d-block mb-md-1"
@@ -89,7 +90,7 @@ export default () => (
             UOAA - United Ostomy Associations of America, Golden Gate Chapter
           </h3>
           <h2 className="text-left mb-md-1" id="silver">
-            2018 SILVER Level Partners:
+            SILVER Level Partners:
           </h2>
           <a href="https://www.hasbro.com/">
             <img
@@ -122,7 +123,7 @@ export default () => (
             UOAA - Southwest Riverside ASG
           </h4>
           <h2 className="text-left mb-md-1" id="green">
-            2018 GREEN Level Partners:
+            GREEN Level Partners:
           </h2>
           <a href="https://www.ostomy.org/">
             <img

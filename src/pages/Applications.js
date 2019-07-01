@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
@@ -6,13 +6,18 @@ import Header from "./../components/Header";
 export default () => (
   <div>
     <Navbar />
-        
+
     <Header title="Applications" />
 
     <div id="content">
       <div className="row">
-        <div className="col-md-10 mx-auto text-center">
-          <p>
+        <div className="col-md-10 mx-auto text-center my-2">
+          <h2>
+            Applications for the 2020 Youth Rally - to be held in San Diego, CA,
+            July 8th-13th should be available from this page January 1, 2020.
+          </h2>
+
+          {/* <p>
             The 2019 Youth Rally will take place in Seattle, WA, July 8
             <sup>th</sup> - 13<sup>th</sup>. ALL VOLUNTEERS will need to arrive
             by July 6th for mandatory on-site orientation. The 2019 Youth Rally
@@ -34,10 +39,10 @@ export default () => (
           </a>
 
           <p>
-            <span className="font-weight-bold">APPLICATION PROCESS</span> – Click on
-            the button above. Begin the application process by selecting your
-            intended REGISTRATION (Camper, Counselor, or Nurse). Work to
-            complete the HEALTH PROFILE within. Applications will not be
+            <span className="font-weight-bold">APPLICATION PROCESS</span> –
+            Click on the button above. Begin the application process by
+            selecting your intended REGISTRATION (Camper, Counselor, or Nurse).
+            Work to complete the HEALTH PROFILE within. Applications will not be
             considered for approval until the HEALTH PROFILE is 100% complete.
             Once completed, you’re registration will go into an internal review
             process (we are 100% staffed by volunteers so this can take time).
@@ -61,7 +66,9 @@ export default () => (
           </p>
 
           <p>
-            <span className="font-weight-bold">ADDITIONAL CAMPER INSTRUCTIONS</span>{" "}
+            <span className="font-weight-bold">
+              ADDITIONAL CAMPER INSTRUCTIONS
+            </span>{" "}
             Camper applications will require an additional form to be completed
             by a current health care provider. Camper registrations cannot be
             completed until the 2019 Medical Clearance form has been uploaded to
@@ -104,8 +111,8 @@ export default () => (
           </p>
 
           <p>
-            <span className="font-weight-bold">BOOKING AIR TRAVEL</span> – We do not
-            advise participants to book airfare until notification of
+            <span className="font-weight-bold">BOOKING AIR TRAVEL</span> – We do
+            not advise participants to book airfare until notification of
             application acceptance is approved. All accepted Youth Rally
             participants are welcome to utilize our travel agent to book their
             airfare – contact information will be provided with notification of
@@ -168,9 +175,9 @@ export default () => (
               July 1<sup>st</sup>
             </span>{" "}
             – ALL Registration balances due
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
   </div>
-)
+);
