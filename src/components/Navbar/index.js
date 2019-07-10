@@ -110,6 +110,11 @@ export default () => (
             </Link>
           </div>
         </li>
+        <li className="nav-item" id="photos">
+          <Link to="/photos" className="nav-link">
+            Photos
+          </Link>
+        </li>
         <li className="nav-item" id="give">
           <Link to="/give" className="nav-link">
             Give

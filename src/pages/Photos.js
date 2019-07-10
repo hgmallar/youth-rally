@@ -6,11 +6,16 @@ import Header from "./../components/Header";
 export default () => (
   <div>
     <Navbar />
-    
+
     <Header title="Photos" />
 
     <div id="content">
       <div className="col-md-10 mx-auto text-center font-weight-bold">
+        <p className="greenText">
+          <a href="https://youthrallyphotos.smugmug.com/2019-Rally-in-Seattle-Photos">
+            2019 Youth Rally Photos and Videos
+          </a>
+        </p>
         <p className="purpleText">
           <a href="https://youthrallyphotos.smugmug.com/2018-Rally-in-Boulder">
             2018 Youth Rally Photos and Videos
