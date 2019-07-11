@@ -14,7 +14,7 @@ export default () => (
         <div className="col-md-10 mx-auto text-center my-2">
           <h2>
             Applications for the 2020 Youth Rally - to be held in San Diego, CA,
-            July 8th-13th should be available from this page January 1, 2020.
+            July 20th-25th should be available from this page January 1, 2020.
           </h2>
 
           {/* <p>

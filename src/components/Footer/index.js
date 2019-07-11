@@ -131,7 +131,7 @@ export default () => (
             <p>
               January 1st, 2020 Applications for 2020 Youth Rally available{" "}
             </p>
-            <p>July 8th - 13th, 2020 Youth Rally in San Diego, CA</p>
+            <p>July 20th - 25th, 2020 Youth Rally in San Diego, CA</p>
           </div>
         </div>
 
