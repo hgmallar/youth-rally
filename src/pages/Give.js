@@ -27,8 +27,8 @@ export default () => (
           <p>
             Outside of campus/program costs, the majority of our donations go to
             support the costs associated with getting our camper participants to
-            Youth Rally each year.  NO CHILD is every turned away due to
-            financial hardship, but we need your help!
+            Youth Rally each year.  In over 40 years of operations NO CHILD has been turned away due to
+            financial hardship and we appreciate YOUR HELP to continue this pattern!
           </p>
 
           <h2>SEND A CHECK</h2>
