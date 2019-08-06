@@ -172,34 +172,11 @@ export default () => (
                   </a>
                 </div>
                 <div className="carousel-item">
-                  <img
-                    className="d-block w-100"
-                    src="/assets/images/sponsor logos/slideshow/paulhastings.png"
-                    alt="Paul's Friends"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    className="d-block w-100"
-                    src="/assets/images/sponsor logos/slideshow/cherylebb.png"
-                    alt="UOAA New London"
-                  />
-                </div>
-                <div className="carousel-item">
                   <a href="http://www.coloplast.com/">
                     <img
                       className="d-block w-100"
                       src="/assets/images/sponsor logos/slideshow/ColoPlast.jpg"
                       alt="Coloplast"
-                    />
-                  </a>
-                </div>
-                <div className="carousel-item">
-                  <a href="http://www.celgene.com/">
-                    <img
-                      className="d-block w-100"
-                      src="/assets/images/sponsor logos/slideshow/CELGene.jpg"
-                      alt="Celgene"
                     />
                   </a>
                 </div>
@@ -212,21 +189,31 @@ export default () => (
                     />
                   </a>
                 </div>
-
                 <div className="carousel-item">
+                <a href="http://www.ostomy.org/">
                   <img
                     className="d-block w-100"
-                    src="/assets/images/sponsor logos/slideshow/cherylebbfam.png"
-                    alt="Cheryl Ebbinghaus"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    className="d-block w-100"
-                    src="/assets/images/sponsor logos/slideshow/goldgate.png"
+                    src="/assets/images/sponsor logos/slideshow/goldengate.png"
                     alt="UOAA Golden Gate"
                   />
+                  </a>
+                </div>  
+                <div className="carousel-item">
+                  <a href="https://www.seattlechildrens.org/">
+                    <img
+                      className="d-block w-100"
+                      src="/assets/images/sponsor logos/slideshow/seattle-childrens.png"
+                      alt="seattle_childrens"
+                    />
+                  </a>
                 </div>
+                <div className="carousel-item">
+                  <img
+                    className="d-block w-100"
+                    src="/assets/images/sponsor logos/slideshow/paulhastings.png"
+                    alt="Paul's Friends"
+                  />
+                </div>         
               </div>
             </div>
           </div>
