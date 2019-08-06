@@ -6,7 +6,7 @@ import Header from "./../components/Header";
 export default () => (
   <div>
     <Navbar />
-    
+
     <Header title="Partners" />
 
     <div id="content">
@@ -29,13 +29,13 @@ export default () => (
             and learn about the various levels of sponsorship opportunities.
           </h5>
           <h2 className="text-left mb-md-1" id="platinum">
-            PLATINUM Level Partners:
+            <u>PLATINUM Level Partners:</u>
           </h2>
           <a href="https://www.hollister.com/">
             <img
               className="partner-img-lg mx-auto d-block mb-md-1"
               src="/assets/images/sponsor logos/Hollister-2016.jpg"
-              alt="Hollister"
+              alt="hollister"
             />
           </a>
           <a href="https://www.gilead.com">
@@ -52,51 +52,60 @@ export default () => (
               alt="convatec"
             />
           </a>
-          <h3 className="greenText font-weight-bold mb-md-1">
-            Paul Hastings - Friends & Family
-          </h3>
-          <h3 className="greenText font-weight-bold mb-md-1">
-            UOAA - New London ASG (In loving memory of Cheryl Ebbinghaus)
-          </h3>
+
           <h2 className="text-left mb-md-1" id="gold">
-            GOLD Level Partners:
+            <u>GOLD Level Partners:</u>
           </h2>
-          
           <a href="https://www.coloplast.com/">
             <img
-              className="partner-img-lg mx-auto d-block mb-md-1"
+              className="partner-img-md mx-auto d-block mb-md-1"
               src="/assets/images/sponsor logos/ColoPlast.jpg"
               alt="coloplast"
             />
           </a>
-          <a href="https://www.celgene.com/">
-            <img
-              className="partner-img-lg mx-auto d-block mb-md-1"
-              src="/assets/images/sponsor logos/CELGene.jpg"
-              alt="Celgene Blue-large No background"
-            />
-          </a>
           <a href="https://www.nwregionwocn.org/">
             <img
-              className="partner-img-lg mx-auto d-block mb-md-1"
+              className="partner-img-md mx-auto d-block mb-md-1"
               src="/assets/images/sponsor logos/NW_WOCN.png"
               alt="NW"
             />
           </a>
+          <a href="https://www.ostomy.org/">
+            <h3 className="greenText font-weight-bold mb-md-1">
+              UOAA - United Ostomy Associations of America, Golden Gate Chapter
+            </h3>
+          </a>
+          <a href="https://www.seattlechildrens.org/">
+            <img
+              className="partner-img-md mx-auto d-block mb-md-1"
+              src="/assets/images/sponsor logos/seattle-childrens.png"
+              alt="seattle_childrens"
+            />
+          </a>
           <h3 className="greenText font-weight-bold mb-md-1">
-            Friends & Family of Cheryl Ebbinghaus - In Loving Memory
+            Paul Hastings - Friends & Family
           </h3>
-          <h3 className="greenText font-weight-bold mb-md-1">
-            UOAA - United Ostomy Associations of America, Golden Gate Chapter
-          </h3>
+
           <h2 className="text-left mb-md-1" id="silver">
-            SILVER Level Partners:
+            <u>SILVER Level Partners:</u>
           </h2>
-          <a href="https://www.hasbro.com/">
+          <img
+            className="partner-img-sm mx-auto d-block mb-md-1"
+            src="/assets/images/sponsor logos/aWEARness.jpg"
+            alt="Pineapple's_EVENT_BANNER"
+          />
+          <a href="https://cookchildrens.org">
             <img
               className="partner-img-sm mx-auto d-block mb-md-1"
-              src="/assets/images/sponsor logos/Hasbro.jpg"
-              alt="hasbro"
+              src="/assets/images/sponsor logos/cc.png"
+              alt="cook_childrens_hospital"
+            />
+          </a>
+          <a href="https://newenglandwocn.org/">
+            <img
+              className="partner-img-sm mx-auto d-block mb-md-1"
+              src="/assets/images/sponsor logos/ner_wocns.png"
+              alt="wocns_ner"
             />
           </a>
           <a href="https://www.properbostonianquilters.org/">
@@ -106,132 +115,85 @@ export default () => (
               alt="Proper Bostonian Quilters"
             />
           </a>
-          <img
-            className="partner-img-sm mx-auto d-block mb-md-1"
-            src="/assets/images/sponsor logos/pineapple_event.jpg"
-            alt="Pineapple's_EVENT_BANNER"
-          />
-          <img
-            className="partner-img-sm mx-auto d-block mb-md-1"
-            src="/assets/images/sponsor logos/NE_WOCN.jpg"
-            alt="new england wocn"
-          />
           <h4 className="greenText font-weight-bold mb-md-1">
-            UOAA - Orange County ASG
-          </h4>
-          <h4 className="greenText font-weight-bold mb-md-1">
-            UOAA - Southwest Riverside ASG
-          </h4>
-          <h2 className="text-left mb-md-1" id="green">
-            GREEN Level Partners:
-          </h2>
-          <a href="https://www.ostomy.org/">
-            <img
-              className="partner-img-sm mx-auto d-block mb-md-1"
-              src="/assets/images/sponsor logos/UOAA.png"
-              alt="uoaa"
-            />
-          </a>
-          <a href="https://www.byramhealthcare.com/">
-            <img
-              className="partner-img-sm mx-auto d-block mb-md-1"
-              src="/assets/images/sponsor logos/Byram-Logo-color.jpg"
-              alt="Byram"
-            />
-          </a>
-          <a href="https://www.childrenshospital.org/Centers-And-Services/Departments-and-Divisions/department-of-urology">
-            <img
-              className="partner-img-sm mx-auto d-block mb-md-1"
-              src="/assets/images/sponsor logos/boston.jpg"
-              alt="Boston childrens hospital"
-            />
-          </a>
-          <a href="https://www.serwocn.org/">
-            <img
-              className="partner-img-sm mx-auto d-block mb-md-1"
-              src="/assets/images/sponsor logos/SE_WOCN.jpg"
-              alt="southeast wocn"
-            />
-          </a>
-          <a href="https://iowawocn.org/">
-            <img
-              className="partner-img-sm mx-auto d-block mb-md-1"
-              src="/assets/images/sponsor logos/iowa_WOCN.jpg"
-              alt="iowa wocn"
-            />
-          </a>
-          <img
-            className="partner-img-sm mx-auto d-block mb-md-1"
-            src="/assets/images/sponsor logos/Volleyball-logo.png"
-            alt="Volleyball logo"
-          />
-          <h5 className="purpleText font-weight-bold mb-md-1">
-            MAGGIE SNYDER - GOT GUTS 7th ANNUAL VOLLEYBALL TOURNAMENT
-          </h5>
-          <img
-            className="partner-img-sm mx-auto d-block mb-md-1"
-            src="/assets/images/sponsor logos/SD_Sisters.png"
-            alt="Sisters"
-          />
-          <a href="https://www.boeing.com/">
-            <img
-              className="partner-img-sm mx-auto d-block mb-md-1"
-              src="/assets/images/sponsor logos/boeing.jpg"
-              alt="Boeing"
-            />
-          </a>
-          <img
-            className="partner-img-sm mx-auto d-block mb-md-1"
-            src="/assets/images/sponsor logos/pacific-coast.png"
-            alt="pacific coast"
-          />
-          <a href="https://www.pullthrunetwork.org/">
-            <img
-              className="partner-img-sm mx-auto d-block mb-md-1"
-              src="/assets/images/sponsor logos/pullthru.png"
-              alt="PTN"
-            />
-          </a>
-          <img
-            className="partner-img-sm mx-auto d-block mb-md-1"
-            src="/assets/images/sponsor logos/MER-WOCN.png"
-            alt="Mideast Region WON"
-          />
-          <h5 className="purpleText font-weight-bold mb-md-1">
             Bill O'Donnell - Friends & Family
+          </h4>
+          <h4 className="greenText font-weight-bold mb-md-1">
+            William Taylor
+          </h4>
+          
+          <h2 className="text-left mb-md-1" id="green">
+            <u>GREEN Level Partners:</u>
+          </h2>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            Laura Holan
           </h5>
           <h5 className="purpleText font-weight-bold mb-md-1">
-            Sylvia Hebert - Friends & Family
+            David Hartley
           </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            Boston Children's Hospital Urological Foundation
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">Timothy Loretan</h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            Rachel Sideris
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            Boeing
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            The San Diego Sisters of Perpetual Indulgence
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            UOAA - St. Louis Chapter
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            Lahey Hospital & Medical Center - Nursing 7E
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            Annie Carver & Erin Kavanagh - Friends & Family
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">Mary Beth Akers - Friends & Family</h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">Sylvia Herbert - Friends & Family</h5>
           <h5 className="purpleText font-weight-bold mb-md-1">
             Bob Heitker - Friends & Family
           </h5>
-          <h5 className="purpleText font-weight-bold mb-md-1">Julie Epstein</h5>
           <h5 className="purpleText font-weight-bold mb-md-1">
-            David & Deborah Hartley
+            Annette Walker
           </h5>
           <h5 className="purpleText font-weight-bold mb-md-1">
-            UOAA - St. Louis ASG
+            Iowa Affiliate of the WOCN
           </h5>
           <h5 className="purpleText font-weight-bold mb-md-1">
-            Annette Walker & Family
+            Buckles-Smith
           </h5>
           <h5 className="purpleText font-weight-bold mb-md-1">
-            UOAA - Napa Valley ASG
+            Steve Goldberg
           </h5>
           <h5 className="purpleText font-weight-bold mb-md-1">
-            UOAA - Dupage County ASG
+            Brian Smith
           </h5>
           <h5 className="purpleText font-weight-bold mb-md-1">
-            UOAA - Los Angeles
+            UOAA
           </h5>
-          <h5 className="purpleText font-weight-bold mb-md-1">John Scarlett</h5>
-          <h5 className="purpleText font-weight-bold mb-md-1">Buckles-Smith</h5>
-          <h5 className="purpleText font-weight-bold mb-md-1">Sharon Brummer</h5>
           <h5 className="purpleText font-weight-bold mb-md-1">
-            Pamela Gelband - In Loving Memory of Martin
+            Mid Atlantic Region of the WOCN
           </h5>
-          <h5 className="purpleText font-weight-bold mb-md-1">Alan Mendelson</h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            The Ostomy Association of Orange County
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            Helen Molloy
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            The Tulsa Ostomy Association
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            Harvey & Edie Brown
+          </h5>
+          <h5 className="purpleText font-weight-bold mb-md-1">
+            Noelle Smith
+          </h5>
         </div>
       </div>
     </div>

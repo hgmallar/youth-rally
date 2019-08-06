@@ -131,7 +131,12 @@ ol li {
 }
 
 .partner-img-lg {
-  max-height: 200px;
+  max-height: 150px;
+  width: auto;
+}
+
+.partner-img-md {
+  max-height: 125px;
   width: auto;
 }
 
