@@ -158,6 +158,13 @@ export default () => (
                 alt="stoma"
               />
             </a>
+            <a href="https://www.simplymedical.com/">
+              <img
+                className="resource-img mx-auto d-block mb-md-1"
+                src="/assets/images/resources/simplymedical.png"
+                alt="simplymed"
+              />
+            </a>
           </div>
         </div>
       </div>
