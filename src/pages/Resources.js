@@ -166,7 +166,7 @@ export default () => (
             <a href="https://www.simplymedical.com/">
               <img
                 className="resource-img mx-auto d-block mb-md-1"
-                src="/assets/images/resources/simplymedical.png"
+                src="/assets/images/resources/simpmed.png"
                 alt="simplymed"
               />
             </a>
