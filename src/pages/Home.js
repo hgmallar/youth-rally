@@ -82,10 +82,34 @@ export default () => (
               <div className="card col-md-3 mx-1 my-2">
                 <div className="card-body">
                   <h5 className="card-title purpleText">
+                    <a
+                      href="https://youthrallyphotos.smugmug.com/"
+                      className="no-underline"
+                    >
+                      CLICK HERE to view photos of the 2019 Youth Rally!
+                    </a>
+                  </h5>
+                  <p>
+                    Pictures will be posted daily after camper arrival on July
+                    8th!
+                  </p>
+                  <span className="greenText">
+                    <a
+                      href="https://youthrallyphotos.smugmug.com/"
+                      className="card-link"
+                    >
+                      2019 Photos
+                    </a>
+                  </span>
+                  <hr />
+                  <h5 className="card-title purpleText">
                     Thanks to our 2019 Platinum Level Community Partners:
                   </h5>
                   <p className="text-center">
-                    <a href="http://www.hollister.com/" className="card-link ml-0">
+                    <a
+                      href="http://www.hollister.com/"
+                      className="card-link ml-0"
+                    >
                       Hollister
                     </a>
                     {", "}
@@ -93,7 +117,10 @@ export default () => (
                       Gilead Sciences
                     </a>
                     , and{" "}
-                    <a href="https://www.convatec.com/" className="card-link ml-0">
+                    <a
+                      href="https://www.convatec.com/"
+                      className="card-link ml-0"
+                    >
                       Convatec!
                     </a>
                   </p>
@@ -148,22 +175,24 @@ export default () => (
               <div className="card col-md-3 mx-1 my-2">
                 <div className="card-body">
                   <h5 className="card-title purpleText">
-                    <a href="https://youthrallyphotos.smugmug.com/" className="no-underline">
-                      CLICK HERE to view photos of the 2019 Youth Rally!
-                    </a>
+                    Join us in celebrating Ostomy Awareness Day!
                   </h5>
                   <p>
-                    Pictures will be posted daily after camper arrival on July
-                    8th!
+                    Visit{" "}
+                    <a href="https://www.ostomy.org/" className="no-underline">
+                      UOAA
+                    </a>{" "}
+                    to learn more about how you can participate in events in
+                    your area!
                   </p>
-                  <span className="greenText">
-                    <a
-                      href="https://youthrallyphotos.smugmug.com/"
-                      className="card-link"
-                    >
-                      2019 Photos
-                    </a>
-                  </span>
+                  <p>#OstomiesAreLifesavers #OstomyDay2019</p>
+                  <a href="https://www.ostomy.org/" className="no-underline">
+                    <img
+                      className="d-block w-75 mx-auto"
+                      src="/assets/images/lifesaver.png"
+                      alt="LifeSaver"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
