@@ -5,14 +5,12 @@ export default () => (
     <a href="/" className="no-underline">
       <div className="row justify-content-center">
         <div className="col-md-3">
-          <a href="/">
-            <img
-              className="rounded float-right align-middle"
-              id="header-logo"
-              src="/assets/images/youth_rally_logo.png"
-              alt="youth rally logo"
-            />
-          </a>
+          <img
+            className="rounded float-right align-middle"
+            id="header-logo"
+            src="/assets/images/youth_rally_logo.png"
+            alt="youth rally logo"
+          />
         </div>
         <div className="col-md-8">
           <h1 className="display-4 pl-3">The Youth Rally</h1>

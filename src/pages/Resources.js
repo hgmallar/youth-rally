@@ -6,7 +6,7 @@ import Header from "./../components/Header";
 export default () => (
   <div>
     <Navbar />
-    
+
     <Header title="Resources" />
 
     <div id="content">
@@ -15,7 +15,9 @@ export default () => (
           <h2 className="greenText">
             Use these tools to raise Youth Rally awareness:
           </h2>
-          <h2 className="purpleText text-center">The 2019 Youth Rally Brochure:</h2>
+          <h2 className="purpleText text-center">
+            The 2019 Youth Rally Brochure:
+          </h2>
           <p className="purpleText text-center">
             <a href="/assets/documents/2019-BROCHURE_1.jpg">
               2019 BROCHURE - front/back
@@ -26,7 +28,9 @@ export default () => (
               2019 BROCHURE - center content
             </a>
           </p>
-          <h2 className="purpleText text-center">Youth Rally Promotional Video:</h2>
+          <h2 className="purpleText text-center">
+            Youth Rally Promotional Video:
+          </h2>
           <p className="purpleText text-center">
             <a href="https://youthrallyphotos.smugmug.com/YouthRallyPhotos/AdditionalMaterials/OtherRallyInformation/i-mDm8qF3/A ">
               Youth Rally Promotional Video
@@ -158,6 +162,7 @@ export default () => (
                 alt="stoma"
               />
             </a>
+
             <a href="https://www.simplymedical.com/">
               <img
                 className="resource-img mx-auto d-block mb-md-1"
