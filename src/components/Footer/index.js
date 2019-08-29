@@ -127,7 +127,6 @@ export default () => (
         <div className="row">
           <div className="col mb-md-5">
             <h5 className="topBotBorder text-center">EVENTS</h5>
-            <p>October 5th, 2019 Ostomy Awareness Day</p>
             <p>
               January 1st, 2020 Applications for 2020 Youth Rally available{" "}
             </p>

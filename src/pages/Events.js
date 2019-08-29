@@ -13,10 +13,6 @@ export default () => (
       <div className="row">
         <div className="col-md-11 mx-auto">
           <h2 className="text-center">
-            October 5th, 2019 Ostomy Awareness Day
-          </h2>
-          <hr />
-          <h2 className="text-center">
             July 20th - 25th, 2020 Youth Rally in San Diego, CA
           </h2>
           <hr />
