@@ -7,21 +7,41 @@ import Header from "./../components/Header";
 class Store extends Component {
   state = {
     braceletSize: "Size",
-    tshirtSize: "Size",
+    tshirtSizeA: "Size",
+    tshirtSizeB: "Size",
     dropdownBorderA: "no-border",
     dropdownBorderB: "no-border",
+    dropdownBorderC: "no-border",
     errorMessage1: "",
-    errorMessage2: ""
+    errorMessage2: "",
+    errorMessage3: ""
   };
 
   updateBraceletOptions = (size, evt) => {
     evt.preventDefault();
-    this.setState({ dropdownBorderA: "no-border", braceletSize: size, errorMessage1: "" });
+    this.setState({
+      dropdownBorderA: "no-border",
+      braceletSize: size,
+      errorMessage1: ""
+    });
   };
 
-  updateTshirtOptions = (size, evt) => {
+  updateTshirtOptionsBlue = (size, evt) => {
     evt.preventDefault();
-    this.setState({ dropdownBorderB: "no-border", tshirtSize: size, errorMessage2: ""  });
+    this.setState({
+      dropdownBorderB: "no-border",
+      tshirtSizeA: size,
+      errorMessage2: ""
+    });
+  };
+
+  updateTshirtOptionsPurp = (size, evt) => {
+    evt.preventDefault();
+    this.setState({
+      dropdownBorderC: "no-border",
+      tshirtSizeB: size,
+      errorMessage3: ""
+    });
   };
 
   addItemToCart(itemName, price, evt) {
@@ -46,21 +66,62 @@ class Store extends Component {
       } else if (this.state.braceletSize === "Adult") {
         this.addItemToCart("wristbands-adult", 3, evt);
       } else {
-        this.setState({dropdownBorderA: "red-border", errorMessage1: "*Please Select Your Size*"});
+        this.setState({
+          dropdownBorderA: "red-border",
+          errorMessage1: "*Please Select Your Size*"
+        });
       }
-    } else if (itemType === "tshirt") {
-      if (this.state.tshirtSize === "Youth Small $15") {
-        this.addItemToCart("tshirts-youth-small", 15, evt);
-      } else if (this.state.tshirtSize === "Youth Medium $15") {
-        this.addItemToCart("tshirts-youth-medium", 15, evt);
-      } else if (this.state.tshirtSize === "Youth Large $15") {
-        this.addItemToCart("tshirts-youth-large", 15, evt);
-      } else if (this.state.tshirtSize === "Youth Extra Large $15") {
-        this.addItemToCart("tshirts-youth-xtra", 15, evt);
-      } else if (this.state.tshirtSize === "Adult Small $20") {
-        this.addItemToCart("tshirts-adult-small", 20, evt);
+    } else if (itemType === "tshirt-blue") {
+      if (this.state.tshirtSizeA === "Blue Youth Small $20") {
+        this.addItemToCart("tshirts-youth-small-blue", 20, evt);
+      } else if (this.state.tshirtSizeA === "Blue Youth Medium $20") {
+        this.addItemToCart("tshirts-youth-medium-blue", 20, evt);
+      } else if (this.state.tshirtSizeA === "Blue Youth Large $20") {
+        this.addItemToCart("tshirts-youth-large-blue", 20, evt);
+      } else if (this.state.tshirtSizeA === "Blue Youth Extra Large $20") {
+        this.addItemToCart("tshirts-youth-xtra-blue", 20, evt);
+      } else if (this.state.tshirtSizeA === "Blue Adult Small $20") {
+        this.addItemToCart("tshirts-adult-small-blue", 20, evt);
+      } else if (this.state.tshirtSizeA === "Blue Adult Medium $20") {
+        this.addItemToCart("tshirts-adult-medium-blue", 20, evt);
+      } else if (this.state.tshirtSizeA === "Blue Adult Large $20") {
+        this.addItemToCart("tshirts-adult-large-blue", 20, evt);
+      } else if (this.state.tshirtSizeA === "Blue Adult Extra Large $20") {
+        this.addItemToCart("tshirts-adult-xtra-blue", 20, evt);
+      } else if (this.state.tshirtSizeA === "Blue Adult Extra Extra Large $20") {
+        this.addItemToCart("tshirts-adult-xtra-xtra-blue", 20, evt);
       } else {
-        this.setState({dropdownBorderB: "red-border", errorMessage2: "*Please Select Your Size*"});
+        this.setState({
+          dropdownBorderB: "red-border",
+          errorMessage2: "*Please Select Your Size*"
+        });
+      }
+    } else if (itemType === "tshirt-purp") {
+      if (this.state.tshirtSizeB === "Purple Youth Small $20") {
+        this.addItemToCart("tshirts-youth-small-purp", 20, evt);
+      } else if (this.state.tshirtSizeB === "Purple Youth Medium $20") {
+        this.addItemToCart("tshirts-youth-medium-purp", 20, evt);
+      } else if (this.state.tshirtSizeB === "Purple Youth Large $20") {
+        this.addItemToCart("tshirts-youth-large-purp", 20, evt);
+      } else if (this.state.tshirtSizeB === "Purple Youth Extra Large $20") {
+        this.addItemToCart("tshirts-youth-xtra-purp", 20, evt);
+      } else if (this.state.tshirtSizeB === "Purple Adult Small $20") {
+        this.addItemToCart("tshirts-adult-small-purp", 20, evt);
+      } else if (this.state.tshirtSizeB === "Purple Adult Medium $20") {
+        this.addItemToCart("tshirts-adult-medium-purp", 20, evt);
+      } else if (this.state.tshirtSizeB === "Purple Adult Large $20") {
+        this.addItemToCart("tshirts-adult-large-purp", 20, evt);
+      } else if (this.state.tshirtSizeB === "Purple Adult Extra Large $20") {
+        this.addItemToCart("tshirts-adult-xtra-purp", 20, evt);
+      } else if (
+        this.state.tshirtSizeB === "Purple Adult Extra Extra Large $20"
+      ) {
+        this.addItemToCart("tshirts-adult-xtra-xtra-purp", 20, evt);
+      } else {
+        this.setState({
+          dropdownBorderC: "red-border",
+          errorMessage3: "*Please Select Your Size*"
+        });
       }
     }
   }
@@ -69,7 +130,7 @@ class Store extends Component {
     return (
       <div>
         <Navbar />
-        
+
         <Header title="Store" />
 
         <div className="container-fluid mx-auto">
@@ -88,7 +149,383 @@ class Store extends Component {
             <div />
           )}
           <div className="row justify-content-center text-center">
-            <div className="col-md-3">
+            <div className="col-md-3 m-1">
+              <div className="card">
+                <img
+                  className="card-img-top store-image"
+                  src="/assets/images/blue_yr_shirt.jpg"
+                  alt="Blue YR Tshirt"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Youth Rally Blue T-Shirt</h5>
+                  <h6>Price(USD): $20.00 </h6>
+                  <p className="card-text">
+                    Support Youth Rally with this fresh Unisex Youth Rally
+                    T-Shirt! Front: I ain't ashamed of nothing on this body -
+                    Butterball, Age 13; Back: youthrally.org
+                  </p>
+                  <div className="form row justify-content-center">
+                    <form className="form-inline">
+                      <div className="dropdown">
+                        <button
+                          className={`btn btn-primary text-white dropdown-toggle mb-2 ${
+                            this.state.dropdownBorderB
+                          }`}
+                          type="button"
+                          id="dropdownMenuButtonB"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <span id="tshirt-selected-blue">
+                            {this.state.tshirtSizeA}
+                          </span>
+                        </button>
+                        <div
+                          className="dropdown-menu"
+                          aria-labelledby="dropdownMenuButtonB"
+                          id="tshirt-size-selection-blue"
+                        >
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsBlue(
+                                "Blue Youth Small $20",
+                                e
+                              )
+                            }
+                          >
+                            Blue Youth Small $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsBlue(
+                                "Blue Youth Medium $20",
+                                e
+                              )
+                            }
+                          >
+                            Blue Youth Medium $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsBlue(
+                                "Blue Youth Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Blue Youth Large $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsBlue(
+                                "Blue Youth Extra Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Blue Youth Extra Large $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsBlue(
+                                "Blue Adult Small $20",
+                                e
+                              )
+                            }
+                          >
+                            Blue Adult Small $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsBlue(
+                                "Blue Adult Medium $20",
+                                e
+                              )
+                            }
+                          >
+                            Blue Adult Medium $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsBlue(
+                                "Blue Adult Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Blue Adult Large $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsBlue(
+                                "Blue Adult Extra Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Blue Adult Extra Large $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsBlue(
+                                "Blue Adult Extra Extra Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Blue Adult Extra Extra Large $20
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+
+                    <button
+                      className="btn btn-primary text-white mb-2 ml-1 float-left"
+                      id="tshirt-btn-blue"
+                      onClick={e => this.addSizedItemToCart("tshirt-blue", e)}
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <div className="red-text">{this.state.errorMessage2}</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-3 m-1">
+              <div className="card">
+                <img
+                  className="card-img-top store-image"
+                  src="/assets/images/purp_yr_shirt.jpg"
+                  alt="Purple YR Tshirt"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Youth Rally Purple T-Shirt</h5>
+                  <h6>Price(USD): $20.00 </h6>
+                  <p className="card-text">
+                    Support Youth Rally with this fresh new Unisex Youth Rally
+                    T-Shirt! Front: There's A Camp For That? (with diagnoses
+                    listed); Back: youthrally.org
+                  </p>
+                  <div className="form row justify-content-center">
+                    <form className="form-inline">
+                      <div className="dropdown">
+                        <button
+                          className={`btn btn-primary text-white dropdown-toggle mb-2 ${
+                            this.state.dropdownBorderC
+                          }`}
+                          type="button"
+                          id="dropdownMenuButtonC"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <span id="tshirt-selected-purp">
+                            {this.state.tshirtSizeB}
+                          </span>
+                        </button>
+                        <div
+                          className="dropdown-menu"
+                          aria-labelledby="dropdownMenuButtonC"
+                          id="tshirt-size-selection-purp"
+                        >
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsPurp(
+                                "Purple Youth Small $20",
+                                e
+                              )
+                            }
+                          >
+                            Purple Youth Small $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsPurp(
+                                "Purple Youth Medium $20",
+                                e
+                              )
+                            }
+                          >
+                            Purple Youth Medium $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsPurp(
+                                "Purple Youth Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Purple Youth Large $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsPurp(
+                                "Purple Youth Extra Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Purple Youth Extra Large $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsPurp(
+                                "Purple Adult Small $20",
+                                e
+                              )
+                            }
+                          >
+                            Purple Adult Small $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsPurp(
+                                "Purple Adult Medium $20",
+                                e
+                              )
+                            }
+                          >
+                            Purple Adult Medium $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsPurp(
+                                "Purple Adult Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Purple Adult Large $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsPurp(
+                                "Purple Adult Extra Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Purple Adult Extra Large $20
+                          </button>
+                          <button
+                            className="dropdown-item dropdown-tshirt-size link-button"
+                            href="#"
+                            onClick={e =>
+                              this.updateTshirtOptionsPurp(
+                                "Purple Adult Extra Extra Large $20",
+                                e
+                              )
+                            }
+                          >
+                            Purple Adult Extra Extra Large $20
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+
+                    <button
+                      className="btn btn-primary text-white mb-2 ml-1 float-left"
+                      id="tshirt-btn-purp"
+                      onClick={e => this.addSizedItemToCart("tshirt-purp", e)}
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <div className="red-text">{this.state.errorMessage3}</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-3 m-1">
+              <div className="card">
+                <img
+                  className="card-img-top store-image"
+                  src="/assets/images/20150924_150546.jpg"
+                  alt="YR keychain"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Keychain</h5>
+                  <h6>Price(USD): $4.00 </h6>
+                  <p className="card-text">
+                    Find your keys quickly with this Youth Rally "YOU ARE NOT
+                    ALONE" glow in the dark keychain.
+                  </p>
+                  <div className="row justify-content-center">
+                    <button
+                      className="btn btn-primary text-white mb-2 float-left"
+                      id="keychain-btn"
+                      onClick={e => this.addItemToCart("keychains", 4, e)}
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 m-1">
+              <div className="card">
+                <img
+                  className="card-img-top store-image"
+                  src="/assets/images/patch.jpg"
+                  alt="YR Patch"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Patch</h5>
+                  <h6>Price(USD): $4.00 </h6>
+                  <p className="card-text">
+                    Personalize your own Youth Rally gear with this "YOU ARE NOT
+                    ALONE" embroidered patch. 3 inch by 3 inch square patch.
+                  </p>
+                  <div className="row justify-content-center">
+                    <button
+                      className="btn btn-primary text-white mb-2 float-left"
+                      id="patch-btn"
+                      onClick={e => this.addItemToCart("patches", 4, e)}
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 m-1">
               <div className="card">
                 <img
                   className="card-img-top store-image"
@@ -108,7 +545,9 @@ class Store extends Component {
                     <form className="form-inline">
                       <div className="dropdown">
                         <button
-                          className={`btn btn-primary text-white dropdown-toggle mb-2 ${this.state.dropdownBorderA}`}
+                          className={`btn btn-primary text-white dropdown-toggle mb-2 ${
+                            this.state.dropdownBorderA
+                          }`}
                           type="button"
                           id="dropdownMenuButton"
                           data-toggle="dropdown"
@@ -157,168 +596,12 @@ class Store extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
-              <div className="card">
-                <img
-                  className="card-img-top store-image"
-                  src="/assets/images/20150924_150546.jpg"
-                  alt="YR keychain"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Keychain</h5>
-                  <h6>Price(USD): $4.00 </h6>
-                  <p className="card-text">
-                    Find your keys quickly with this Youth Rally "YOU ARE NOT
-                    ALONE" glow in the dark keychain.
-                  </p>
-                  <div className="row justify-content-center">
-                    <button
-                      className="btn btn-primary text-white mb-2 float-left"
-                      id="keychain-btn"
-                      onClick={e => this.addItemToCart("keychains", 4, e)}
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="card">
-                <img
-                  className="card-img-top store-image"
-                  src="/assets/images/patch.jpg"
-                  alt="YR Patch"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Patch</h5>
-                  <h6>Price(USD): $4.00 </h6>
-                  <p className="card-text">
-                    Personalize your own Youth Rally gear with this "YOU ARE NOT
-                    ALONE" embroidered patch. 3 inch by 3 inch square patch.
-                  </p>
-                  <div className="row justify-content-center">
-                    <button
-                      className="btn btn-primary text-white mb-2 float-left"
-                      id="patch-btn"
-                      onClick={e => this.addItemToCart("patches", 4, e)}
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="card">
-                <img
-                  className="card-img-top store-image"
-                  src="/assets/images/frontback.png"
-                  alt="YR Tshirts"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Youth Rally T-Shirt</h5>
-                  <h6>Price(USD): $15.00/$20.00 </h6>
-                  <p className="card-text">
-                    Contact{" "}
-                    <span className="greenText">
-                      <a href="mailto:info@youthrally.org">
-                        info@youthrally.org
-                      </a>
-                    </span>
-                    for sizes/availability. Unisex Youth Rally T-Shirt in
-                    electric blue! Front: I ain't ashamed of nothing on this
-                    body - "Butterball", Age 13; Back: youthrally.org Support
-                    Youth Rally with this fresh new t-shirt!{" "}
-                  </p>
-
-                  <div className="form row justify-content-center">
-                    <form className="form-inline">
-                      <div className="dropdown">
-                        <button
-                          className={`btn btn-primary text-white dropdown-toggle mb-2 ${this.state.dropdownBorderB}`}
-                          type="button"
-                          id="dropdownMenuButton"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          <span id="tshirt-selected">
-                            {this.state.tshirtSize}
-                          </span>
-                        </button>
-                        <div
-                          className="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton"
-                          id="tshirt-size-selection"
-                        >
-                          <button
-                            className="dropdown-item dropdown-tshirt-size link-button"
-                            href="#"
-                            onClick={e =>
-                              this.updateTshirtOptions("Youth Small $15", e)
-                            }
-                          >
-                            Youth Small $15
-                          </button>
-                          <button
-                            className="dropdown-item dropdown-tshirt-size link-button"
-                            href="#"
-                            onClick={e =>
-                              this.updateTshirtOptions("Youth Medium $15", e)
-                            }
-                          >
-                            Youth Medium $15
-                          </button>
-                          <button
-                            className="dropdown-item dropdown-tshirt-size link-button"
-                            href="#"
-                            onClick={e =>
-                              this.updateTshirtOptions("Youth Large $15", e)
-                            }
-                          >
-                            Youth Large $15
-                          </button>
-                          <button
-                            className="dropdown-item dropdown-tshirt-size link-button"
-                            href="#"
-                            onClick={e =>
-                              this.updateTshirtOptions(
-                                "Youth Extra Large $15",
-                                e
-                              )
-                            }
-                          >
-                            Youth Extra Large $15
-                          </button>
-                          <button
-                            className="dropdown-item dropdown-tshirt-size link-button"
-                            href="#"
-                            onClick={e =>
-                              this.updateTshirtOptions("Adult Small $20", e)
-                            }
-                          >
-                            Adult Small $20
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-
-                    <button
-                      className="btn btn-primary text-white mb-2 ml-1 float-left"
-                      id="tshirt-btn"
-                      onClick={e => this.addSizedItemToCart("tshirt", e)}
-                    >
-                      Add to Cart
-                    </button>
-                  </div>
-                  <div className="red-text">{this.state.errorMessage2}</div>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="text-center">
-          <Link to="/cart" className="btn btn-primary text-white mb-2 mx-auto purpleButton">
+            <Link
+              to="/cart"
+              className="btn btn-primary text-white mb-2 mx-auto purpleButton"
+            >
               Go to Checkout
             </Link>
           </div>

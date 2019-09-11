@@ -51,20 +51,59 @@ class App extends Component {
     if (sessionStorage.getItem("patches")) {
       total += 4 * sessionStorage.getItem("patches");
     }
-    if (sessionStorage.getItem("tshirts-youth-small")) {
-      total += 15 * sessionStorage.getItem("tshirts-youth-small");
+    if (sessionStorage.getItem("tshirts-youth-small-blue")) {
+      total += 20 * sessionStorage.getItem("tshirts-youth-small-blue");
     }
-    if (sessionStorage.getItem("tshirts-youth-medium")) {
-      total += 15 * sessionStorage.getItem("tshirts-youth-medium");
+    if (sessionStorage.getItem("tshirts-youth-medium-blue")) {
+      total += 20 * sessionStorage.getItem("tshirts-youth-medium-blue");
     }
-    if (sessionStorage.getItem("tshirts-youth-large")) {
-      total += 15 * sessionStorage.getItem("tshirts-youth-large");
+    if (sessionStorage.getItem("tshirts-youth-large-blue")) {
+      total += 20 * sessionStorage.getItem("tshirts-youth-large-blue");
     }
-    if (sessionStorage.getItem("tshirts-youth-xtra")) {
-      total += 15 * sessionStorage.getItem("tshirts-youth-xtra");
+    if (sessionStorage.getItem("tshirts-youth-xtra-blue")) {
+      total += 20 * sessionStorage.getItem("tshirts-youth-xtra-blue");
     }
-    if (sessionStorage.getItem("tshirts-adult-small")) {
-      total += 20 * sessionStorage.getItem("tshirts-adult-small");
+    if (sessionStorage.getItem("tshirts-adult-small-blue")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-small-blue");
+    }
+    if (sessionStorage.getItem("tshirts-adult-medium-blue")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-medium-blue");
+    }
+    if (sessionStorage.getItem("tshirts-adult-large-blue")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-large-blue");
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-blue")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-xtra-blue");
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-xtra-blue")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-xtra-xtra-blue");
+    }
+    if (sessionStorage.getItem("tshirts-youth-small-purp")) {
+      total += 20 * sessionStorage.getItem("tshirts-youth-small-purp");
+    }
+    if (sessionStorage.getItem("tshirts-youth-medium-purp")) {
+      total += 20 * sessionStorage.getItem("tshirts-youth-medium-purp");
+    }
+    if (sessionStorage.getItem("tshirts-youth-large-purp")) {
+      total += 20 * sessionStorage.getItem("tshirts-youth-large-purp");
+    }
+    if (sessionStorage.getItem("tshirts-youth-xtra-purp")) {
+      total += 20 * sessionStorage.getItem("tshirts-youth-xtra-purp");
+    }
+    if (sessionStorage.getItem("tshirts-adult-small-purp")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-small-purp");
+    }
+    if (sessionStorage.getItem("tshirts-adult-medium-purp")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-medium-purp");
+    }
+    if (sessionStorage.getItem("tshirts-adult-large-purp")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-large-purp");
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-purp")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-xtra-purp");
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-xtra-purp")) {
+      total += 20 * sessionStorage.getItem("tshirts-adult-xtra-xtra-purp");
     }
     this.setState({ cartTotal: total });
     this.updateCartTotal(total);

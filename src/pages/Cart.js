@@ -14,11 +14,28 @@ class Cart extends Component {
     wristbandsAdult: sessionStorage.getItem("wristbands-adult"),
     patches: sessionStorage.getItem("patches"),
     keychains: sessionStorage.getItem("keychains"),
-    tshirtsYouthSmall: sessionStorage.getItem("tshirts-youth-small"),
-    tshirtsYouthMedium: sessionStorage.getItem("tshirts-youth-medium"),
-    tshirtsYouthLarge: sessionStorage.getItem("tshirts-youth-large"),
-    tshirtsYouthXtra: sessionStorage.getItem("tshirts-youth-xtra"),
-    tshirtsAdultSmall: sessionStorage.getItem("tshirts-adult-small"),
+    tshirtsYouthSmallBlue: sessionStorage.getItem("tshirts-youth-small-blue"),
+    tshirtsYouthMediumBlue: sessionStorage.getItem("tshirts-youth-medium-blue"),
+    tshirtsYouthLargeBlue: sessionStorage.getItem("tshirts-youth-large-blue"),
+    tshirtsYouthXtraBlue: sessionStorage.getItem("tshirts-youth-xtra-blue"),
+    tshirtsAdultSmallBlue: sessionStorage.getItem("tshirts-adult-small-blue"),
+    tshirtsAdultMediumBlue: sessionStorage.getItem("tshirts-adult-medium-blue"),
+    tshirtsAdultLargeBlue: sessionStorage.getItem("tshirts-adult-large-blue"),
+    tshirtsAdultXtraBlue: sessionStorage.getItem("tshirts-adult-xtra-blue"),
+    tshirtsAdultXtraXtraBlue: sessionStorage.getItem(
+      "tshirts-adult-xtra-xtra-blue"
+    ),
+    tshirtsYouthSmallPurp: sessionStorage.getItem("tshirts-youth-small-purp"),
+    tshirtsYouthMediumPurp: sessionStorage.getItem("tshirts-youth-medium-purp"),
+    tshirtsYouthLargePurp: sessionStorage.getItem("tshirts-youth-large-purp"),
+    tshirtsYouthXtraPurp: sessionStorage.getItem("tshirts-youth-xtra-purp"),
+    tshirtsAdultSmallPurp: sessionStorage.getItem("tshirts-adult-small-purp"),
+    tshirtsAdultMediumPurp: sessionStorage.getItem("tshirts-adult-medium-purp"),
+    tshirtsAdultLargePurp: sessionStorage.getItem("tshirts-adult-large-purp"),
+    tshirtsAdultXtraPurp: sessionStorage.getItem("tshirts-adult-xtra-purp"),
+    tshirtsAdultXtraXtraPurp: sessionStorage.getItem(
+      "tshirts-adult-xtra-xtra-purp"
+    ),
     show: false,
     title: "",
     message: ""
@@ -109,62 +126,237 @@ class Cart extends Component {
       this.updateQuantity("patches", this.state.patches, 4);
     }
     if (
-      sessionStorage.getItem("tshirts-youth-small") &&
-      (this.state.tshirtsYouthSmall || this.state.tshirtsYouthSmall === 0) &&
-      sessionStorage.getItem("tshirts-youth-small") !==
-        this.state.tshirtsYouthSmall
+      sessionStorage.getItem("tshirts-youth-small-blue") &&
+      (this.state.tshirtsYouthSmallBlue ||
+        this.state.tshirtsYouthSmallBlue === 0) &&
+      sessionStorage.getItem("tshirts-youth-small-blue") !==
+        this.state.tshirtsYouthSmallBlue
     ) {
       this.updateQuantity(
-        "tshirts-youth-small",
-        this.state.tshirtsYouthSmall,
-        15
+        "tshirts-youth-small-blue",
+        this.state.tshirtsYouthSmallBlue,
+        20
       );
     }
     if (
-      sessionStorage.getItem("tshirts-youth-medium") &&
-      (this.state.tshirtsYouthMedium || this.state.tshirtsYouthMedium === 0) &&
-      sessionStorage.getItem("tshirts-youth-medium") !==
-        this.state.tshirtsYouthMedium
+      sessionStorage.getItem("tshirts-youth-medium-blue") &&
+      (this.state.tshirtsYouthMediumBlue ||
+        this.state.tshirtsYouthMediumBlue === 0) &&
+      sessionStorage.getItem("tshirts-youth-medium-blue") !==
+        this.state.tshirtsYouthMediumBlue
     ) {
       this.updateQuantity(
-        "tshirts-youth-medium",
-        this.state.tshirtsYouthMedium,
-        15
+        "tshirts-youth-medium-blue",
+        this.state.tshirtsYouthMediumBlue,
+        20
       );
     }
     if (
-      sessionStorage.getItem("tshirts-youth-large") &&
-      (this.state.tshirtsYouthLarge || this.state.tshirtsYouthLarge === 0) &&
-      sessionStorage.getItem("tshirts-youth-large") !==
-        this.state.tshirtsYouthLarge
+      sessionStorage.getItem("tshirts-youth-large-blue") &&
+      (this.state.tshirtsYouthLargeBlue ||
+        this.state.tshirtsYouthLargeBlue === 0) &&
+      sessionStorage.getItem("tshirts-youth-large-blue") !==
+        this.state.tshirtsYouthLargeBlue
     ) {
       this.updateQuantity(
-        "tshirts-youth-large",
-        this.state.tshirtsYouthLarge,
-        15
+        "tshirts-youth-large-blue",
+        this.state.tshirtsYouthLargeBlue,
+        20
       );
     }
     if (
-      sessionStorage.getItem("tshirts-youth-xtra") &&
-      (this.state.tshirtsYouthXtra || this.state.tshirtsYouthXtra === 0) &&
-      sessionStorage.getItem("tshirts-youth-xtra") !==
-        this.state.tshirtsYouthXtra
+      sessionStorage.getItem("tshirts-youth-xtra-blue") &&
+      (this.state.tshirtsYouthXtraBlue ||
+        this.state.tshirtsYouthXtraBlue === 0) &&
+      sessionStorage.getItem("tshirts-youth-xtra-blue") !==
+        this.state.tshirtsYouthXtraBlue
     ) {
       this.updateQuantity(
-        "tshirts-youth-xtra",
-        this.state.tshirtsYouthXtra,
-        15
+        "tshirts-youth-xtra-blue",
+        this.state.tshirtsYouthXtraBlue,
+        20
       );
     }
     if (
-      sessionStorage.getItem("tshirts-adult-small") &&
-      (this.state.tshirtsAdultSmall || this.state.tshirtsAdultSmall === 0) &&
-      sessionStorage.getItem("tshirts-adult-small") !==
-        this.state.tshirtsAdultSmall
+      sessionStorage.getItem("tshirts-adult-small-blue") &&
+      (this.state.tshirtsAdultSmallBlue ||
+        this.state.tshirtsAdultSmallBlue === 0) &&
+      sessionStorage.getItem("tshirts-adult-small-blue") !==
+        this.state.tshirtsAdultSmallBlue
     ) {
       this.updateQuantity(
-        "tshirts-adult-small",
-        this.state.tshirtsAdultSmall,
+        "tshirts-adult-small-blue",
+        this.state.tshirtsAdultSmallBlue,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-adult-medium-blue") &&
+      (this.state.tshirtsAdultMediumBlue ||
+        this.state.tshirtsAdultMediumBlue === 0) &&
+      sessionStorage.getItem("tshirts-adult-medium-blue") !==
+        this.state.tshirtsAdultMediumBlue
+    ) {
+      this.updateQuantity(
+        "tshirts-adult-medium-blue",
+        this.state.tshirtsAdultMediumBlue,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-adult-large-blue") &&
+      (this.state.tshirtsAdultLargeBlue ||
+        this.state.tshirtsAdultLargeBlue === 0) &&
+      sessionStorage.getItem("tshirts-adult-large-blue") !==
+        this.state.tshirtsAdultLargeBlue
+    ) {
+      this.updateQuantity(
+        "tshirts-adult-large-blue",
+        this.state.tshirtsAdultLargeBlue,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-adult-xtra-blue") &&
+      (this.state.tshirtsAdultXtraBlue ||
+        this.state.tshirtsAdultXtraBlue === 0) &&
+      sessionStorage.getItem("tshirts-adult-xtra-blue") !==
+        this.state.tshirtsAdultXtraBlue
+    ) {
+      this.updateQuantity(
+        "tshirts-adult-xtra-blue",
+        this.state.tshirtsAdultXtraBlue,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-adult-xtra-xtra-blue") &&
+      (this.state.tshirtsAdultXtraXtraBlue ||
+        this.state.tshirtsAdultXtraXtraBlue === 0) &&
+      sessionStorage.getItem("tshirts-adult-xtra-xtra-blue") !==
+        this.state.tshirtsAdultXtraXtraBlue
+    ) {
+      this.updateQuantity(
+        "tshirts-adult-xtra-xtra-blue",
+        this.state.tshirtsAdultXtraXtraBlue,
+        20
+      );
+    }
+
+    if (
+      sessionStorage.getItem("tshirts-youth-small-purp") &&
+      (this.state.tshirtsYouthSmallPurp ||
+        this.state.tshirtsYouthSmallPurp === 0) &&
+      sessionStorage.getItem("tshirts-youth-small-purp") !==
+        this.state.tshirtsYouthSmallPurp
+    ) {
+      this.updateQuantity(
+        "tshirts-youth-small-purp",
+        this.state.tshirtsYouthSmallPurp,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-youth-medium-purp") &&
+      (this.state.tshirtsYouthMediumPurp ||
+        this.state.tshirtsYouthMediumPurp === 0) &&
+      sessionStorage.getItem("tshirts-youth-medium-purp") !==
+        this.state.tshirtsYouthMediumPurp
+    ) {
+      this.updateQuantity(
+        "tshirts-youth-medium-purp",
+        this.state.tshirtsYouthMediumPurp,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-youth-large-purp") &&
+      (this.state.tshirtsYouthLargePurp ||
+        this.state.tshirtsYouthLargePurp === 0) &&
+      sessionStorage.getItem("tshirts-youth-large-purp") !==
+        this.state.tshirtsYouthLargePurp
+    ) {
+      this.updateQuantity(
+        "tshirts-youth-large-purp",
+        this.state.tshirtsYouthLargePurp,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-youth-xtra-purp") &&
+      (this.state.tshirtsYouthXtraPurp ||
+        this.state.tshirtsYouthXtraPurp === 0) &&
+      sessionStorage.getItem("tshirts-youth-xtra-purp") !==
+        this.state.tshirtsYouthXtraPurp
+    ) {
+      this.updateQuantity(
+        "tshirts-youth-xtra-purp",
+        this.state.tshirtsYouthXtraPurp,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-adult-small-purp") &&
+      (this.state.tshirtsAdultSmallPurp ||
+        this.state.tshirtsAdultSmallPurp === 0) &&
+      sessionStorage.getItem("tshirts-adult-small-purp") !==
+        this.state.tshirtsAdultSmallPurp
+    ) {
+      this.updateQuantity(
+        "tshirts-adult-small-purp",
+        this.state.tshirtsAdultSmallPurp,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-adult-medium-purp") &&
+      (this.state.tshirtsAdultMediumPurp ||
+        this.state.tshirtsAdultMediumPurp === 0) &&
+      sessionStorage.getItem("tshirts-adult-medium-purp") !==
+        this.state.tshirtsAdultMediumPurp
+    ) {
+      this.updateQuantity(
+        "tshirts-adult-medium-purp",
+        this.state.tshirtsAdultMediumPurp,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-adult-large-purp") &&
+      (this.state.tshirtsAdultLargePurp ||
+        this.state.tshirtsAdultLargePurp === 0) &&
+      sessionStorage.getItem("tshirts-adult-large-purp") !==
+        this.state.tshirtsAdultLargePurp
+    ) {
+      this.updateQuantity(
+        "tshirts-adult-large-purp",
+        this.state.tshirtsAdultLargePurp,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-adult-xtra-purp") &&
+      (this.state.tshirtsAdultXtraPurp ||
+        this.state.tshirtsAdultXtraPurp === 0) &&
+      sessionStorage.getItem("tshirts-adult-xtra-purp") !==
+        this.state.tshirtsAdultXtraPurp
+    ) {
+      this.updateQuantity(
+        "tshirts-adult-xtra-purp",
+        this.state.tshirtsAdultXtraPurp,
+        20
+      );
+    }
+    if (
+      sessionStorage.getItem("tshirts-adult-xtra-xtra-purp") &&
+      (this.state.tshirtsAdultXtraXtraPurp ||
+        this.state.tshirtsAdultXtraXtraPurp === 0) &&
+      sessionStorage.getItem("tshirts-adult-xtra-xtra-purp") !==
+        this.state.tshirtsAdultXtraXtraPurp
+    ) {
+      this.updateQuantity(
+        "tshirts-adult-xtra-xtra-purp",
+        this.state.tshirtsAdultXtraXtraPurp,
         20
       );
     }
@@ -213,52 +405,182 @@ class Cart extends Component {
       });
       id++;
     }
-    if (sessionStorage.getItem("tshirts-youth-small")) {
+    if (sessionStorage.getItem("tshirts-youth-small-blue")) {
       itemsArray.push({
         id: id,
-        storageName: "tshirts-youth-small",
-        stateName: "tshirtsYouthSmall",
-        productName: "Tshirt (Youth Small)",
-        price: 15
+        storageName: "tshirts-youth-small-blue",
+        stateName: "tshirtsYouthSmallBlue",
+        productName: "Blue Tshirt (Youth Small)",
+        price: 20
       });
       id++;
     }
-    if (sessionStorage.getItem("tshirts-youth-medium")) {
+    if (sessionStorage.getItem("tshirts-youth-medium-blue")) {
       itemsArray.push({
         id: id,
-        storageName: "tshirts-youth-medium",
-        stateName: "tshirtsYouthMedium",
-        productName: "Tshirt (Youth Medium)",
-        price: 15
+        storageName: "tshirts-youth-medium-blue",
+        stateName: "tshirtsYouthMediumBlue",
+        productName: "Blue Tshirt (Youth Medium)",
+        price: 20
       });
       id++;
     }
-    if (sessionStorage.getItem("tshirts-youth-large")) {
+    if (sessionStorage.getItem("tshirts-youth-large-blue")) {
       itemsArray.push({
         id: id,
-        storageName: "tshirts-youth-large",
-        stateName: "tshirtsYouthLarge",
-        productName: "Tshirt (Youth Large)",
-        price: 15
+        storageName: "tshirts-youth-large-blue",
+        stateName: "tshirtsYouthLargeBlue",
+        productName: "Blue Tshirt (Youth Large)",
+        price: 20
       });
       id++;
     }
-    if (sessionStorage.getItem("tshirts-youth-xtra")) {
+    if (sessionStorage.getItem("tshirts-youth-xtra-blue")) {
       itemsArray.push({
         id: id,
-        storageName: "tshirts-youth-xtra",
-        stateName: "tshirtsYouthXtra",
-        productName: "Tshirt (Youth Extra Large)",
-        price: 15
+        storageName: "tshirts-youth-xtra-blue",
+        stateName: "tshirtsYouthXtraBlue",
+        productName: "Blue Tshirt (Youth Extra Large)",
+        price: 20
       });
       id++;
     }
-    if (sessionStorage.getItem("tshirts-adult-small")) {
+    if (sessionStorage.getItem("tshirts-adult-small-blue")) {
       itemsArray.push({
         id: id,
-        storageName: "tshirts-adult-small",
-        stateName: "tshirtsAdultSmall",
-        productName: "Tshirt (Adult Small)",
+        storageName: "tshirts-adult-small-blue",
+        stateName: "tshirtsAdultSmallBlue",
+        productName: "Blue Tshirt (Adult Small)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-adult-medium-blue")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-adult-medium-blue",
+        stateName: "tshirtsAdultMediumBlue",
+        productName: "Blue Tshirt (Adult Medium)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-adult-large-blue")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-adult-large-blue",
+        stateName: "tshirtsAdultLargeBlue",
+        productName: "Blue Tshirt (Adult Large)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-blue")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-adult-xtra-blue",
+        stateName: "tshirtsAdultXtraBlue",
+        productName: "Blue Tshirt (Adult Extra Large)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-xtra-blue")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-adult-xtra-xtra-blue",
+        stateName: "tshirtsAdultXtraXtraBlue",
+        productName: "Blue Tshirt (Adult Extra Extra Large)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-youth-small-purp")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-youth-small-purp",
+        stateName: "tshirtsYouthSmallPurp",
+        productName: "Purple Tshirt (Youth Small)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-youth-medium-purp")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-youth-medium-purp",
+        stateName: "tshirtsYouthMediumPurp",
+        productName: "Purple Tshirt (Youth Medium)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-youth-large-purp")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-youth-large-purp",
+        stateName: "tshirtsYouthLargePurp",
+        productName: "Purple Tshirt (Youth Large)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-youth-xtra-purp")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-youth-xtra-purp",
+        stateName: "tshirtsYouthXtraPurp",
+        productName: "Purple Tshirt (Youth Extra Large)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-adult-small-purp")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-adult-small-purp",
+        stateName: "tshirtsAdultSmallPurp",
+        productName: "Purple Tshirt (Adult Small)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-adult-medium-purp")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-adult-medium-purp",
+        stateName: "tshirtsAdultMediumPurp",
+        productName: "Purple Tshirt (Adult Medium)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-adult-large-purp")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-adult-large-purp",
+        stateName: "tshirtsAdultLargePurp",
+        productName: "Purple Tshirt (Adult Large)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-purp")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-adult-xtra-purp",
+        stateName: "tshirtsAdultXtraPurp",
+        productName: "Purple Tshirt (Adult Extra Large)",
+        price: 20
+      });
+      id++;
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-xtra-purp")) {
+      itemsArray.push({
+        id: id,
+        storageName: "tshirts-adult-xtra-xtra-purp",
+        stateName: "tshirtsAdultXtraXtraPurp",
+        productName: "Purple Tshirt (Adult Extra Extra Large)",
         price: 20
       });
       id++;
@@ -304,47 +626,164 @@ class Cart extends Component {
         currency: "USD"
       });
     }
-    if (sessionStorage.getItem("tshirts-youth-small")) {
+    if (sessionStorage.getItem("tshirts-youth-small-blue")) {
       items.push({
         name: "tshirts",
-        description: "Youth Small Tshirt",
-        quantity: sessionStorage.getItem("tshirts-youth-small"),
-        price: "15",
+        description: "Blue Youth Small Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-small-blue"),
+        price: "20",
         currency: "USD"
       });
     }
-    if (sessionStorage.getItem("tshirts-youth-medium")) {
+    if (sessionStorage.getItem("tshirts-youth-medium-blue")) {
       items.push({
         name: "tshirts",
-        description: "Youth Medium Tshirt",
-        quantity: sessionStorage.getItem("tshirts-youth-medium"),
-        price: "15",
+        description: "Blue Youth Medium Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-medium-blue"),
+        price: "20",
         currency: "USD"
       });
     }
-    if (sessionStorage.getItem("tshirts-youth-large")) {
+    if (sessionStorage.getItem("tshirts-youth-large-blue")) {
       items.push({
         name: "tshirts",
-        description: "Youth Large Tshirt",
-        quantity: sessionStorage.getItem("tshirts-youth-large"),
-        price: "15",
+        description: "Blue Youth Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-large-blue"),
+        price: "20",
         currency: "USD"
       });
     }
-    if (sessionStorage.getItem("tshirts-youth-xtra")) {
+    if (sessionStorage.getItem("tshirts-youth-xtra-blue")) {
       items.push({
         name: "tshirts",
-        description: "Youth Xtra-Large Tshirt",
-        quantity: sessionStorage.getItem("tshirts-youth-xtra"),
-        price: "15",
+        description: "Blue Youth Xtra-Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-xtra-blue"),
+        price: "20",
         currency: "USD"
       });
     }
-    if (sessionStorage.getItem("tshirts-adult-small")) {
+    if (sessionStorage.getItem("tshirts-adult-small-blue")) {
       items.push({
         name: "tshirts",
-        description: "Adult Small Tshirt",
-        quantity: sessionStorage.getItem("tshirts-adult-small"),
+        description: "Blue Adult Small Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-small-blue"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-medium-blue")) {
+      items.push({
+        name: "tshirts",
+        description: "Blue Adult Medium Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-medium-blue"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-large-blue")) {
+      items.push({
+        name: "tshirts",
+        description: "Blue Adult Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-large-blue"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-blue")) {
+      items.push({
+        name: "tshirts",
+        description: "Blue Adult Extra Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-xtra-blue"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-xtra-blue")) {
+      items.push({
+        name: "tshirts",
+        description: "Blue Adult Extra Extra Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-xtra-xtra-blue"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-youth-small-purp")) {
+      items.push({
+        name: "tshirts",
+        description: "Purple Youth Small Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-small-purp"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-youth-medium-purp")) {
+      items.push({
+        name: "tshirts",
+        description: "Purple Youth Medium Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-medium-purp"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-youth-large-purp")) {
+      items.push({
+        name: "tshirts",
+        description: "Purple Youth Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-large-purp"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-youth-xtra-purp")) {
+      items.push({
+        name: "tshirts",
+        description: "Purple Youth Xtra-Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-youth-xtra-purp"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-small-purp")) {
+      items.push({
+        name: "tshirts",
+        description: "Purple Adult Small Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-small-purp"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-medium-purp")) {
+      items.push({
+        name: "tshirts",
+        description: "Purple Adult Medium Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-medium-purp"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-large-purp")) {
+      items.push({
+        name: "tshirts",
+        description: "Purple Adult Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-large-purp"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-purp")) {
+      items.push({
+        name: "tshirts",
+        description: "Purple Adult Extra Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-xtra-purp"),
+        price: "20",
+        currency: "USD"
+      });
+    }
+    if (sessionStorage.getItem("tshirts-adult-xtra-xtra-purp")) {
+      items.push({
+        name: "tshirts",
+        description: "Purple Adult Extra Extra Large Tshirt",
+        quantity: sessionStorage.getItem("tshirts-adult-xtra-xtra-purp"),
         price: "20",
         currency: "USD"
       });
@@ -380,7 +819,7 @@ class Cart extends Component {
         show: true,
         title: "Payment Cancelled",
         message: `The payment was cancelled!`
-      });    
+      });
     };
 
     const onError = err => {
@@ -389,7 +828,7 @@ class Cart extends Component {
       // Because the Paypal's main script is loaded asynchronously from "https://www.paypalobjects.com/api/checkout.js"
       // => sometimes it may take about 0.5 second for everything to get set, or for the button to appear
     };
-    
+
     return (
       <div>
         <Navbar />
@@ -417,11 +856,24 @@ class Cart extends Component {
                     wristbandsAdult={this.state.wristbandsAdult}
                     patches={this.state.patches}
                     keychains={this.state.keychains}
-                    tshirtsAdultSmall={this.state.tshirtsAdultSmall}
-                    tshirtsYouthSmall={this.state.tshirtsYouthSmall}
-                    tshirtsYouthMedium={this.state.tshirtsYouthMedium}
-                    tshirtsYouthLarge={this.state.tshirtsYouthLarge}
-                    tshirtsYouthXtra={this.state.tshirtsYouthXtra}
+                    tshirtsAdultSmallBlue={this.state.tshirtsAdultSmallBlue}
+                    tshirtsAdultMediumBlue={this.state.tshirtsAdultMediumBlue}
+                    tshirtsAdultLargeBlue={this.state.tshirtsAdultLargeBlue}
+                    tshirtsAdultXtraBlue={this.state.tshirtsAdultXtraBlue}
+                    tshirtsAdultXtraXtraBlue={this.state.tshirtsAdultXtraXtraBlue}
+                    tshirtsYouthSmallBlue={this.state.tshirtsYouthSmallBlue}
+                    tshirtsYouthMediumBlue={this.state.tshirtsYouthMediumBlue}
+                    tshirtsYouthLargeBlue={this.state.tshirtsYouthLargeBlue}
+                    tshirtsYouthXtraBlue={this.state.tshirtsYouthXtraBlue}
+                    tshirtsAdultSmallPurp={this.state.tshirtsAdultSmallPurp}
+                    tshirtsAdultMediumPurp={this.state.tshirtsAdultMediumPurp}
+                    tshirtsAdultLargePurp={this.state.tshirtsAdultLargePurp}
+                    tshirtsAdultXtraPurp={this.state.tshirtsAdultXtraPurp}
+                    tshirtsAdultXtraXtraPurp={this.state.tshirtsAdultXtraXtraPurp}
+                    tshirtsYouthSmallPurp={this.state.tshirtsYouthSmallPurp}
+                    tshirtsYouthMediumPurp={this.state.tshirtsYouthMediumPurp}
+                    tshirtsYouthLargePurp={this.state.tshirtsYouthLargePurp}
+                    tshirtsYouthXtraPurp={this.state.tshirtsYouthXtraPurp}
                   />
                   <tr>
                     <td />

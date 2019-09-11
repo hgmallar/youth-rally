@@ -236,6 +236,11 @@ button:active {
   border: inherit;
 }
 
+.btn {
+  white-space: normal !important;
+  word-wrap: break-word;
+}
+
 @media (max-width: 768px) {
   #header-logo {
     display: none;
