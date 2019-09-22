@@ -16,16 +16,11 @@ export default () => (
             Use these tools to raise Youth Rally awareness:
           </h2>
           <h2 className="purpleText text-center">
-            The 2019 Youth Rally Brochure:
+            The 2020 Youth Rally Brochure:
           </h2>
           <p className="purpleText text-center">
-            <a href="/assets/documents/2019-BROCHURE_1.jpg">
-              2019 BROCHURE - front/back
-            </a>
-          </p>
-          <p className="purpleText text-center">
-            <a href="/assets/documents/2019-BROCHURE_2.jpg">
-              2019 BROCHURE - center content
+            <a href="/assets/documents/YRC2020.pdf">
+              2020 BROCHURE
             </a>
           </p>
           <h2 className="purpleText text-center">

@@ -131,7 +131,7 @@ export default () => (
                 Click here
               </a>
             </span>
-            to create your own grassroots fundraising page with FirstGiving
+             to create your own grassroots fundraising page with FirstGiving
             today!
           </p>
 
@@ -177,7 +177,7 @@ export default () => (
           <div className="card border-0">
             <img
               className="card-img-top mx-auto img-fluid"
-              src="/assets/images/18grp shot.jpg"
+              src="/assets/images/18grpshot.JPG"
               alt="2018 Campers"
             />
             <div className="card-body">

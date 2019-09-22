@@ -46,7 +46,7 @@ export default () => (
               </span>
                or
               <span className="purpleText">
-                <a href="/photos">PHOTOS & VIDEOS</a>
+                <a href="/photos"> PHOTOS & VIDEOS</a>
               </span>{" "}
               page to download promotional videos and presentations - use them
               to help raise awareness (and funds!)
