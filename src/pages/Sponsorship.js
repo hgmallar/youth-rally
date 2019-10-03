@@ -24,7 +24,7 @@ export default () => (
             turned away due to lack of financial resources. The sponsorship
             application form is embedded in the camper application. Simply
             complete the application and state your need as prompted for
-            registration ($425) and/or travel (variable) assistance. No coupon
+            registration ($500) and/or travel (variable) assistance. No coupon
             code required.
           </p>
 
@@ -39,7 +39,7 @@ export default () => (
 
           <p>
             <span className="font-weight-bold">Note:</span> all applicants are
-            subject to a $75 application fee. This helps the Youth Rally better
+            subject to a $100 application fee. This helps the Youth Rally better
             plan for program and housing purposes.  If for some reason you
             absolutely cannot afford this payment please contact{" "}
             <a
