@@ -19,9 +19,7 @@ export default () => (
             The 2020 Youth Rally Brochure:
           </h2>
           <p className="purpleText text-center">
-            <a href="/assets/documents/YRC2020.pdf">
-              2020 BROCHURE
-            </a>
+            <a href="/assets/documents/YRC2020.pdf">2020 BROCHURE</a>
           </p>
           <h2 className="purpleText text-center">
             Youth Rally Promotional Video:
@@ -54,7 +52,47 @@ export default () => (
                 alt="uoaa"
               />
             </a>
-
+            <p className="purpleText text-center">
+              <a href="https://www.self.com/story/crohns-disease-symptoms-to-know/">
+                10 Crohn’s Disease Symptoms, From Diarrhea to Beyond
+              </a>
+            </p>
+            <p className="purpleText text-center">
+              <a href="https://www.crohnsandcolitis.com/find-a-gastroenterologist">
+                Find a Gastroenterologist
+              </a>
+            </p>
+            <p className="purpleText text-center">
+              <a href="https://www.medicareadvantage.com/resources/health-care-cost-assistance-resource-guide">
+                Health Care Cost Assistance Guide
+              </a>
+            </p>
+            <p className="purpleText text-center">
+              <a href="https://www.verywellhealth.com/crohns-disease-treatment-options-1943057">
+                How Crohn's Disease Is Treated
+              </a>
+            </p>
+            <p className="purpleText text-center">
+              <a href="https://www.crohnscolitisfoundation.org/what-is-ibd/medication/complementary-alternative-medicine">
+                Complementary Medicine
+              </a>
+            </p>
+            <p className="purpleText text-center">
+              <a href="https://www.homeadvisor.com/r/how-to-create-a-healthy-home-for-autoimmune-disease-symptoms/">
+                How to Create a Healthy Home Environment that Will Soothe
+                Autoimmune Disease Symptoms
+              </a>
+            </p>
+            <p className="purpleText text-center">
+              <a href="https://www.ucsfhealth.org/education/nutrition-tips-for-inflammatory-bowel-disease">
+                Nutrition Tips for Inflammatory Bowel Disease
+              </a>
+            </p>
+            <p className="purpleText text-center">
+              <a href="https://www.ibdrelief.com/learn/complications-of-ibd/complications-of-crohns-disease">
+                Complications of Crohn's disease
+              </a>
+            </p>
             <a href="https://www.spinabifidaassociation.org/">
               <img
                 className="resource-img mx-auto d-block mb-md-1"
