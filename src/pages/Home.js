@@ -33,21 +33,6 @@ export default () => (
                   </a>
                 </div>
               </div>
-              <div className="card col-md-3 mx-1 mt-2 my-auto no-border">
-                <div className="card-body">
-                  <h4 className="card-title">
-                    2019 APPLICATIONS ARE NOW LIVE!
-                  </h4>
-                  <h5>Click on the button below to start yours TODAY!</h5>
-                  <a
-                    href="/applications"
-                    className="btn btn-primary text-white mb-2"
-                    id="campers-btn"
-                  >
-                    Click Here
-                  </a>
-                </div>
-              </div>
               <div className="card col-md-3 mx-1 mt-2">
                 <div className="text-center">
                   <img
@@ -79,6 +64,32 @@ export default () => (
               </div>
             </div> */}
             <div className="row justify-content-center text-center">
+            <div className="card col-md-3 mx-1 mt-2 my-auto no-border">
+                <div className="card-body">
+                  <h4 className="card-title">
+                    2020 APPLICATIONS ARE NOW LIVE!
+                  </h4>
+                  <h5>Click on the button below to start yours TODAY!</h5>
+                  <a
+                    href="/applications"
+                    className="btn btn-primary text-white mb-2"
+                    id="campers-btn"
+                  >
+                    Click Here
+                  </a>
+                </div>
+              </div>
+              <div className="card col-md-5 my-1 mt-2 my-auto no-border">
+                <div className="card-body">
+                  <video controls>
+                    <source
+                      src="/assets/images/youth_rally_promotional_video_web.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+                <h5>Youth Rally Video</h5>
+              </div>
               <div className="card col-md-3 mx-1 my-2">
                 <div className="card-body">
                   <h5 className="card-title purpleText">
@@ -161,17 +172,7 @@ export default () => (
                   </div>
                 </div>
               </div>
-              <div className="card col-md-5 my-1 mt-2 my-auto no-border">
-                <div className="card-body">
-                  <video controls>
-                    <source
-                      src="/assets/images/youth_rally_promotional_video_web.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </div>
-                <h5>Youth Rally Video</h5>
-              </div>
+              {/* Ostomy Day
               <div className="card col-md-3 mx-1 my-2">
                 <div className="card-body">
                   <h5 className="card-title purpleText">
@@ -194,7 +195,7 @@ export default () => (
                     />
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

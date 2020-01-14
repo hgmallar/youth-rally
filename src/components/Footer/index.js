@@ -127,9 +127,11 @@ export default () => (
         <div className="row">
           <div className="col mb-md-5">
             <h5 className="topBotBorder text-center">EVENTS</h5>
-            <p>
-              January 1st, 2020 Applications for 2020 Youth Rally available{" "}
-            </p>
+            <p>March 15th – COUNSELOR Applications due</p>
+            <p>May 31st – Order & Payment deadline for any “Add-On” 2020 Youth Rally Clothing</p>
+            <p>June 1st – CAMPER Applications due</p>   
+            <p>June 1st – NURSE Applications due</p>
+            <p>July 1st – ALL Registration balances due</p> 
             <p>July 20th - 25th, 2020 Youth Rally in San Diego, CA</p>
           </div>
         </div>
@@ -189,14 +191,14 @@ export default () => (
                   </a>
                 </div>
                 <div className="carousel-item">
-                <a href="http://www.ostomy.org/">
-                  <img
-                    className="d-block w-100"
-                    src="/assets/images/sponsor logos/slideshow/goldengate.png"
-                    alt="UOAA Golden Gate"
-                  />
+                  <a href="http://www.ostomy.org/">
+                    <img
+                      className="d-block w-100"
+                      src="/assets/images/sponsor logos/slideshow/goldengate.png"
+                      alt="UOAA Golden Gate"
+                    />
                   </a>
-                </div>  
+                </div>
                 <div className="carousel-item">
                   <a href="https://www.seattlechildrens.org/">
                     <img
@@ -212,7 +214,7 @@ export default () => (
                     src="/assets/images/sponsor logos/slideshow/paulhastings.png"
                     alt="Paul's Friends"
                   />
-                </div>         
+                </div>
               </div>
             </div>
           </div>
