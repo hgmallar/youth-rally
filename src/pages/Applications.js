@@ -17,7 +17,15 @@ export default () => (
             July 20th-25th should be available from this page January 1, 2020.
           </h2> */}
 
-          <p>
+          <h2>
+            We are temporarily suspending the 2020 application so that folks can
+            focus on the health and well-being of themselves and those around
+            them. Stay tuned for more details as they unfold - like us on
+            Facebook to ensure you're getting the necessary updates. We are
+            hopeful to be resuming "business as usual" by the beginning of May.
+          </h2>
+
+          {/* <p>
             The 2020 Youth Rally will take place in San Diego, CA, July 20
             <sup>th</sup> - 25<sup>th</sup>. VOLUNTEERS will need to arrive by
             July 18th for mandatory on-site orientation. For ALL PARTICIPANTS,
@@ -152,7 +160,7 @@ export default () => (
               July 1<sup>st</sup>
             </span>{" "}
             – ALL Registration balances due
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
