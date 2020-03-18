@@ -63,8 +63,9 @@ export default () => (
                 </div>
               </div>
             </div> */}
+
             <div className="row justify-content-center text-center">
-            <div className="card col-md-3 mx-1 mt-2 my-auto no-border">
+              {/* <div className="card col-md-3 mx-1 mt-2 my-auto no-border">
                 <div className="card-body">
                   <h4 className="card-title">
                     2020 APPLICATIONS ARE NOW LIVE!
@@ -78,7 +79,25 @@ export default () => (
                     Click Here
                   </a>
                 </div>
+              </div> */}
+
+              <div className="card col-md-3 mx-1 mt-2 my-auto no-border">
+                <div className="card-body">
+                  <h4 className="card-title">
+                  IMPORTANT 2020 YOUTH RALLY UPDATE
+                  </h4>
+                  <h5>In response to COVID-19, please click on the link 
+below to view a message from our President.</h5>
+                  <a
+                    href="/assets/documents/YouthRallyUpdate031720.pdf"
+                    className="btn btn-primary text-white mb-2"
+                    id="campers-btn"
+                  >
+                    Click Here
+                  </a>
+                </div>
               </div>
+
               <div className="card col-md-5 my-1 mt-2 my-auto no-border">
                 <div className="card-body">
                   <video controls>
