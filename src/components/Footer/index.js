@@ -76,6 +76,14 @@ export default () => (
         <p>
           <a
             className="links"
+            href="https://mailchi.mp/19062fa274d5/youth-rally-newsletter-april-2020?e=77c92b6866"
+          >
+            April, 2020
+          </a>
+        </p>
+        <p>
+          <a
+            className="links"
             href="https://mailchi.mp/74a0995f9407/youth-rally-newsletter-sept-1373089?e=77c92b6866"
           >
             September, 2018

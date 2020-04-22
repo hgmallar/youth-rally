@@ -6,12 +6,20 @@ import Header from "./../components/Header";
 export default () => (
   <div>
     <Navbar />
-    
+
     <Header title="Newsletter" />
 
     <div id="content">
       <div className="row">
         <div className="col-md-10 mx-auto text-center">
+          <h5 className="purpleText font-weight-bold">
+            <a
+              className="links"
+              href="https://mailchi.mp/19062fa274d5/youth-rally-newsletter-april-2020?e=77c92b6866"
+            >
+              April 2020
+            </a>
+          </h5>
           <h5 className="greenText font-weight-bold">
             <a
               className="links"
