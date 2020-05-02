@@ -3,5 +3,5 @@
 
 ## Volunteer web designer for non-profit.  
 
-* Coded Node, Express, React.js, HTML, CSS, and Javascript.
+* Coded React.js, HTML, CSS, and Javascript.
 * Uses Bootstrap, FontAwesome, and Google Fonts styling.
