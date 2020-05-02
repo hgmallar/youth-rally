@@ -1,16 +1,14 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
+import Photograph from "./../components/Photograph";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="The Mission" />
 
     <div id="content">
-      <div className="col-md-10 mx-auto">
+      <div className="col-md-10 mx-auto pt-2 pb-1">
         <h2 className="text-center">
           {" "}
           To provide an environment for adolescents living with conditions of
@@ -90,14 +88,15 @@ export default () => (
             </ul>
           </div>
         </div>
-        <p>
-          In addition to recreational programming, the Youth Rally provides
-          educational sessions addressing topics that are common among all
-          adolescents as well as those unique to individuals living with medical
-          and/or physical challenges:
-        </p>
+
         <div className="row">
           <div className="col-md-6">
+            <p>
+              In addition to recreational programming, the Youth Rally provides
+              educational sessions addressing topics that are common among all
+              adolescents as well as those unique to individuals living with
+              medical and/or physical challenges:
+            </p>
             <ul>
               <li>Motivational sessions</li>
               <li>Living independently - going to college</li>
@@ -108,9 +107,9 @@ export default () => (
             </ul>
           </div>
           <div className="col-md-6">
-            <img
-              src="/assets/images/camper_counselor.jpg"
-              alt="camper/counselor"
+            <Photograph
+              imageSource="/assets/images/camper_counselor.jpg"
+              imageAlt="camper/counselor"
             />
           </div>
         </div>

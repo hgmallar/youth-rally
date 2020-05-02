@@ -1,17 +1,14 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
 
 export default () => (
   <div>
-    <Navbar />
-
     <Header title="Resources" />
 
     <div id="content">
       <div className="row">
-        <div className="col-md-10 mx-auto">
+        <div className="col-md-10 mx-auto pt-2 pb-1">
           <h2 className="greenText">
             Use these tools to raise Youth Rally awareness:
           </h2>
@@ -19,13 +16,13 @@ export default () => (
             The 2020 Youth Rally Brochure:
           </h2>
           <p className="purpleText text-center">
-            <a href="/assets/documents/YRC2020.pdf">2020 BROCHURE</a>
+            <a href="/assets/documents/YRC2020.pdf" className="links">2020 BROCHURE</a>
           </p>
           <h2 className="purpleText text-center">
             Youth Rally Promotional Video:
           </h2>
           <p className="purpleText text-center">
-            <a href="https://youthrallyphotos.smugmug.com/YouthRallyPhotos/AdditionalMaterials/OtherRallyInformation/i-mDm8qF3/A ">
+            <a href="https://youthrallyphotos.smugmug.com/YouthRallyPhotos/AdditionalMaterials/OtherRallyInformation/i-mDm8qF3/A" className="links">
               Youth Rally Promotional Video
             </a>
           </p>
@@ -53,43 +50,43 @@ export default () => (
               />
             </a>
             <p className="purpleText text-center">
-              <a href="https://www.self.com/story/crohns-disease-symptoms-to-know/">
+              <a href="https://www.self.com/story/crohns-disease-symptoms-to-know/" className="links">
                 10 Crohn’s Disease Symptoms, From Diarrhea to Beyond
               </a>
             </p>
             <p className="purpleText text-center">
-              <a href="https://www.crohnsandcolitis.com/find-a-gastroenterologist">
+              <a href="https://www.crohnsandcolitis.com/find-a-gastroenterologist" className="links">
                 Find a Gastroenterologist
               </a>
             </p>
             <p className="purpleText text-center">
-              <a href="https://www.medicareadvantage.com/resources/health-care-cost-assistance-resource-guide">
+              <a href="https://www.medicareadvantage.com/resources/health-care-cost-assistance-resource-guide" className="links">
                 Health Care Cost Assistance Guide
               </a>
             </p>
             <p className="purpleText text-center">
-              <a href="https://www.verywellhealth.com/crohns-disease-treatment-options-1943057">
+              <a href="https://www.verywellhealth.com/crohns-disease-treatment-options-1943057" className="links">
                 How Crohn's Disease Is Treated
               </a>
             </p>
             <p className="purpleText text-center">
-              <a href="https://www.crohnscolitisfoundation.org/what-is-ibd/medication/complementary-alternative-medicine">
+              <a href="https://www.crohnscolitisfoundation.org/what-is-ibd/medication/complementary-alternative-medicine" className="links">
                 Complementary Medicine
               </a>
             </p>
             <p className="purpleText text-center">
-              <a href="https://www.homeadvisor.com/r/how-to-create-a-healthy-home-for-autoimmune-disease-symptoms/">
+              <a href="https://www.homeadvisor.com/r/how-to-create-a-healthy-home-for-autoimmune-disease-symptoms/" className="links">
                 How to Create a Healthy Home Environment that Will Soothe
                 Autoimmune Disease Symptoms
               </a>
             </p>
             <p className="purpleText text-center">
-              <a href="https://www.ucsfhealth.org/education/nutrition-tips-for-inflammatory-bowel-disease">
+              <a href="https://www.ucsfhealth.org/education/nutrition-tips-for-inflammatory-bowel-disease" className="links">
                 Nutrition Tips for Inflammatory Bowel Disease
               </a>
             </p>
             <p className="purpleText text-center">
-              <a href="https://www.ibdrelief.com/learn/complications-of-ibd/complications-of-crohns-disease">
+              <a href="https://www.ibdrelief.com/learn/complications-of-ibd/complications-of-crohns-disease" className="links">
                 Complications of Crohn's disease
               </a>
             </p>

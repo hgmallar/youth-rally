@@ -1,11 +1,13 @@
 :root {
-  --green: #339966;
-  --purple: #662c91;
+  --yrgreen: #339966;
+  --yrpurple: #662c91;
 }
 
-a:link,
-a:visited,
-a:active {
+.links,
+.links:hover,
+.links:link,
+.links:visited,
+.links:active {
   color: inherit;
   border: none !important;
 }
@@ -18,9 +20,10 @@ head {
   font-family: "Roboto", sans-serif;
 }
 
-.navbar {
-  padding-top: 0;
-  padding-bottom: 0;
+#content,
+#events-page {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 #header-logo {
@@ -29,84 +32,78 @@ head {
   padding: auto 0px;
 }
 
-.jumbotron {
-  padding: 10px 0px 0px 0px;
-  margin: 0px;
+#jumbotron {
+  background-color: #343a40;
+  color: #fff;
 }
 
-i {
-  color: var(--green);
-  padding: 0px 5px;
-}
-
-#donate {
-  font-weight: bolder;
-}
-
-.flyer-image {
-  max-width: 100%;
-}
-
-.btn,
-.btn:hover,
-.btn:active {
-  background-color: var(--green);
+.dropdown-menu,
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:checked {
+  background-color: #343a40 !important;
   border: none !important;
 }
 
-a:hover,
-.nav-link:hover {
-  font-weight: bolder;
+.dropdown-item {
+  color: white !important;
 }
 
+.fontAwesome {
+  color: var(--yrgreen);
+}
+
+#donate,
+#donate:hover,
+#donate:active {
+  font-weight: bolder;
+  background-color: var(--yrgreen);
+  border: none !important;
+}
+
+.green-btn,
+.green-btn:hover,
+.green-btn:active,
+.green-btn:checked {
+  background-color: var(--yrgreen) !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: none !important;
+  white-space: normal !important;
+}
+
+.green-btn:hover,
+.green-btn:active,
+.dropdown-item:hover,
 .dropdown-item:active {
-  background-color: inherit;
+  font-weight: bolder !important;
 }
 
 .card-link,
 .card-link:hover {
-  color: var(--green);
-}
-
-#content-pages {
-  display: none;
+  color: var(--yrgreen);
 }
 
 h2 {
-  color: var(--green);
+  color: var(--yrgreen);
   font-weight: bold;
 }
 
 .banner {
-  background-color: var(--purple);
+  background-color: var(--yrpurple);
   color: white;
-}
-
-.card-img-top {
-  width: auto;
-  height: auto;
-  max-width: 100%;
 }
 
 iframe {
   max-width: 100%;
 }
 
-.topBotBorder {
-  border-top: solid white 0.5px;
-  border-bottom: solid white 0.5px;
-}
-
 .greenText {
-  color: var(--green);
+  color: var(--yrgreen);
 }
 
 .purpleText {
-  color: var(--purple);
-}
-
-.dropdown:hover > .dropdown-menu {
-  display: block;
+  color: var(--yrpurple);
 }
 
 ul {
@@ -146,19 +143,23 @@ ol li {
 }
 
 #platinum {
-  color: grey;
+  background-color: grey;
+  color: white;
 }
 
 #gold {
-  color: gold;
+  background-color: gold;
+  color: white;
 }
 
 #silver {
-  color: silver;
+  background-color: silver;
+  color: white;
 }
 
 #green {
-  color: green;
+  background-color: var(--yrgreen);
+  color: white;
 }
 
 .store-image {
@@ -183,7 +184,7 @@ ol li {
 .caption {
   font-size: 10pt;
   position: absolute;
-  left: -9px;
+  left: -3px;
   bottom: -1px;
   width: 100%;
 }
@@ -191,25 +192,32 @@ ol li {
 .purpleButton,
 .purpleButton:hover,
 .purpleButton:active {
-  background-color: var(--purple);
+  background-color: var(--yrpurple) !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .no-border {
-  border: none;
+  border: none !important;
 }
 
 video {
   width: 400px;
-  height: 300px;
   max-width: 100%;
-  max-height: 100%;
+  height: 100%;
 }
 
-.nav-link,
-.nav-link:visited,
-.nav-link:hover,
-.nav-link:active {
-  background-color: inherit;
+Nav.Link:hover {
+  color: inherit !important;
+  font-weight: bolder !important;
+}
+
+Nav.Link,
+Nav.Link:visited,
+Nav.Link:hover,
+Nav.Link:active {
+  background-color: inherit !important;
   border: none !important;
 }
 
@@ -228,17 +236,58 @@ button:focus {
   color: red;
 }
 
-.no-border {
-  border: none;
-}
-
 button:active {
   border: inherit;
 }
 
-.btn {
-  white-space: normal !important;
-  word-wrap: break-word;
+.navbar-collapse {
+  padding-left: 1rem;
+}
+
+.navbar {
+  justify-content: flex-start !important;
+  flex-wrap: nowrap;
+}
+
+#donate-button {
+  position: relative;
+}
+
+.topBotBorder {
+  border-top: solid white 0.5px;
+  border-bottom: solid white 0.5px;
+}
+
+.white,
+.white:hover {
+  color: white;
+}
+
+.modal-dialog {
+  position: fixed !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+}
+
+.modal-header {
+  background-color: #662c91;
+  color: white;
+}
+
+.close {
+  color: white !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  font-weight: normal !important;
+}
+
+.close:hover {
+  font-weight: bold !important;
+}
+
+.trash-can {
+  color: var(--yrgreen);
 }
 
 @media (max-width: 768px) {

@@ -1,16 +1,13 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Get Involved" />
 
     <div id="content">
-      <div className="row">
+      <div className="row pt-2">
         <div className="col-md-10 mx-auto">
           <h2>Can't make it to Rally, but still want to help?</h2>
           <p>
@@ -30,7 +27,7 @@ export default () => (
             <li>
               Contact{" "}
               <span className="purpleText">
-                <a href="mailto:ABS626@aol.com">Abby Ryan</a>
+                <a href="mailto:ABS626@aol.com" className="links">Abby Ryan</a>
               </span>{" "}
               for brochures to distribute to local healthcare professionals;
               please indicate “brochure request” in the subject line
@@ -42,11 +39,11 @@ export default () => (
             <li>
               Visit our{" "}
               <span className="purpleText">
-                <a href="/resources">RESOURCES</a>
+                <a href="/resources" className="links">RESOURCES</a>
               </span>
-               or
+               or {' '}
               <span className="purpleText">
-                <a href="/photos"> PHOTOS & VIDEOS</a>
+                <a href="/photos" className="links">PHOTOS & VIDEOS</a>
               </span>{" "}
               page to download promotional videos and presentations - use them
               to help raise awareness (and funds!)

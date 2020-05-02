@@ -1,32 +1,23 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
+import ImageWithText from "../components/ImageWithText";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Campers" />
 
     <div id="content">
-      <div className="row">
+      <div className="row pt-2 pb-1">
         <div className="col-md-6 mx-auto">
-          <div className="card border-0 mb-2">
-            <img
-              className="card-img-top"
-              src="/assets/images/2017camps.png"
-              alt="2017 campers"
-            />
-            <div className="card-body">
-              <p className="card-text">
-                Each year the Youth Rally hosts roughly 150 campers ages 11-17
+          <ImageWithText
+            imageSource="/assets/images/2017camps.png"
+            imageAlt="2017 campers"
+            imageText="Each year the Youth Rally hosts roughly 150 campers ages 11-17
                 from all over the United States and beyond! Many of our campers
                 grow up to become Youth Rally Counselors and/or find alternative
-                means to support their Rally Community.
-              </p>
-            </div>
-          </div>
+                means to support their Rally Community."
+          />
         </div>
         <div className="col-md-10 mx-auto">
           <p>
@@ -63,20 +54,13 @@ export default () => (
         </div>
 
         <div className="col-md-4 mx-auto">
-          <div className="card border-0">
-            <img
-              className="card-img-top w-75 h-75 mx-auto img-fluid"
-              src="/assets/images/Cody-graduation.2014.jpg"
-              alt="Cody's graduation"
-            />
-            <div className="card-body">
-              <p className="card-text">
-                Cody Mitchem, pictured here with members of Youth Rally
-                Leadership at his 2014 Rally graduation ceremony, joined the YR
-                Counselor Team in 2015!
-              </p>
-            </div>
-          </div>
+          <ImageWithText
+            imageSource="/assets/images/Cody-graduation.2014.jpg"
+            imageAlt="Cody's graduation"
+            imageText="Cody Mitchem, pictured here with members of Youth Rally
+            Leadership at his 2014 Rally graduation ceremony, joined the YR
+            Counselor Team in 2015!"
+          />
         </div>
       </div>
     </div>

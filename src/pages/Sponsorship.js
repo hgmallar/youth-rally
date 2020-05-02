@@ -1,17 +1,15 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
+import Photograph from "./../components/Photograph";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Sponsorship" />
 
     <div id="content">
       <div className="row">
-        <div className="col-md-10 mx-auto">
+        <div className="col-md-10 mx-auto pt-2 pb-1">
           <h2>
             <span className="font-weight-bold greenText">
               SPONSORSHIP is available for ALL CAMPERS in need!
@@ -46,16 +44,16 @@ export default () => (
               href="mailto:info@youthrally.org"
               target="_blank"
               rel="noopener noreferrer"
+              className="links"
             >
               <span className="purpleText">Emily Mallar</span>
             </a>
             .
           </p>
 
-          <img
-            src="/assets/images/soccer.jpg"
-            className="mx-auto d-block"
-            alt="campers playing soccer"
+          <Photograph
+            imageSource="/assets/images/soccer.jpg"
+            imageAlt="campers playing soccer"
           />
 
           <p>
@@ -65,7 +63,7 @@ export default () => (
             The Youth Rally strongly encourages all participants to do some bit
             of fundraising on their own. There are many local/regional charities
             (Kiwanis, Rotary, church groups, WOCN affiliates, Hospitals,{" "}
-            <a href="https://www.ostomy.org/ASGs_with_Websites.html/">
+            <a href="https://www.ostomy.org/ASGs_with_Websites.html/" className="links">
               UOAA affilliates
             </a>
             , etc.) that set aside funds for this very thing.
@@ -76,7 +74,7 @@ export default () => (
             fundraising sites. The Youth Rally is already establised with{" "}
             <span className="font-weight-bold">FirstGiving</span>.{" "}
             <span className="font-weight-bold greenText">
-              <a href="http://info.firstgiving.com/individuals/create-a-page/">
+              <a href="http://info.firstgiving.com/individuals/create-a-page/" className="links">
                 Click here
               </a>
             </span>
@@ -90,7 +88,7 @@ export default () => (
           <p className="font-weight-bold purpleText">
             HOW DO I SPONSOR A CAMPER (and/or a volunteer)?  There are two ways:
           </p>
-          <ol>
+          <ol className="mb-0">
             <li>
               <span className="font-weight-bold greenText">SEND A CHECK </span>
               Please indicate in a memo if you intend to sponsor a specific

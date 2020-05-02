@@ -1,17 +1,14 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
 
 export default () => (
   <div>
-    <Navbar />
-
     <Header title="Newsletter" />
 
     <div id="content">
       <div className="row">
-        <div className="col-md-10 mx-auto text-center">
+        <div className="col-md-10 mx-auto text-center pt-2 pb-1">
           <h5 className="purpleText font-weight-bold">
             <a
               className="links"

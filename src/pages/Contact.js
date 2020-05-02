@@ -1,17 +1,14 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Contact" />
 
     <div id="content">
       <div className="row">
-        <div className="col-md-10 mx-auto">
+        <div className="col-md-10 mx-auto pt-2 pb-1 purpleText">
           <h5>
             <span className="greenText font-weight-bold">
               For application assistance:{" "}

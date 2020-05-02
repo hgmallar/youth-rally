@@ -1,16 +1,14 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
+import Photograph from "./../components/Photograph";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Nurses" />
 
     <div id="content">
-      <div className="col-md-10 mx-auto">
+      <div className="col-md-10 mx-auto pt-2 pb-1">
         <div className="row">
           <h2>Who are the Youth Rally Nurses/Medical Team?</h2>
           <div className="col-md-7">
@@ -31,7 +29,7 @@ export default () => (
               our counselor team. As such, they also have a number of
               responsibilities throughout the week including:
             </p>
-            <ul>
+            <ul className="mb-0">
               <li>Facilitation of medical diagnosis groups</li>
               <li>
                 Enforcement of all Youth Rally Policies and Camper Code of
@@ -44,7 +42,7 @@ export default () => (
             </ul>
           </div>
           <div className="col-md-5">
-            <img src="/assets/images/nurses.jpg" alt="nurses" />
+            <Photograph imageSource="/assets/images/nurses.jpg" imageAlt="nurses" />
           </div>
         </div>
       </div>

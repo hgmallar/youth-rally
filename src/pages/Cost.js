@@ -1,17 +1,14 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Cost" />
 
     <div id="content">
       <div className="row">
-        <div className="col-md-10 mx-auto">
+        <div className="col-md-10 mx-auto pt-2 pb-1">
           <h2>HOW MUCH DOES IT COST?</h2>
           <h3>
             There are two costs associated with Youth Rally Participation:

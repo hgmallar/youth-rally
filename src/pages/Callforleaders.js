@@ -1,17 +1,14 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Call for Leaders" />
 
     <div id="content">
       <div className="row">
-        <div className="col-md-10 mx-auto">
+        <div className="col-md-10 mx-auto pt-2 pb-1">
           <p>
             Dear Graduates, future Graduates, and potential newcomers to the
             Youth Rally "Family",

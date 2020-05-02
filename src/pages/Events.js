@@ -1,16 +1,13 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
 
 export default () => (
   <div>
-    <Navbar />
-
     <Header title="Events" />
 
     <div id="events-page">
-      <div className="row">
+      <div className="row pt-2 pb-1">
         <div className="col-md-11 mx-auto">
           <h2 className="text-center">
             July 20th - 25th, 2020 Youth Rally in San Diego, CA
@@ -84,7 +81,7 @@ export default () => (
                   medical/physical differences.{" "}
                 </p>
                 <p>Mark your calendar for this Sunday FUNday and JOIN US! </p>
-                <p className="text-center font-weight-bold">
+                <p className="text-center font-weight-bold mb-0">
                   Can't make the event, but wish to contribute? Donate here:
                 </p>
                 <form
@@ -92,7 +89,7 @@ export default () => (
                   method="post"
                   target="_top"
                 >
-                  <p className="text-center">
+                  <p className="text-center mb-0">
                     <input name="cmd" type="hidden" value="_donations" />
                     <input
                       name="business"

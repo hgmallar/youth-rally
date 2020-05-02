@@ -1,223 +1,108 @@
 import React from "react";
-
-import Navbar from "./../components/Navbar";
+import { Card, Button, Carousel } from "react-bootstrap";
 
 export default () => (
   <div>
-    <Navbar />
-
     <div id="content">
-      <div className="row">
-        <div className="col-md-10 mx-auto">
-          <div id="home-page">
-            {/* <div className="row justify-content-center text-center">
-              <div className="card col-md-3 mt-2 mx-1">
-                <div className="text-center">
+      <div className="row justify-content-center mx-auto text-center">
+        <Card className="col-md-3 my-auto no-border">
+          <Card.Body className="px-0">
+            <Card.Title className="purpleText">
+              IMPORTANT 2020 YOUTH RALLY UPDATE
+            </Card.Title>
+            <Card.Text>
+              In response to COVID-19, please click on the link below to view a
+              message from our President.
+            </Card.Text>
+            <Button
+              href="/assets/documents/YouthRallyUpdate031720.pdf"
+              className="green-btn"
+            >
+              Click Here
+            </Button>
+          </Card.Body>
+        </Card>
+
+        <Card className="col-md-5 my-auto no-border">
+          <Card.Body className="px-0 py-0 my-0 justify-content-center">
+            <video controls>
+              <source
+                src="/assets/images/youth_rally_promotional_video_web.mp4"
+                type="video/mp4"
+                className="my-auto"
+              />
+            </video>
+          </Card.Body>
+          <Card.Title className="purpleText">Youth Rally Video</Card.Title>
+        </Card>
+
+        <Card className="col-md-3 my-auto no-border">
+          <Card.Body>
+            <Card.Title className="purpleText">
+              <a
+                href="https://youthrallyphotos.smugmug.com/"
+                className="no-underline links"
+              >
+                CLICK HERE to view photos of the 2019 Youth Rally!
+              </a>
+            </Card.Title>
+            <Card.Text>
+              Pictures will be posted daily after camper arrival on July 8th!
+            </Card.Text>
+            <span className="greenText">
+              <Card.Link href="https://youthrallyphotos.smugmug.com/">
+                2019 Photos
+              </Card.Link>
+            </span>
+            <hr />
+            <Card.Title className="purpleText">
+              Thanks to our 2019 Platinum Level Community Partners:
+            </Card.Title>
+            <Card.Text className="greenText">
+              <Card.Link href="http://www.hollister.com/" className="ml-0">
+                Hollister
+              </Card.Link>
+              {", "}
+              <Card.Link href="http://www.gilead.com/" className="ml-0">
+                Gilead Sciences
+              </Card.Link>
+              , and{" "}
+              <Card.Link href="https://www.convatec.com/" className="ml-0">
+                Convatec!
+              </Card.Link>
+            </Card.Text>
+
+            <Carousel controls={false} indicators={false}>
+              <Carousel.Item>
+                <a href="http://www.hollister.com/">
                   <img
-                    className="card-img-top mt-1"
-                    src="/assets/images/2018_campers.jpg"
-                    alt="Campers"
+                    className="d-block w-75 mx-auto"
+                    src="/assets/images/sponsor_logos/slideshow/Hollister.jpg"
+                    alt="Hollister"
                   />
-                </div>
-                <div className="card-body">
-                  <h5 className="card-title">Be a camper!</h5>
-                  <p className="card-text">
-                    July 8th - 13th, 2019 in Seattle, WA
-                  </p>
-                  <a
-                    href="/campers"
-                    className="btn btn-primary text-white mb-2"
-                    id="campers-btn"
-                  >
-                    Campers
-                  </a>
-                </div>
-              </div>
-              <div className="card col-md-3 mx-1 mt-2">
-                <div className="text-center">
+                </a>
+              </Carousel.Item>
+              <Carousel.Item>
+                <a href="http://www.gilead.com/">
                   <img
-                    className="card-img-top mt-1"
-                    src="/assets/images/2018_nurses.png"
-                    alt="Nurses"
+                    className="d-block w-75 mx-auto"
+                    src="/assets/images/sponsor_logos/slideshow/gilead.png"
+                    alt="Gilead"
                   />
-                </div>
-                <div className="card-body">
-                  <h5 className="card-title">Be a counselor or nurse!</h5>
-                  <p className="card-text">
-                    July 8th - 13th, 2019 in Seattle, WA
-                  </p>
-                  <a
-                    href="/nurses"
-                    className="btn btn-primary text-white mb-2"
-                    id="nurses-btn"
-                  >
-                    Nurses/Medical
-                  </a>
-                  <a
-                    href="/counselors"
-                    className="btn btn-primary text-white mb-2 mx-1"
-                    id="counselors-btn"
-                  >
-                    Counselors
-                  </a>
-                </div>
-              </div>
-            </div> */}
-
-            <div className="row justify-content-center text-center">
-              {/* <div className="card col-md-3 mx-1 mt-2 my-auto no-border">
-                <div className="card-body">
-                  <h4 className="card-title">
-                    2020 APPLICATIONS ARE NOW LIVE!
-                  </h4>
-                  <h5>Click on the button below to start yours TODAY!</h5>
-                  <a
-                    href="/applications"
-                    className="btn btn-primary text-white mb-2"
-                    id="campers-btn"
-                  >
-                    Click Here
-                  </a>
-                </div>
-              </div> */}
-
-              <div className="card col-md-3 mx-1 mt-2 my-auto no-border">
-                <div className="card-body">
-                  <h4 className="card-title">
-                  IMPORTANT 2020 YOUTH RALLY UPDATE
-                  </h4>
-                  <h5>In response to COVID-19, please click on the link 
-below to view a message from our President.</h5>
-                  <a
-                    href="/assets/documents/YouthRallyUpdate031720.pdf"
-                    className="btn btn-primary text-white mb-2"
-                    id="campers-btn"
-                  >
-                    Click Here
-                  </a>
-                </div>
-              </div>
-
-              <div className="card col-md-5 my-1 mt-2 my-auto no-border">
-                <div className="card-body">
-                  <video controls>
-                    <source
-                      src="/assets/images/youth_rally_promotional_video_web.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </div>
-                <h5>Youth Rally Video</h5>
-              </div>
-              <div className="card col-md-3 mx-1 my-2">
-                <div className="card-body">
-                  <h5 className="card-title purpleText">
-                    <a
-                      href="https://youthrallyphotos.smugmug.com/"
-                      className="no-underline"
-                    >
-                      CLICK HERE to view photos of the 2019 Youth Rally!
-                    </a>
-                  </h5>
-                  <p>
-                    Pictures will be posted daily after camper arrival on July
-                    8th!
-                  </p>
-                  <span className="greenText">
-                    <a
-                      href="https://youthrallyphotos.smugmug.com/"
-                      className="card-link"
-                    >
-                      2019 Photos
-                    </a>
-                  </span>
-                  <hr />
-                  <h5 className="card-title purpleText">
-                    Thanks to our 2019 Platinum Level Community Partners:
-                  </h5>
-                  <p className="text-center">
-                    <a
-                      href="http://www.hollister.com/"
-                      className="card-link ml-0"
-                    >
-                      Hollister
-                    </a>
-                    {", "}
-                    <a href="http://www.gilead.com/" className="card-link ml-0">
-                      Gilead Sciences
-                    </a>
-                    , and{" "}
-                    <a
-                      href="https://www.convatec.com/"
-                      className="card-link ml-0"
-                    >
-                      Convatec!
-                    </a>
-                  </p>
-                  <div
-                    id="carouselExampleSlidesOnly"
-                    className="carousel slide"
-                    data-ride="carousel"
-                  >
-                    <div className="carousel-inner">
-                      <div className="carousel-item active">
-                        <a href="http://www.hollister.com/">
-                          <img
-                            className="d-block w-75 mx-auto"
-                            src="/assets/images/sponsor logos/slideshow/Hollister.jpg"
-                            alt="Hollister"
-                          />
-                        </a>
-                      </div>
-                      <div className="carousel-item">
-                        <a href="http://www.gilead.com/">
-                          <img
-                            className="d-block w-75 mx-auto"
-                            src="/assets/images/sponsor logos/slideshow/gilead.png"
-                            alt="Gilead"
-                          />
-                        </a>
-                      </div>
-                      <div className="carousel-item">
-                        <a href="https://www.convatec.com/">
-                          <img
-                            className="d-block w-75 mx-auto"
-                            src="/assets/images/sponsor logos/slideshow/Convatec.jpg"
-                            alt="Convatec"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Ostomy Day
-              <div className="card col-md-3 mx-1 my-2">
-                <div className="card-body">
-                  <h5 className="card-title purpleText">
-                    Join us in celebrating Ostomy Awareness Day!
-                  </h5>
-                  <p>
-                    Visit{" "}
-                    <a href="https://www.ostomy.org/" className="no-underline">
-                      UOAA
-                    </a>{" "}
-                    to learn more about how you can participate in events in
-                    your area!
-                  </p>
-                  <p>#OstomiesAreLifesavers #OstomyDay2019</p>
-                  <a href="https://www.ostomy.org/" className="no-underline">
-                    <img
-                      className="d-block w-75 mx-auto"
-                      src="/assets/images/lifesaver.png"
-                      alt="LifeSaver"
-                    />
-                  </a>
-                </div>
-              </div> */}
-            </div>
-          </div>
-        </div>
+                </a>
+              </Carousel.Item>
+              <Carousel.Item>
+                <a href="https://www.convatec.com/">
+                  <img
+                    className="d-block w-75 mx-auto"
+                    src="/assets/images/sponsor_logos/slideshow/Convatec.jpg"
+                    alt="Convatec"
+                  />
+                </a>
+              </Carousel.Item>
+            </Carousel>
+          </Card.Body>
+        </Card>
       </div>
     </div>
 

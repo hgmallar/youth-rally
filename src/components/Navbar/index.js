@@ -1,172 +1,212 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from 'react-router-dom'
+import { NavDropdown, Navbar, Button, Nav } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faTwitterSquare,
+  faYoutubeSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
-export default () => (
-  <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon" />
-    </button>
+class YRNavbar extends Component {
+  state = {
+    hamburgerToggle: false,
+  };
 
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav mr-auto">
-        <li className="nav-item active" id="home">
-          <Link to="/" className="nav-link" >
-            Home <span className="sr-only">(current)</span>
-          </Link>
-        </li>
-        <li className="nav-item dropdown">
-          <button
-            className="nav-link"
-            id="navbarDropdown"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            About
-          </button>
-          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link to="/mission" className="dropdown-item" id="mission">
-              Mission
-            </Link>
-            <Link to="/message" className="dropdown-item" id="message">
-              Message
-            </Link>
-            <Link to="/cost" className="dropdown-item" id="cost">
-              Cost
-            </Link>
-            <Link to="/sponsorship"className="dropdown-item" id="sponsorship">
-              Sponsorship
-            </Link>
-            <div className="dropdown-divider" />
-            <Link to="/partners" className="dropdown-item" id="partners">
-              Partners
-            </Link>
-            <Link to="/newsletter" className="dropdown-item" id="newsletters">
-              Newsletters
-            </Link>
-            <Link to="/resources" className="dropdown-item" id="resources">
-              Resources
-            </Link>
-            <Link to="/contact" className="dropdown-item" id="contact">
-              Contact
-            </Link>
-          </div>
-        </li>
-        <li className="nav-item dropdown">
-          <button
-            className="nav-link"
-            id="navbarDropdown"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Campers
-          </button>
-          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link to="/campers" className="dropdown-item" id="campers">
-              Campers
-            </Link>
-            <Link to="/photos" className="dropdown-item" id="photos">
-              Photos & Video
-            </Link>
-            <Link to="/applications" className="dropdown-item applications">
-              Applications
-            </Link>
-          </div>
-        </li>
-        <li className="nav-item dropdown">
-          <button
-            className="nav-link"
-            id="navbarDropdown"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Volunteers
-          </button>
-          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link to="/callforleaders" className="dropdown-item" id="leaders">
-              Call For Leaders
-            </Link>
-            <Link to="/counselors" className="dropdown-item" id="counselors">
-              Counselors
-            </Link>
-            <Link to="/nurses" className="dropdown-item" id="nurses">
-              Nurses/Medical
-            </Link>
-            <Link to="/getinvolved" className="dropdown-item" id="involved">
-              Get Involved
-            </Link>
-            <Link to="/applications" className="dropdown-item applications">
-              Applications
-            </Link>
-          </div>
-        </li>
-        <li className="nav-item" id="photos">
-          <Link to="/photos" className="nav-link">
-            Photos
-          </Link>
-        </li>
-        <li className="nav-item" id="give">
-          <Link to="/give" className="nav-link">
-            Give
-          </Link>
-        </li>
-        <li className="nav-item" id="events">
-          <Link to="/events" className="nav-link">
-            Events
-          </Link>
-        </li>
-        <li className="nav-item" id="store">
-          <Link to="/store" className="nav-link" >
-            Store
-          </Link>
-        </li>
-      </ul>
-    </div>
-    <ul className="navbar-nav ml-auto">
-      <li className="nav-item active my-auto d-none d-md-block">
-        <a href="https://www.facebook.com/YouthRallyInc">
-          <i className="fab fa-facebook-square fa-2x" />
-        </a>
-      </li>
-      <li className="nav-item active my-auto d-none d-md-block">
-        <a href="https://twitter.com/Youth_Rally">
-          <i className="fab fa-twitter-square fa-2x" />
-        </a>
-      </li>
-      <li className="nav-item active my-auto d-none d-md-block">
-        <a href="https://www.youtube.com/user/YRCMedia">
-          <i className="fab fa-youtube-square fa-2x" />
-        </a>
-      </li>
+  render() {
+    return (
+      <div>
+        <Navbar bg="dark" variant="dark" expand="md" className="py-1 px-1">
+          <Navbar.Toggle
+            className="mr-auto d-xs-block d-md-none"
+            onClick={() =>
+              this.setState({ hamburgerToggle: !this.state.hamburgerToggle })
+            }
+          />
 
-      <li className="nav-item active nav-link">
-        <form
-          action="https://www.paypal.com/cgi-bin/webscr"
-          method="post"
-          target="_top"
-        >
-          <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="PWWKYKVHHVD7E" />
-          <button
-            id="donate"
-            className="btn btn-primary"
-            type="submit"
-            name="submit"
+          <Nav>
+            <NavDropdown
+              className="d-none d-md-block"
+              title="About"
+              id="about-nav-dropdown"
+            >
+              <NavDropdown.Item className="d-none d-md-block" as={Link} to="/mission">
+                Mission
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/message">Message</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/cost">Cost</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/sponsorship">
+                Sponsorship
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/partners">Partners</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/newsletter">
+                Newsletters
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/resources">Resources</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/contact">Contact</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown
+              className="d-none d-md-block"
+              id="campers-dropdown"
+              title="Campers"
+            >
+              <NavDropdown.Item as={Link} to="/campers">Campers</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/photos">Photo & Video</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/applications">
+                Applications
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown
+              className="d-none d-md-block"
+              id="volunteers-dropdown"
+              title="Volunteers"
+            >
+              <NavDropdown.Item as={Link} to="/callforleaders">
+                Call for Leaders
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/counselors">Counselors</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/nurses">Nurses/Medical</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/getinvolved">
+                Get Involved
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/applications">
+                Applications
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            <Nav.Item className="d-none d-md-block" id="photos">
+              <Nav.Link as={Link} to="/photos">Photos</Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="d-none d-md-block" id="give">
+              <Nav.Link as={Link} to="/give">Give</Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="d-none d-md-block" id="events">
+              <Nav.Link as={Link} to="/events">Events</Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="d-none d-md-block" id="store">
+              <Nav.Link as={Link} to="/store">Store</Nav.Link>
+            </Nav.Item>
+          </Nav>
+          <Nav className="ml-auto">
+            <Nav.Item className="my-auto d-none d-md-block">
+              <Nav.Link href="https://www.facebook.com/YouthRallyInc">
+                <FontAwesomeIcon
+                  className="fontAwesome"
+                  icon={faFacebookSquare}
+                  size="2x"
+                />
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="my-auto d-none d-md-block">
+              <Nav.Link href="https://twitter.com/Youth_Rally">
+                <FontAwesomeIcon
+                  className="fontAwesome"
+                  icon={faTwitterSquare}
+                  size="2x"
+                />
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="my-auto d-none d-md-block">
+              <Nav.Link href="https://www.youtube.com/user/YRCMedia">
+                <FontAwesomeIcon
+                  className="fontAwesome"
+                  icon={faYoutubeSquare}
+                  size="2x"
+                />
+              </Nav.Link>
+            </Nav.Item>
+            <form
+              action="https://www.paypal.com/cgi-bin/webscr"
+              method="post"
+              target="_top"
+              className="my-auto px-1 form-inline"
+              id="donate-button"
+            >
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="PWWKYKVHHVD7E"
+              />
+              <Button id="donate" type="submit" name="submit">
+                DONATE
+              </Button>
+            </form>
+          </Nav>
+        </Navbar>
+        {this.state.hamburgerToggle && (
+          <Navbar
+            bg="dark"
+            variant="dark"
+            expand="md"
+            className="pl-4 py-1 d-xs-block d-md-none"
           >
-            DONATE
-          </button>
-        </form>
-      </li>
-    </ul>
-  </nav>
-);
+            <Nav>
+              <NavDropdown title="About" id="about-nav-dropdown">
+                <NavDropdown.Item href="/mission">Mission</NavDropdown.Item>
+                <NavDropdown.Item href="/message">Message</NavDropdown.Item>
+                <NavDropdown.Item href="/cost">Cost</NavDropdown.Item>
+                <NavDropdown.Item href="/sponsorship">
+                  Sponsorship
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/partners">Partners</NavDropdown.Item>
+                <NavDropdown.Item href="/newsletter">
+                  Newsletters
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/resources">Resources</NavDropdown.Item>
+                <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
+              </NavDropdown>
+
+              <NavDropdown id="campers-dropdown" title="Campers">
+                <NavDropdown.Item href="/campers">Campers</NavDropdown.Item>
+                <NavDropdown.Item href="/photos">
+                  Photo & Video
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/applications">
+                  Applications
+                </NavDropdown.Item>
+              </NavDropdown>
+
+              <NavDropdown id="volunteers-dropdown" title="Volunteers">
+                <NavDropdown.Item href="/callforleaders">
+                  Call for Leaders
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/counselors">
+                  Counselors
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/nurses">
+                  Nurses/Medical
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/getinvolved">
+                  Get Involved
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/applications">
+                  Applications
+                </NavDropdown.Item>
+              </NavDropdown>
+
+              <Nav.Item id="photos">
+                <Nav.Link href="/photos">Photos</Nav.Link>
+              </Nav.Item>
+              <Nav.Item id="give">
+                <Nav.Link href="/give">Give</Nav.Link>
+              </Nav.Item>
+              <Nav.Item id="events">
+                <Nav.Link href="/events">Events</Nav.Link>
+              </Nav.Item>
+              <Nav.Item id="store">
+                <Nav.Link href="/store">Store</Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Navbar>
+        )}
+      </div>
+    );
+  }
+}
+
+export default YRNavbar;

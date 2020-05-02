@@ -1,17 +1,14 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
 
 export default () => (
   <div>
-    <Navbar />
-
     <Header title="Applications" />
 
-    <div id="content">
+    <div id="content ">
       <div className="row">
-        <div className="col-md-10 mx-auto text-center my-2">
+        <div className="col-md-10 mx-auto text-center pt-2 pb-1">
           {/* <h2>
             Applications for the 2020 Youth Rally - to be held in San Diego, CA,
             July 20th-25th should be available from this page January 1, 2020.

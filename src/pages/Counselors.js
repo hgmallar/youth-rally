@@ -1,17 +1,15 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
+import Photograph from "./../components/Photograph";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Counselors" />
 
     <div id="content">
       <div className="row">
-        <div className="col-md-10 mx-auto">
+        <div className="col-md-10 mx-auto pt-2 pb-1">
           <h2>Who are the Youth Rally Counselors?</h2>
           <div className="row">
             <div className="col-md-7">
@@ -46,23 +44,22 @@ export default () => (
               </ul>
             </div>
             <div className="col-md-5">
-              <img
-                className="img-fluid"
-                src="/assets/images/Counselors.jpg"
-                alt="counselors"
+              <Photograph
+                imageSource="/assets/images/Counselors.jpg"
+                imageAlt="counselors"
               />
             </div>
           </div>
           <div className="col-md-12">
             <h2>First time Counselors</h2>
-            <p>
+            <p className="mb-0">
               All first-time Youth Rally Counselors will participate in an
               on-site Counselor-in-Training (CIT) mentor-ship program - an
               extension of the on-site orientation that will continue throughout
               the week while at camp with specific focus on leadership. Read
               this{" "}
               <span className="purpleText">
-                <a href="http://youthrally.org/callforleaders/">
+                <a href="http://youthrally.org/callforleaders/" className="links"> 
                   call for leaders
                 </a>
               </span>{" "}

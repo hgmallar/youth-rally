@@ -1,22 +1,25 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
+import ImageWithText from "./../components/ImageWithText";
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Ways to Give" />
 
     <div id="content">
-      <div className="row">
+      <div className="row pt-2 pb-1">
         <div className="col-md-10 mx-auto">
-          <h1 className="font-weight-bold">Choose from several ways to give:</h1>
+          <h1 className="font-weight-bold purpleText">
+            Choose from several ways to give:
+          </h1>
 
           <h2>BECOME A YOUTH RALLY COMMUNITY PARTNER</h2>
           <p className="font-weight-bold">
-            <a href="/assets/documents/Community-Partnership-Packet.pdf">
+            <a
+              href="/assets/documents/Community-Partnership-Packet.pdf"
+              className="links"
+            >
               <span className="purpleText">CLICK HERE</span>
             </a>{" "}
             to download a copy of the Youth Rally Community Partnership Packet
@@ -27,8 +30,9 @@ export default () => (
           <p>
             Outside of campus/program costs, the majority of our donations go to
             support the costs associated with getting our camper participants to
-            Youth Rally each year.  In over 40 years of operations NO CHILD has been turned away due to
-            financial hardship and we appreciate YOUR HELP to continue this pattern!
+            Youth Rally each year.  In over 40 years of operations NO CHILD has
+            been turned away due to financial hardship and we appreciate YOUR
+            HELP to continue this pattern!
           </p>
 
           <h2>SEND A CHECK</h2>
@@ -82,7 +86,9 @@ export default () => (
           <p>
             Shop at Amazon?? Use{" "}
             <span className="font-weight-bold purpleText">
-              <a href="http://smile.amazon.com">Amazon Smile</a>
+              <a href="http://smile.amazon.com" className="links">
+                Amazon Smile
+              </a>
             </span>{" "}
             to start your next purchase and Amazon will donate 0.5% of the price
             of your eligible purchases to Youth Rally. Just sign in, select the
@@ -91,7 +97,7 @@ export default () => (
             </span>{" "}
             from the list of charitable organizations, and start shopping!
           </p>
-          <a href="https://smile.amazon.com/">
+          <a href="https://smile.amazon.com/" className="links">
             <img
               className="mx-auto d-block resource-img"
               src="/assets/images/amazon.smile.jpg"
@@ -104,7 +110,10 @@ export default () => (
             Wish to donate, but not sure how to give?  Consider a purchase from
             our{" "}
             <span className="font-weight-bold purpleText">
-              <a href="https://www.amazon.com/gp/registry/wishlist/2HGUY4ZDZ8XNV">
+              <a
+                href="https://www.amazon.com/gp/registry/wishlist/2HGUY4ZDZ8XNV"
+                className="links"
+              >
                 AMAZON WISH LIST
               </a>
             </span>
@@ -112,7 +121,10 @@ export default () => (
             and/or our medical supply room. EVERY purchase made leaves more in
             our pocket to support camper sponsorship! 
           </p>
-          <a href="https://www.amazon.com/gp/registry/wishlist/2HGUY4ZDZ8XNV">
+          <a
+            href="https://www.amazon.com/gp/registry/wishlist/2HGUY4ZDZ8XNV"
+            className="links"
+          >
             <img
               className="mx-auto d-block resource-img"
               src="/assets/images/wishlist.png"
@@ -127,11 +139,14 @@ export default () => (
             opportunity to donate directly, via your page! The Youth Rally is
             already established with FirstGiving. 
             <span className="font-weight-bold purpleText">
-              <a href="https://www.firstgiving.com/organization/26064">
+              <a
+                href="https://www.firstgiving.com/organization/26064"
+                className="links"
+              >
                 Click here
               </a>
-            </span>
-             to create your own grassroots fundraising page with FirstGiving
+            </span>{" "}
+            to create your own grassroots fundraising page with FirstGiving
             today!
           </p>
 
@@ -144,18 +159,19 @@ export default () => (
           </p>
 
           <p className="text-center">
-            <span className="font-weight-bold">Name of Charity:</span> Youth Rally
-            Committee, Inc
+            <span className="font-weight-bold">Name of Charity:</span> Youth
+            Rally Committee, Inc
           </p>
           <p className="text-center">
             <span className="font-weight-bold">Fed Tax ID#:</span> 20-3579812
           </p>
           <p className="text-center">
-            <span className="font-weight-bold">Address:</span> 949 Chestnut Oak Dr
+            <span className="font-weight-bold">Address:</span> 949 Chestnut Oak
+            Dr
           </p>
           <p className="text-center">
-            <span className="font-weight-bold">City/State/Zip:</span> St. Charles,
-            MO 63303
+            <span className="font-weight-bold">City/State/Zip:</span> St.
+            Charles, MO 63303
           </p>
           <p className="text-center">
             <span className="font-weight-bold">Phone:</span> (314)452-7759
@@ -167,25 +183,20 @@ export default () => (
           <h5 className="text-center">
             Please contact{" "}
             <span className="font-weight-bold purpleText">
-              <a href="mailto:marybethakers13@gmail.com">Mary Beth </a>
-            </span>
-             with any questions
+              <a href="mailto:marybethakers13@gmail.com" className="links">
+                Mary Beth
+              </a>
+            </span>{" "}
+            with any questions
           </h5>
         </div>
 
         <div className="col-md-4 mx-auto">
-          <div className="card border-0">
-            <img
-              className="card-img-top mx-auto img-fluid"
-              src="/assets/images/18grpshot.JPG"
-              alt="2018 Campers"
-            />
-            <div className="card-body">
-              <p className="card-text text-center">
-                2018 Youth Rally Campers in Boulder, CO
-              </p>
-            </div>
-          </div>
+          <ImageWithText
+            imageSource="/assets/images/18grpshot.JPG"
+            imageAlt="2018 campers"
+            imageText="2018 Youth Rally Campers in Boulder, CO"
+          />
         </div>
       </div>
     </div>

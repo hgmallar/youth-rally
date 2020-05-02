@@ -1,22 +1,19 @@
 import React from "react";
 
-import Navbar from "./../components/Navbar";
 import Header from "./../components/Header";
+import Photograph from "./../components/Photograph"
 
 export default () => (
   <div>
-    <Navbar />
-    
     <Header title="Message" />
 
     <div id="content">
-      <div className="col-md-10 mx-auto">
+      <div className="col-md-10 mx-auto pt-2 pb-1">
         <div className="row">
           <div className="col-md-4 mx-auto">
-            <img
-              className="img-fluid"
-              src="/assets/images/paul1.jpg"
-              alt="paul"
+            <Photograph
+              imageSource="/assets/images/paul1.jpg"
+              imageAlt="paul"
             />
           </div>
           <div className="col-md-7">

@@ -1,11 +1,12 @@
 import React from "react";
+import { Carousel } from "react-bootstrap";
 
 export default () => (
-  <div className="text-center p-2 banner">
+  <div className="text-center px-3 py-2 banner">
     <div className="row mt-2 justify-content-center text-left">
-      <div className="col-md-3">
+      <div className="col-md-4">
         <h5 className="topBotBorder text-center">CONTACT</h5>
-        <p>
+        <p className="mb-2">
           <span className="greenText">For application assistance: </span>
           <br />{" "}
           <a className="links" href="mailto:registrar@youthrally.org">
@@ -13,7 +14,7 @@ export default () => (
           </a>{" "}
           – Youth Rally Registrar
         </p>
-        <p>
+        <p className="mb-2">
           <span className="greenText">
             To speak with a Youth Rally Parent:{" "}
           </span>
@@ -23,7 +24,7 @@ export default () => (
           </a>{" "}
           – Director, Program & Outreach
         </p>
-        <p>
+        <p className="mb-2">
           <span className="greenText">
             For general questions, website glitches, or promotional materials:
           </span>
@@ -33,7 +34,7 @@ export default () => (
           </a>{" "}
           – Director, Public Relations & Outreach
         </p>
-        <p>
+        <p className="mb-2">
           <span className="greenText">For travel related questions: </span>
           <br />{" "}
           <a className="links" href="mailto:Travel@youthrally.org">
@@ -41,7 +42,7 @@ export default () => (
           </a>{" "}
           – Transportation Coordinator
         </p>
-        <p>
+        <p className="mb-2">
           <span className="greenText">To request brochures: </span>
           <br />{" "}
           <a className="links" href="mailto:brochures@youthrally.org">
@@ -49,7 +50,7 @@ export default () => (
           </a>{" "}
           – Program Coordinator
         </p>
-        <p>
+        <p className="mb-2">
           <span className="greenText">
             For information on Youth Rally’s electronic quarterly newsletter:{" "}
           </span>
@@ -59,7 +60,7 @@ export default () => (
           </a>{" "}
           – Editor in Chief
         </p>
-        <p>
+        <p className="mb-2">
           <span className="greenText">
             Experiencing problems on the website:{" "}
           </span>
@@ -71,7 +72,7 @@ export default () => (
         </p>
       </div>
 
-      <div className="col-md-3 text-center">
+      <div className="col-md-4 text-center">
         <h5 className="topBotBorder">NEWSLETTERS</h5>
         <p>
           <a
@@ -131,7 +132,7 @@ export default () => (
         </p>
       </div>
 
-      <div className="col-md-3">
+      <div className="col-md-4">
         <div className="row">
           <div className="col mb-md-5">
             <h5 className="topBotBorder text-center">EVENTS</h5>
@@ -147,84 +148,78 @@ export default () => (
         <div className="row">
           <div className="col">
             <h5 className="topBotBorder text-center">SPONSORS</h5>
-            <div
-              id="carouselExampleSlidesOnly"
-              className="carousel slide"
-              data-ride="carousel"
-            >
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <a href="http://www.hollister.com/">
-                    <img
-                      className="d-block w-100"
-                      src="/assets/images/sponsor logos/slideshow/Hollister.jpg"
-                      alt="Hollister"
-                    />
-                  </a>
-                </div>
-                <div className="carousel-item">
-                  <a href="http://www.gilead.com/">
-                    <img
-                      className="d-block w-100"
-                      src="/assets/images/sponsor logos/slideshow/gilead.png"
-                      alt="Gilead"
-                    />
-                  </a>
-                </div>
-                <div className="carousel-item">
-                  <a href="https://www.convatec.com/">
-                    <img
-                      className="d-block w-100"
-                      src="/assets/images/sponsor logos/slideshow/Convatec.jpg"
-                      alt="Convatec"
-                    />
-                  </a>
-                </div>
-                <div className="carousel-item">
-                  <a href="http://www.coloplast.com/">
-                    <img
-                      className="d-block w-100"
-                      src="/assets/images/sponsor logos/slideshow/ColoPlast.jpg"
-                      alt="Coloplast"
-                    />
-                  </a>
-                </div>
-                <div className="carousel-item">
-                  <a href="http://www.nwregionwocn.org/">
-                    <img
-                      className="d-block w-100"
-                      src="/assets/images/sponsor logos/slideshow/NW_WOCN.png"
-                      alt="NW WOCN"
-                    />
-                  </a>
-                </div>
-                <div className="carousel-item">
-                  <a href="http://www.ostomy.org/">
-                    <img
-                      className="d-block w-100"
-                      src="/assets/images/sponsor logos/slideshow/goldengate.png"
-                      alt="UOAA Golden Gate"
-                    />
-                  </a>
-                </div>
-                <div className="carousel-item">
-                  <a href="https://www.seattlechildrens.org/">
-                    <img
-                      className="d-block w-100"
-                      src="/assets/images/sponsor logos/slideshow/seattle-childrens.png"
-                      alt="seattle_childrens"
-                    />
-                  </a>
-                </div>
-                <div className="carousel-item">
+            <Carousel controls={false} indicators={false}>
+              <Carousel.Item>
+                <a href="http://www.hollister.com/">
                   <img
                     className="d-block w-100"
-                    src="/assets/images/sponsor logos/slideshow/paulhastings.png"
-                    alt="Paul's Friends"
+                    src="/assets/images/sponsor_logos/slideshow/Hollister.jpg"
+                    alt="Hollister"
                   />
-                </div>
-              </div>
-            </div>
+                </a>
+              </Carousel.Item>
+              <Carousel.Item>
+                <a href="http://www.gilead.com/">
+                  <img
+                    className="d-block w-100"
+                    src="/assets/images/sponsor_logos/slideshow/gilead.png"
+                    alt="Gilead"
+                  />
+                </a>
+              </Carousel.Item>
+              <Carousel.Item>
+                <a href="https://www.convatec.com/">
+                  <img
+                    className="d-block w-100"
+                    src="/assets/images/sponsor_logos/slideshow/Convatec.jpg"
+                    alt="Convatec"
+                  />
+                </a>
+              </Carousel.Item>
+              <Carousel.Item>
+                <a href="http://www.coloplast.com/">
+                  <img
+                    className="d-block w-100"
+                    src="/assets/images/sponsor_logos/slideshow/ColoPlast.jpg"
+                    alt="Coloplast"
+                  />
+                </a>
+              </Carousel.Item>
+              <Carousel.Item>
+                <a href="http://www.nwregionwocn.org/">
+                  <img
+                    className="d-block w-100"
+                    src="/assets/images/sponsor_logos/slideshow/NW_WOCN.png"
+                    alt="NW WOCN"
+                  />
+                </a>
+              </Carousel.Item>
+              <Carousel.Item>
+                <a href="http://www.ostomy.org/">
+                  <img
+                    className="d-block w-100"
+                    src="/assets/images/sponsor_logos/slideshow/goldengate.png"
+                    alt="UOAA Golden Gate"
+                  />
+                </a>
+              </Carousel.Item>
+              <Carousel.Item>
+                <a href="https://www.seattlechildrens.org/">
+                  <img
+                    className="d-block w-100"
+                    src="/assets/images/sponsor_logos/slideshow/seattle-childrens.png"
+                    alt="seattle_childrens"
+                  />
+                </a>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="/assets/images/sponsor_logos/slideshow/paulhastings.png"
+                  alt="Paul's Friends"
+                />
+              </Carousel.Item>
+            </Carousel>
           </div>
         </div>
       </div>
