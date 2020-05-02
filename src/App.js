@@ -281,7 +281,6 @@ class App extends Component {
         <Jumbotron />
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
           <Route path="/applications" component={Applications} />
           <Route path="/callforleaders" component={Callforleaders} />
           <Route path="/campers" component={Campers} />
