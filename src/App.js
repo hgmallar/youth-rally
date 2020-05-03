@@ -26,6 +26,7 @@ import Photos from "./pages/Photos";
 import Resources from "./pages/Resources";
 import Sponsorship from "./pages/Sponsorship";
 import Store from "./pages/Store";
+import VirtualRally from "./pages/VirtualRally";
 
 class App extends Component {
   constructor(props) {
@@ -322,6 +323,7 @@ class App extends Component {
               />
             )}
           />
+          <Route path="/virtualrally" component={VirtualRally} />
           <Route component={Home} />
         </Switch>
         <Footer />

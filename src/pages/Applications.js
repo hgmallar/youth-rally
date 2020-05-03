@@ -8,19 +8,34 @@ export default () => (
 
     <div id="content ">
       <div className="row">
-        <div className="col-md-10 mx-auto text-center pt-2 pb-1">
+        <div className="col-md-10 mx-auto text-center pt-2 pb-1 greenText">
           {/* <h2>
             Applications for the 2020 Youth Rally - to be held in San Diego, CA,
             July 20th-25th should be available from this page January 1, 2020.
           </h2> */}
 
           <h2>
-            We are temporarily suspending the 2020 application so that folks can
-            focus on the health and well-being of themselves and those around
-            them. Stay tuned for more details as they unfold - like us on
-            Facebook to ensure you're getting the necessary updates. We are
-            hopeful to be resuming "business as usual" by the beginning of May.
+            The 2020 Youth Rally will take place July 20th-25th from <span className="font-weight-bold">WHEREVER
+            YOU ARE</span>!!
           </h2>
+          <h2>
+            The registration application will re-open <span className="font-weight-bold">THIS WEEK</span> on this page for
+            all campers, nurses, and returning staff.
+          </h2>
+          <h3>
+            We intend to fill the week with a number of educational and
+            recreational events, very similar to our typical Rally. The distance
+            will be a challenge, but we still have an opportunity to learn and
+            grow from and with one another - so let's take it!
+          </h3>
+          <h4>Registration cost: $50, due at time of registration. </h4>
+          <h5>
+            For more information you can contact{" "}
+            <a className="links" href="mailto:info@youthrally.org">
+              info@youthrally.org
+            </a>
+            .
+          </h5>
 
           {/* <p>
             The 2020 Youth Rally will take place in San Diego, CA, July 20

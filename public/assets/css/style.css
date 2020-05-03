@@ -290,6 +290,10 @@ button:active {
   color: var(--yrgreen);
 }
 
+.underline {
+ text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   #header-logo {
     display: none;

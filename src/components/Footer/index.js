@@ -136,12 +136,8 @@ export default () => (
         <div className="row">
           <div className="col mb-md-5">
             <h5 className="topBotBorder text-center">EVENTS</h5>
-            {/* <p>March 15th – COUNSELOR Applications due</p>
-            <p>May 31st – Order & Payment deadline for any “Add-On” 2020 Youth Rally Clothing</p>
-            <p>June 1st – CAMPER Applications due</p>   
-            <p>June 1st – NURSE Applications due</p>
-            <p>July 1st – ALL Registration balances due</p> 
-            <p>July 20th - 25th, 2020 Youth Rally in San Diego, CA</p> */}
+            <p>July 20th-25th, 2020 Virtual Youth Rally</p>
+            <p>July 12th-17th, 2021 Youth Rally in Boulder, Colorado</p>
           </div>
         </div>
 

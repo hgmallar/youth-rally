@@ -11,14 +11,13 @@ export default () => (
               IMPORTANT 2020 YOUTH RALLY UPDATE
             </Card.Title>
             <Card.Text>
-              In response to COVID-19, please click on the link below to view a
-              message from our President.
+              In response to COVID-19, the 2020 Youth Rally will take place VIRTUALLY July 20th-25th.
             </Card.Text>
             <Button
-              href="/assets/documents/YouthRallyUpdate031720.pdf"
+              href="/virtualrally"
               className="green-btn"
             >
-              Click Here
+              CLICK HERE FOR MORE DETAILS
             </Button>
           </Card.Body>
         </Card>
