@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { NavDropdown, Navbar, Button, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -25,26 +25,52 @@ class YRNavbar extends Component {
           />
 
           <Nav>
+            <Nav.Item className="d-none d-md-block" id="virtualrally">
+              <Nav.Link as={Link} to="/virtualrally">
+                Virtual Rally
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item className="d-none d-md-block" id="applications">
+              <Nav.Link as={Link} to="/applications">
+                Applications
+              </Nav.Link>
+            </Nav.Item>
+
             <NavDropdown
               className="d-none d-md-block"
               title="About"
               id="about-nav-dropdown"
             >
-              <NavDropdown.Item className="d-none d-md-block" as={Link} to="/mission">
+              <NavDropdown.Item
+                className="d-none d-md-block"
+                as={Link}
+                to="/mission"
+              >
                 Mission
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/message">Message</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/cost">Cost</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/message">
+                Message
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/cost">
+                Cost
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/sponsorship">
                 Sponsorship
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/partners">Partners</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/partners">
+                Partners
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/newsletter">
                 Newsletters
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/resources">Resources</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/contact">Contact</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/resources">
+                Resources
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/contact">
+                Contact
+              </NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown
@@ -52,10 +78,11 @@ class YRNavbar extends Component {
               id="campers-dropdown"
               title="Campers"
             >
-              <NavDropdown.Item as={Link} to="/campers">Campers</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/photos">Photo & Video</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/applications">
-                Applications
+              <NavDropdown.Item as={Link} to="/campers">
+                Campers
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/photos">
+                Photo & Video
               </NavDropdown.Item>
             </NavDropdown>
 
@@ -67,27 +94,36 @@ class YRNavbar extends Component {
               <NavDropdown.Item as={Link} to="/callforleaders">
                 Call for Leaders
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/counselors">Counselors</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/nurses">Nurses/Medical</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/counselors">
+                Counselors
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/nurses">
+                Nurses/Medical
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/getinvolved">
                 Get Involved
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/applications">
-                Applications
               </NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Item className="d-none d-md-block" id="photos">
-              <Nav.Link as={Link} to="/photos">Photos</Nav.Link>
+              <Nav.Link as={Link} to="/photos">
+                Photos
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item className="d-none d-md-block" id="give">
-              <Nav.Link as={Link} to="/give">Give</Nav.Link>
+              <Nav.Link as={Link} to="/give">
+                Give
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item className="d-none d-md-block" id="events">
-              <Nav.Link as={Link} to="/events">Events</Nav.Link>
+              <Nav.Link as={Link} to="/events">
+                Events
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item className="d-none d-md-block" id="store">
-              <Nav.Link as={Link} to="/store">Store</Nav.Link>
+              <Nav.Link as={Link} to="/store">
+                Store
+              </Nav.Link>
             </Nav.Item>
           </Nav>
           <Nav className="ml-auto">
@@ -145,6 +181,13 @@ class YRNavbar extends Component {
             className="pl-4 py-1 d-xs-block d-md-none"
           >
             <Nav>
+              <Nav.Item id="virtualrally">
+                <Nav.Link href="/virtualrally">Virtual Rally</Nav.Link>
+              </Nav.Item>
+
+              <Nav.Item id="applications">
+                <Nav.Link href="/applications">Applications</Nav.Link>
+              </Nav.Item>
               <NavDropdown title="About" id="about-nav-dropdown">
                 <NavDropdown.Item href="/mission">Mission</NavDropdown.Item>
                 <NavDropdown.Item href="/message">Message</NavDropdown.Item>
@@ -166,9 +209,6 @@ class YRNavbar extends Component {
                 <NavDropdown.Item href="/photos">
                   Photo & Video
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/applications">
-                  Applications
-                </NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown id="volunteers-dropdown" title="Volunteers">
@@ -183,9 +223,6 @@ class YRNavbar extends Component {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/getinvolved">
                   Get Involved
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/applications">
-                  Applications
                 </NavDropdown.Item>
               </NavDropdown>
 
