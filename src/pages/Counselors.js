@@ -1,10 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-import Header from "./../components/Header";
-import Photograph from "./../components/Photograph";
+import { Header, Photograph } from "./../Elements";
 
 export default () => (
-  <div>
+  <Fragment>
     <Header title="Counselors" />
 
     <div id="content">
@@ -59,7 +58,10 @@ export default () => (
               the week while at camp with specific focus on leadership. Read
               this{" "}
               <span className="purpleText">
-                <a href="http://youthrally.org/callforleaders/" className="links"> 
+                <a
+                  href="http://youthrally.org/callforleaders/"
+                  className="links"
+                >
                   call for leaders
                 </a>
               </span>{" "}
@@ -69,5 +71,5 @@ export default () => (
         </div>
       </div>
     </div>
-  </div>
+  </Fragment>
 );

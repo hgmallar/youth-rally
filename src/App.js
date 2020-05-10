@@ -1,32 +1,32 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Jumbotron from "./components/Jumbotron";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import { Jumbotron, Footer, Navbar } from "./Elements";
+import {
+  Applications,
+  Callforleaders,
+  Campers,
+  Cart,
+  Contact,
+  Cost,
+  Counselors,
+  Events,
+  Getinvolved,
+  Give,
+  Home,
+  Message,
+  Mission,
+  Newsletters,
+  Nurses,
+  Partners,
+  Photos,
+  Resources,
+  Sponsorship,
+  Store,
+  VirtualRally,
+} from "./Pages";
 
 import "./App.css";
-import Home from "./pages/Home";
-import Applications from "./pages/Applications";
-import Callforleaders from "./pages/Callforleaders";
-import Campers from "./pages/Campers";
-import Cart from "./pages/Cart";
-import Contact from "./pages/Contact";
-import Cost from "./pages/Cost";
-import Counselors from "./pages/Counselors";
-import Events from "./pages/Events";
-import Getinvolved from "./pages/Getinvolved";
-import Give from "./pages/Give";
-import Message from "./pages/Message";
-import Mission from "./pages/Mission";
-import Newsletters from "./pages/Newsletters";
-import Nurses from "./pages/Nurses";
-import Partners from "./pages/Partners";
-import Photos from "./pages/Photos";
-import Resources from "./pages/Resources";
-import Sponsorship from "./pages/Sponsorship";
-import Store from "./pages/Store";
-import VirtualRally from "./pages/VirtualRally";
 
 class App extends Component {
   constructor(props) {

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-import Header from "./../components/Header";
+import { Header } from "./../Elements";
 
 export default () => (
-  <div>
+  <Fragment>
     <Header title="Virtual Rally" />
 
     <div id="content">
@@ -162,5 +162,5 @@ export default () => (
         <p className="row">Mary Beth & Emily</p>
       </div>
     </div>
-  </div>
+  </Fragment>
 );

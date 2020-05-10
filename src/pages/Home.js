@@ -1,8 +1,8 @@
-import React from "react";
-import { Card, Button, Carousel } from "react-bootstrap";
+import React, { Fragment } from "react";
+import { Card, Button } from "react-bootstrap";
 
 export default () => (
-  <div>
+  <Fragment>
     <div id="content">
       <div className="row justify-content-center mx-auto text-center">
         <Card className="col-md-3 my-auto no-border">
@@ -11,12 +11,10 @@ export default () => (
               IMPORTANT 2020 YOUTH RALLY UPDATE
             </Card.Title>
             <Card.Text>
-              In response to COVID-19, the 2020 Youth Rally will take place VIRTUALLY July 20th-25th.
+              In response to COVID-19, the 2020 Youth Rally will take place
+              VIRTUALLY July 20th-25th.
             </Card.Text>
-            <Button
-              href="/virtualrally"
-              className="green-btn"
-            >
+            <Button href="/virtualrally" className="green-btn">
               CLICK HERE FOR MORE DETAILS
             </Button>
           </Card.Body>
@@ -36,6 +34,26 @@ export default () => (
         </Card>
 
         <Card className="col-md-3 my-auto no-border">
+          <Card.Body className="px-0">
+            <Card.Title className="purpleText">
+              APPLICATIONS ARE (AGAIN) LIVE!
+            </Card.Title>
+            <Card.Text>
+              Click on the button below to start/complete yours TODAY!
+            </Card.Text>
+            <Button
+              href="http://app.campdoc.com/register/youthrally"
+              className="green-btn mb-2"
+              id="campers-btn"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              START 2020 APPLICATIONS
+            </Button>
+          </Card.Body>
+        </Card>
+
+        {/* <Card className="col-md-3 my-auto no-border">
           <Card.Body>
             <Card.Title className="purpleText">
               <a
@@ -101,7 +119,7 @@ export default () => (
               </Carousel.Item>
             </Carousel>
           </Card.Body>
-        </Card>
+        </Card> */}
       </div>
     </div>
 
@@ -113,5 +131,5 @@ export default () => (
         living.
       </p>
     </div>
-  </div>
+  </Fragment>
 );

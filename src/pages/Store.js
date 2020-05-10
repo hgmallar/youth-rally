@@ -1,16 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
-import Header from "./../components/Header";
-import SizedItemCard from "./../components/SizedItemCard";
-import ItemCard from "./../components/ItemCard";
+import { Header, SizedItemCard, ItemCard } from "./../Elements";
 
 const Store = (props) => (
-  <div>
+  <Fragment>
     <Header title="Store" />
 
     <div className="container-fluid mx-auto pt-2 pb-1">
@@ -150,7 +148,7 @@ const Store = (props) => (
         </Button>
       </div>
     </div>
-  </div>
+  </Fragment>
 );
 
 export default Store;

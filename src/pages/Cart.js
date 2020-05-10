@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import PaypalExpressBtn from "react-paypal-express-checkout";
 
-import PaypalModal from "../components/PaypalModal";
-import Header from "./../components/Header";
-import TableRows from "../components/TableRows";
+import { Header, PaypalModal, TableRows } from "./../Elements";
 
 class Cart extends Component {
   constructor(props) {
@@ -22,7 +20,7 @@ class Cart extends Component {
   };
 
   render() {
-    let finalTotal = this.props.shipping + this.props.subtotal
+    let finalTotal = this.props.shipping + this.props.subtotal;
     let env = "production";
     const client = {
       sandbox: process.env.REACT_APP_PAYPAL_CLIENT_ID_SANDBOX,
@@ -60,12 +58,12 @@ class Cart extends Component {
     };
 
     return (
-      <div>
+      <Fragment>
         <PaypalModal
           show={this.state.show}
-          handleClose={this.handleClose}
           title={this.state.title}
           message={this.state.message}
+          handleClose={this.handleClose}
         />
 
         <Header title="Shopping Cart" />
@@ -84,10 +82,10 @@ class Cart extends Component {
                 </thead>
                 <tbody>
                   <TableRows
-                      itemArray = {this.props.itemArray}
-                      changeQuantity = {this.props.changeQuantity}
-                      deleteItem = {this.props.deleteItem}
-                    />
+                    itemArray={this.props.itemArray}
+                    changeQuantity={this.props.changeQuantity}
+                    deleteItem={this.props.deleteItem}
+                  />
                   <tr>
                     <td />
                     <td />
@@ -98,10 +96,7 @@ class Cart extends Component {
                     <td />
                     <td />
                     <td className="font-weight-bold text-right">Shipping:</td>
-                    <td className="text-right">
-                      {" "}
-                      ${this.props.shipping}.00{" "}
-                    </td>
+                    <td className="text-right"> ${this.props.shipping}.00 </td>
                   </tr>
                   <tr>
                     <td>
@@ -175,7 +170,7 @@ class Cart extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </Fragment>
     );
   }
 }

@@ -1,180 +1,63 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-import Header from "./../components/Header";
+import { Header } from "./../Elements";
 
 export default () => (
-  <div>
+  <Fragment>
     <Header title="Applications" />
 
     <div id="content ">
       <div className="row">
-        <div className="col-md-10 mx-auto text-center pt-2 pb-1 greenText">
-          {/* <h2>
-            Applications for the 2020 Youth Rally - to be held in San Diego, CA,
-            July 20th-25th should be available from this page January 1, 2020.
-          </h2> */}
-
-          <h2>
-            The 2020 Youth Rally will take place July 20th-25th from <span className="font-weight-bold">WHEREVER
-            YOU ARE</span>!!
-          </h2>
-          <h2>
-            The registration application will re-open <span className="font-weight-bold">THIS WEEK</span> on this page for
-            all campers, nurses, and returning staff.
-          </h2>
-          <h3>
-            We intend to fill the week with a number of educational and
-            recreational events, very similar to our typical Rally. The distance
-            will be a challenge, but we still have an opportunity to learn and
-            grow from and with one another - so let's take it!
-          </h3>
-          <h4>Registration cost: $50, due at time of registration. </h4>
-          <h5>
-            For more information you can contact{" "}
-            <a className="links" href="mailto:info@youthrally.org">
-              info@youthrally.org
-            </a>
-            .
-          </h5>
-
-          {/* <p>
-            The 2020 Youth Rally will take place in San Diego, CA, July 20
-            <sup>th</sup> - 25<sup>th</sup>. VOLUNTEERS will need to arrive by
-            July 18th for mandatory on-site orientation. For ALL PARTICIPANTS,
-            additional details to follow with notification of acceptance.
+        <div className="col-md-10 mx-auto text-center pt-2 pb-1">
+          <p>The 2020 Youth Rally will take place virtually July 20th-25th.</p>
+          <p>
+            Participants do not have to commit to attending they entire week,
+            rather you can participate as your schedule allows. For our Nurses
+            and Returning Counselors – will be reaching out to you in advance of
+            the week to seek your availability throughout the week.
           </p>
-
-          <h2>
-            Click on the button below to start your 2020 application TODAY!
-          </h2>
-
+          <p>
+            For ALL PARTICIPANTS, additional details to follow with notification
+            of acceptance.
+          </p>
+          <h3 className="font-weight-bold">
+            Click on the button below to complete your 2020 application TODAY!
+          </h3>
           <a
             href="http://app.campdoc.com/register/youthrally"
-            className="btn btn-primary text-white mb-2"
+            className="btn btn-primary green-btn mb-2"
             id="campers-btn"
             target="_blank"
-            rel='noreferrer noopener'
+            rel="noreferrer noopener"
           >
-            Start 2020 Applications
+            START 2020 APPLICATIONS
           </a>
 
           <p>
-            <span className="font-weight-bold">APPLICATION PROCESS</span> –
-            Click on the button above. Begin the application process by
-            selecting your intended REGISTRATION (Camper, Counselor, or Medical
-            Team). Work to complete the HEALTH PROFILE within. Applications will
-            not be considered for approval until the HEALTH PROFILE is 100%
-            complete. Once completed, you’re registration will go into an
-            internal review process (we are 100% staffed by volunteers so this
-            can take time). You may request a rushed approval by contacting {" "}
-            <span className="greenText font-weight-bold">
-              <a href="mailto:registrar@youthrally.org">
-                registrar@youthrally.org
-              </a>
-            </span>
-            – we will do our best to accommodate these requests.
+            <span className="font-weight-bold">APPLICATION PROCESS </span>Click
+            on the button above. Begin the application process by selecting your
+            intended REGISTRATION (Camper, Counselor, or Medical Team). Work to
+            complete the HEALTH PROFILE within. Not required in 2020:
+            Medications, Allergies, Insurance, or Medical Clearance sections.
           </p>
-
           <p>
             Notification of acceptance will be sent via email to the email(s)
             listed as “Users” of the participant’s profile. Additional
-            information, including travel details, will be added for completion
-            to the HEALTH PROFILE upon acceptance. Additional information,
-            including suggested packing list, travel agent contact information,
-            and tentative schedule will also be sent via email upon application
-            approval.
+            information, including scheduling details, will also be sent via
+            email.
+          </p>
+          <p>
+            <span className="font-weight-bold">SPONSORSHIP </span>for
+            registration is available for all campers in need.
           </p>
 
+          <p className="font-weight-bold">IMPORTANT DATES: </p>
           <p>
-            <span className="font-weight-bold">
-              CAMPERS REQUIRE MEDICAL CLEARANCE FROM A CURRENT PROVIDER
-            </span>{" "}
-            Camper applications will require an additional form to be completed
-            by a current health care provider. Camper registrations cannot be
-            completed until the Medical Clearance form has been updated/uploaded
-            for the current year to their HEALTH PROFILE.{" "}
-            <span className="greenText font-weight-bold">
-              <a
-                href="/assets/documents/2020 Medical Clearance.pdf"
-                target="_blank"
-              >
-                Click here
-              </a>
-            </span>{" "}
-            to download/print the Medical Clearance form for completion. For
-            assistance uploading the form to the HEALTH PROFILE, contact{" "}
-            <span className="greenText font-weight-bold">
-              <a href="mailto:registrar@youthrally.org">
-                registrar@youthrally.org
-              </a>
-            </span>
-            .
+            <span className="font-weight-bold">June 1st</span> – Applications
+            for Campers, Medical Team, and Returning Counselors are due
           </p>
-
-          <p>
-            <span className="font-weight-bold">SPONSORSHIP</span> for assistance
-            with registration and/or travel costs is available for all campers
-            in need. There is a specific page within the application that
-            addresses this. We do ask for a $100 upfront hold (refundable if the
-            participant is unable to attend related to medical or other
-            emergency) due at the time the application is started that will be
-            put towards the registration balance. All participants are
-            encouraged to fundraise to support personal registration and/or
-            travel costs. Many campers and volunteers alike have found success
-            using{" "}
-            <span className="greenText font-weight-bold">
-              <a href="https://www.firstgiving.com/organization/26064">
-                FirstGiving
-              </a>
-            </span>
-            .
-          </p>
-
-          <p>
-            <span className="font-weight-bold">BOOKING AIR TRAVEL</span> – We do
-            not advise participants to book airfare until notification of
-            application acceptance is approved. Additional instructions
-            surrounding travel will be provided with notification of application
-            acceptance.
-          </p>
-
-          <p>
-            <span className="font-weight-bold">IMPORTANT DATES:</span>
-          </p>
-          <p>
-            <span className="font-weight-bold">
-              March 15<sup>th</sup>
-            </span>{" "}
-            – COUNSELOR Applications due
-          </p>
-
-          <p>
-            <span className="font-weight-bold">
-              May 31<sup>st</sup>
-            </span>{" "}
-            – Order &amp; Payment deadline for “Add-On” 2020 Youth Rally Gear
-          </p>
-
-          <p>
-            <span className="font-weight-bold">
-              June 1<sup>st</sup>
-            </span>{" "}
-            – CAMPER Applications due
-          </p>
-          <p>
-            <span className="font-weight-bold">
-              June 1<sup>st</sup>
-            </span>{" "}
-            – NURSE Applications due
-          </p>
-          <p>
-            <span className="font-weight-bold">
-              July 1<sup>st</sup>
-            </span>{" "}
-            – ALL Registration balances due
-          </p> */}
         </div>
       </div>
     </div>
-  </div>
+  </Fragment>
 );

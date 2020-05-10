@@ -1,10 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-import Header from "./../components/Header";
-import Photograph from "./../components/Photograph";
+import { Header, Photograph } from "./../Elements";
 
 export default () => (
-  <div>
+  <Fragment>
     <Header title="Nurses" />
 
     <div id="content">
@@ -42,10 +41,13 @@ export default () => (
             </ul>
           </div>
           <div className="col-md-5">
-            <Photograph imageSource="/assets/images/nurses.jpg" imageAlt="nurses" />
+            <Photograph
+              imageSource="/assets/images/nurses.jpg"
+              imageAlt="nurses"
+            />
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </Fragment>
 );

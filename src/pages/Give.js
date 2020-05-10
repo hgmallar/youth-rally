@@ -1,10 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-import Header from "./../components/Header";
-import ImageWithText from "./../components/ImageWithText";
+import { Header, ImageWithText } from "./../Elements";
 
 export default () => (
-  <div>
+  <Fragment>
     <Header title="Ways to Give" />
 
     <div id="content">
@@ -200,5 +199,5 @@ export default () => (
         </div>
       </div>
     </div>
-  </div>
+  </Fragment>
 );
