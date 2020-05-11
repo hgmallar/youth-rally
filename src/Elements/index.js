@@ -1,4 +1,5 @@
 import AddToCart from "./AddToCart";
+import DonorSlideshow from "./DonorSlideshow";
 import Footer from "./Footer";
 import Header from "./Header";
 import ImageWithText from "./ImageWithText";
@@ -12,6 +13,7 @@ import TableRows from "./TableRows";
 
 export {
   AddToCart,
+  DonorSlideshow,
   Footer,
   Header,
   ImageWithText,

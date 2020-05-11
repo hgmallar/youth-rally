@@ -291,7 +291,15 @@ button:active {
 }
 
 .underline {
- text-decoration: underline;
+  text-decoration: underline;
+}
+
+.bg {
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+  max-height: 100px;
+  width: auto;
 }
 
 @media (max-width: 768px) {
