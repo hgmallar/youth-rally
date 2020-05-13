@@ -294,12 +294,22 @@ button:active {
   text-decoration: underline;
 }
 
+.relative {
+  position: relative;
+  height: 283px;
+}
+
 .bg {
+  border-radius: 5px;
+  position: absolute;
+  top: 33;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  height: 250px;
   background-size: cover;
-  background-position: center;
   will-change: opacity;
-  max-height: 100px;
-  width: auto;
+  background-color: var(--yrpurple);
 }
 
 @media (max-width: 768px) {

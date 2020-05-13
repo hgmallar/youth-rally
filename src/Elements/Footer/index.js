@@ -198,9 +198,10 @@ class Footer extends Component {
             </div>
 
             <div className="row">
-              <div className="col">
+              <div className="col relative">
                 <h5 className="topBotBorder text-center">SPONSORS</h5>
                 <DonorSlideshow donors={donors} />
+                <div className="hidden"></div>
               </div>
             </div>
           </div>
