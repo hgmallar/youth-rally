@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTransition, animated, config } from "react-spring";
+import PropTypes from "prop-types";
 
 function DonorSlideshow(props) {
   const [index, set] = useState(0);
@@ -18,8 +19,6 @@ function DonorSlideshow(props) {
     [props.donors.length]
   );
 
-  console.log(transitions);
-
   return transitions.map(({ item, props, key }) => (
     <animated.img
       key={key}
@@ -27,10 +26,14 @@ function DonorSlideshow(props) {
       src={item.src}
       alt={item.alt}
       style={{
-        ...props
+        ...props,
       }}
     />
   ));
 }
 
 export default DonorSlideshow;
+
+DonorSlideshow.propTypes = {
+  donors: PropTypes.array.isRequired,
+};
