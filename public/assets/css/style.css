@@ -12,12 +12,12 @@
   border: none !important;
 }
 
-.boldHover:hover {
-  font-weight: bolder;
-}
-
 .no-underline:hover {
   text-decoration: none !important;
+}
+
+.boldHover:hover {
+  font-weight: bolder !important;
 }
 
 head {
@@ -212,7 +212,7 @@ video {
   height: 100%;
 }
 
-Nav.Link:hover, Card.Link:hover {
+Nav.Link:hover {
   color: inherit !important;
   font-weight: bolder !important;
 }
