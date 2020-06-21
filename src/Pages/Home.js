@@ -58,7 +58,7 @@ export default () => (
             <Card.Title className="purpleText">
               <a
                 href="https://youthrallyphotos.smugmug.com/"
-                className="no-underline links bold"
+                className="no-underline links boldHover"
               >
                 CLICK HERE to view photos of the 2019 Youth Rally!
               </a>
@@ -67,7 +67,7 @@ export default () => (
               Pictures will be posted daily after camper arrival on July 8th!
             </Card.Text>
             <Card.Link
-              className="greenText bold"
+              className="greenText boldHover"
               href="https://youthrallyphotos.smugmug.com/"
             >
               2019 Photos
