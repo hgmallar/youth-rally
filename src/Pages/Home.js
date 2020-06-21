@@ -33,7 +33,7 @@ export default () => (
           <Card.Title className="purpleText">Youth Rally Video</Card.Title>
         </Card>
 
-        <Card className="col-md-3 my-auto no-border">
+        {/* <Card className="col-md-3 my-auto no-border">
           <Card.Body className="px-0">
             <Card.Title className="purpleText">
               APPLICATIONS ARE (AGAIN) LIVE!
@@ -51,14 +51,14 @@ export default () => (
               START 2020 APPLICATIONS
             </Button>
           </Card.Body>
-        </Card>
+        </Card> */}
 
-        {/* <Card className="col-md-3 my-auto no-border">
+        <Card className="col-md-3 my-auto no-border">
           <Card.Body>
             <Card.Title className="purpleText">
               <a
                 href="https://youthrallyphotos.smugmug.com/"
-                className="no-underline links"
+                className="no-underline links bold"
               >
                 CLICK HERE to view photos of the 2019 Youth Rally!
               </a>
@@ -66,60 +66,14 @@ export default () => (
             <Card.Text>
               Pictures will be posted daily after camper arrival on July 8th!
             </Card.Text>
-            <span className="greenText">
-              <Card.Link href="https://youthrallyphotos.smugmug.com/">
-                2019 Photos
-              </Card.Link>
-            </span>
-            <hr />
-            <Card.Title className="purpleText">
-              Thanks to our 2019 Platinum Level Community Partners:
-            </Card.Title>
-            <Card.Text className="greenText">
-              <Card.Link href="http://www.hollister.com/" className="ml-0">
-                Hollister
-              </Card.Link>
-              {", "}
-              <Card.Link href="http://www.gilead.com/" className="ml-0">
-                Gilead Sciences
-              </Card.Link>
-              , and{" "}
-              <Card.Link href="https://www.convatec.com/" className="ml-0">
-                Convatec!
-              </Card.Link>
-            </Card.Text>
-
-            <Carousel controls={false} indicators={false}>
-              <Carousel.Item>
-                <a href="http://www.hollister.com/">
-                  <img
-                    className="d-block w-75 mx-auto"
-                    src="/assets/images/sponsor_logos/slideshow/Hollister.jpg"
-                    alt="Hollister"
-                  />
-                </a>
-              </Carousel.Item>
-              <Carousel.Item>
-                <a href="http://www.gilead.com/">
-                  <img
-                    className="d-block w-75 mx-auto"
-                    src="/assets/images/sponsor_logos/slideshow/gilead.png"
-                    alt="Gilead"
-                  />
-                </a>
-              </Carousel.Item>
-              <Carousel.Item>
-                <a href="https://www.convatec.com/">
-                  <img
-                    className="d-block w-75 mx-auto"
-                    src="/assets/images/sponsor_logos/slideshow/Convatec.jpg"
-                    alt="Convatec"
-                  />
-                </a>
-              </Carousel.Item>
-            </Carousel>
+            <Card.Link
+              className="greenText bold"
+              href="https://youthrallyphotos.smugmug.com/"
+            >
+              2019 Photos
+            </Card.Link>
           </Card.Body>
-        </Card> */}
+        </Card>
       </div>
     </div>
 

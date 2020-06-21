@@ -12,6 +12,10 @@
   border: none !important;
 }
 
+.bold:hover {
+  font-weight: bolder;
+}
+
 .no-underline:hover {
   text-decoration: none !important;
 }
@@ -208,7 +212,7 @@ video {
   height: 100%;
 }
 
-Nav.Link:hover {
+Nav.Link:hover, Card.Link:hover {
   color: inherit !important;
   font-weight: bolder !important;
 }
