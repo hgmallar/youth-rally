@@ -1,7 +1,18 @@
-# YouthRally
-![frontpage image](public/assets/images/frontpage.PNG)
+# Youth Rally
 
-## Volunteer web designer for non-profit.  
+[Start your search here.](https://youthrally.org/)
 
-* Coded React.js, HTML, CSS, and Javascript.
-* Uses Bootstrap, FontAwesome, and Google Fonts styling.
+### React web application for non-profit with custom store.
+
+## Uses: 
+
+ * React.js
+ * Javascript
+ * HTML
+ * CSS
+ * FontAwesome
+ * Google Fonts
+ * Responsive Bootstrap design
+
+
+ ![frontpage image](/public/assets/images/frontpage.PNG)
