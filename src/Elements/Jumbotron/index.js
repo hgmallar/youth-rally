@@ -14,13 +14,11 @@ export default () => (
             alt="youth rally logo"
           />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8 align-self-center">
           <h1 className="display-4 pl-3">The Youth Rally</h1>
           <p className="lead pl-3 mb-0">
-            Each year, the Youth Rally hosts kids and teens living with
-            conditions of the bowel and bladder at a college campus for a
-            5-night one of a kind camp experience that promotes independence,
-            self-esteem, learning, friendship, and FUN!
+            The Youth Rally is a one of a kind camp experience for youth living
+            with conditions of the bowel and/or bladder system.
           </p>
         </div>
       </div>
