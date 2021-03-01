@@ -8,12 +8,9 @@ export default () => (
         <Card className="col-md-3 my-auto no-border">
           <Card.Body className="px-0">
             <Card.Title className="purpleText">
-              IMPORTANT 2020 YOUTH RALLY UPDATE
+              IMPORTANT 2021 UPDATE
             </Card.Title>
-            <Card.Text>
-              In response to COVID-19, the 2020 Youth Rally will take place
-              VIRTUALLY July 20th-25th.
-            </Card.Text>
+            <Card.Text>Our 2021 Dates and Plans have changed</Card.Text>
             <Button href="/virtualrally" className="green-btn">
               CLICK HERE FOR MORE DETAILS
             </Button>

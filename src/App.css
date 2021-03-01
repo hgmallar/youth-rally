@@ -5,3 +5,8 @@
 #root {
   overflow-x: hidden;
 }
+
+.h5Font {
+  font-size: 1.25rem;
+  font-weight: 500;
+}

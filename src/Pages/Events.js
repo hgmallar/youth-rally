@@ -10,10 +10,10 @@ export default () => (
       <div className="row pt-2 pb-1">
         <div className="col-md-11 mx-auto">
           <h2 className="text-center">
-            July 20th - 25th, 2020 Virtual Youth Rally
+            July 13th, 2021 Virtual Youth Rally Volunteer Orientation
           </h2>
           <h2 className="text-center">
-            July 12th-17th, 2021 Youth Rally in Boulder, Colorado
+            July 14th - 17th, 2021 Virtual Youth Rally
           </h2>
           <hr />
           <div className="row mx-auto">

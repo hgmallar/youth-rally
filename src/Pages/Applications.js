@@ -9,14 +9,7 @@ export default () => (
     <div id="content ">
       <div className="row">
         <div className="col-md-10 mx-auto text-center pt-2 pb-1">
-          <p>Applications for the 2020 Rally are now closed! </p>
-          <p>
-            Mark your calendars for July 12th-17th (10th-17th for our
-            volunteers) as the 2021 Youth Rally is scheduled to take place at
-            the University of Colorado at Boulder on those dates!! Check back in
-            January of 2021 to complete your applciation.
-          </p>
-
+          <p>Check back soon for applications for the 2021 Virtual Rally!</p>
           {/* <p>The 2020 Youth Rally will take place virtually July 20th-25th.</p>
           <p>
             Participants do not have to commit to attending they entire week,
