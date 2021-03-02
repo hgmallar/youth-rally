@@ -30,27 +30,21 @@ export default () => (
           <Card.Title className="purpleText">Youth Rally Video</Card.Title>
         </Card>
 
-        {/* <Card className="col-md-3 my-auto no-border">
+        <Card className="col-md-3 my-auto no-border">
           <Card.Body className="px-0">
             <Card.Title className="purpleText">
-              APPLICATIONS ARE (AGAIN) LIVE!
+              Registration for the 2021 Virtual Rally is LIVE!
             </Card.Title>
-            <Card.Text>
-              Click on the button below to start/complete yours TODAY!
-            </Card.Text>
             <Button
-              href="http://app.campdoc.com/register/youthrally"
+              href="/applications"
               className="green-btn mb-2"
-              id="campers-btn"
-              target="_blank"
-              rel="noreferrer noopener"
             >
-              START 2020 APPLICATIONS
+              Applications
             </Button>
           </Card.Body>
-        </Card> */}
+        </Card>
 
-        <Card className="col-md-3 my-auto no-border">
+        {/* <Card className="col-md-3 my-auto no-border">
           <Card.Body>
             <Card.Title className="purpleText">
               <a
@@ -70,7 +64,7 @@ export default () => (
               2019 Photos
             </Card.Link>
           </Card.Body>
-        </Card>
+        </Card> */}
       </div>
     </div>
 

@@ -9,20 +9,19 @@ export default () => (
     <div id="content ">
       <div className="row">
         <div className="col-md-10 mx-auto text-center pt-2 pb-1">
-          <p>Check back soon for applications for the 2021 Virtual Rally!</p>
-          {/* <p>The 2020 Youth Rally will take place virtually July 20th-25th.</p>
+          {/* <p>Check back soon for applications for the 2021 Virtual Rally!</p> */}
+          <p>The 2021 Youth Rally will take place VIRTUALLY July 14th-17th.</p>
           <p>
-            Participants do not have to commit to attending they entire week,
-            rather you can participate as your schedule allows. For our Nurses
-            and Returning Counselors – will be reaching out to you in advance of
-            the week to seek your availability throughout the week.
+            VOLUNTEERS will need to hold July 13th as well for mandatory
+            orientation and should plan to be available 3pm-10pm throughout the
+            duration of camp.
           </p>
           <p>
-            For ALL PARTICIPANTS, additional details to follow with notification
-            of acceptance.
+            ALL PARTICIPANTS, a more formal schedule will follow closer to the
+            time of camp.
           </p>
           <h3 className="font-weight-bold">
-            Click on the button below to complete your 2020 application TODAY!
+            Click on the button below to complete your 2021 Registration TODAY!
           </h3>
           <a
             href="http://app.campdoc.com/register/youthrally"
@@ -31,32 +30,69 @@ export default () => (
             target="_blank"
             rel="noreferrer noopener"
           >
-            START 2020 APPLICATIONS
+            START 2021 Registration
           </a>
 
           <p>
             <span className="font-weight-bold">APPLICATION PROCESS </span>Click
             on the button above. Begin the application process by selecting your
             intended REGISTRATION (Camper, Counselor, or Medical Team). Work to
-            complete the HEALTH PROFILE within. Not required in 2020:
-            Medications, Allergies, Insurance, or Medical Clearance sections.
+            complete the HEALTH PROFILE within. Applications will not be
+            considered for approval until the HEALTH PROFILE is 100% complete.
           </p>
           <p>
-            Notification of acceptance will be sent via email to the email(s)
-            listed as “Users” of the participant’s profile. Additional
-            information, including scheduling details, will also be sent via
-            email.
+            Once completed, you’re registration will go into an internal review
+            process (we are 100% staffed by volunteers so this can take time).
+            You may request a rushed approval by contacting{" "}
+            <span className="greenText">
+              <a className="links" href="mailto:registrar@youthrally.org">
+                registrar@youthrally.org
+              </a>
+            </span>{" "}
+            – we will do our best to accommodate these requests. Notification of
+            acceptance will be sent via email to the email(s) listed as “Users”
+            of the participant’s profile.
           </p>
           <p>
-            <span className="font-weight-bold">SPONSORSHIP </span>for
-            registration is available for all campers in need.
+            <span className="font-weight-bold">SPONSORSHIP </span>is available
+            for all campers in need. There is a specific page within the
+            application that addresses this. We do ask for an upfront hold
+            (refundable if the participant is unable to attend related to
+            medical or other emergency) due at the time the application is
+            started that will be put towards the registration balance. All
+            participants are encouraged to fundraise to support personal
+            registration and/or travel costs. Many campers and volunteers alike
+            have found success using{" "}
+            <span className="greenText">
+              <a
+                className="links"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.firstgiving.com/organization/26064"
+              >
+                FirstGiving
+              </a>
+            </span>
+            .
           </p>
 
           <p className="font-weight-bold">IMPORTANT DATES: </p>
           <p>
-            <span className="font-weight-bold">June 1st</span> – Applications
-            for Campers, Medical Team, and Returning Counselors are due
-          </p> */}
+            <span className="font-weight-bold">March 31st</span> – COUNSELOR
+            Applications due
+          </p>
+          <p>
+            <span className="font-weight-bold">June 1st</span> – CAMPER
+            Applications due
+          </p>
+          <p>
+            <span className="font-weight-bold">June 1st</span> – NURSE
+            Applications due
+          </p>
+          <p>
+            <span className="font-weight-bold">July 1st</span> – ALL
+            Registration balances due
+          </p>
         </div>
       </div>
     </div>

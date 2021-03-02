@@ -188,6 +188,10 @@ class Footer extends Component {
             <div className="row">
               <div className="col mb-md-5">
                 <h5 className="topBotBorder text-center">EVENTS</h5>
+                <p>March 31st, 2021 Counselor Applications due</p>
+                <p>June 1st, 2021 Camper Applications due</p>
+                <p>June 1st, 2021 Nurse Applications due</p>
+                <p>July 1st, 2021 All Registration balances due</p>
                 <p>July 13th, 2021 Virtual Youth Rally Volunteer Orientation</p>
                 <p>July 14th-17th, 2021 Virtual Youth Rally</p>
               </div>
