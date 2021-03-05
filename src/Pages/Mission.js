@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { Header, Photograph } from "./../Elements";
+import { Header, Photograph, TwoColList } from "./../Elements";
 
 export default () => (
   <Fragment>
@@ -24,34 +24,29 @@ export default () => (
           conditions affecting their bowel and/or bladder systems, some of which
           include:
         </p>
-        <div className="row">
-          <div className="col-md-6">
-            <ul>
-              <li>Familial adenomatous polyposis</li>
-              <li>Ulcerative colitis</li>
-              <li>Neuronal intestinal dysplasia</li>
-              <li>Necrotizing enterocolitis</li>
-              <li>Renal agenesis</li>
-              <li>Short gut/bowel syndrome</li>
-              <li>Hallow visceral myopathy</li>
-              <li>Hirschsprung's disease</li>
-              <li>Cancer</li>
-            </ul>
-          </div>
-          <div className="col-md-6">
-            <ul>
-              <li>Bladder exstrophy</li>
-              <li>Cloacal exstrophy</li>
-              <li>Spina bifida</li>
-              <li>VATER Syndrome</li>
-              <li>Imperforate anus</li>
-              <li>Crohn's Disease</li>
-              <li>Bowel exstrophy</li>
-              <li>Hypospadias</li>
-              <li>Epispadias</li>
-            </ul>
-          </div>
-        </div>
+        <TwoColList
+          list1={[
+            "Ulcerative colitis",
+            "Neuronal intestinal dysplasia",
+            "Necrotizing enterocolitis",
+            "Renal agenesis",
+            "Short gut/bowel syndrome",
+            "Hallow visceral myopathy",
+            "Hirschsprung's disease",
+            "Cancer",
+          ]}
+          list2={[
+            "Bladder exstrophy",
+            "Cloacal exstrophy",
+            "Spina bifida",
+            "VATER Syndrome",
+            "Imperforate anus",
+            "Crohn's Disease",
+            "Bowel exstrophy",
+            "Hypospadias",
+            "Epispadias",
+          ]}
+        />
         <p>
           Just like Youth Rally camper and volunteer diagnoses vary, so do their
           management techniques. Some campers and volunteers are able to manage
@@ -59,35 +54,30 @@ export default () => (
           following is an example of some of the additional management methods
           shared by campers and counselors:
         </p>
-        <div className="row">
-          <div className="col-md-6">
-            <ul>
-              <li>Koch pouch</li>
-              <li>J-pouch</li>
-              <li>IV medication</li>
-              <li>Continuous tube feeding</li>
-              <li>Ileostomy</li>
-              <li>Colostomy</li>
-              <li>Dialysis</li>
-              <li>Bowel management programs</li>
-              <li>BCIR (Barnett Continent Intestinal Reservoir)</li>
-            </ul>
-          </div>
-          <div className="col-md-6">
-            <ul>
-              <li>Intermittent catheterization</li>
-              <li>Urostomy</li>
-              <li>Ace Malone</li>
-              <li>Pull-thru</li>
-              <li>Mitrofanoff</li>
-              <li>Total parenteral nutrition (TPN)</li>
-              <li>Enemas</li>
-              <li>Indwelling catheter</li>
-              <li>Irrigation</li>
-            </ul>
-          </div>
-        </div>
-
+        <TwoColList
+          list1={[
+            "Koch pouch",
+            "J-pouch",
+            "IV medication",
+            "Continuous tube feeding",
+            "Ileostomy",
+            "Colostomy",
+            "Dialysis",
+            "Bowel management programs",
+            "BCIR (Barnett Continent Intestinal Reservoir)",
+          ]}
+          list2={[
+            "Intermittent catheterization",
+            "Urostomy",
+            "Ace Malone",
+            "Pull-thru",
+            "Mitrofanoff",
+            "Total parenteral nutrition (TPN)",
+            "Enemas",
+            "Indwelling catheter",
+            "Irrigation",
+          ]}
+        />
         <div className="row">
           <div className="col-md-6">
             <p>

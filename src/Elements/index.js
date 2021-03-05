@@ -6,10 +6,14 @@ import ImageWithText from "./ImageWithText";
 import ItemCard from "./ItemCard";
 import Jumbotron from "./Jumbotron";
 import Navbar from "./Navbar";
+import ParaWithHeader from "./ParaWithHeader";
 import PaypalModal from "./PaypalModal";
 import Photograph from "./Photograph";
 import SizedItemCard from "./SizedItemCard";
 import TableRows from "./TableRows";
+import TwoColList from "./TwoColList";
+import TwoColTextImg from "./TwoColTextImg";
+import TwoColTextPhoto from "./TwoColTextPhoto";
 
 export {
   AddToCart,
@@ -20,8 +24,12 @@ export {
   ItemCard,
   Jumbotron,
   Navbar,
+  ParaWithHeader,
   PaypalModal,
   Photograph,
   SizedItemCard,
   TableRows,
+  TwoColList,
+  TwoColTextImg,
+  TwoColTextPhoto,
 };

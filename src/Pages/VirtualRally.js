@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { Header } from "./../Elements";
+import { Header, ParaWithHeader } from "./../Elements";
 
 export default () => (
   <Fragment>
@@ -9,7 +9,7 @@ export default () => (
     <div id="content">
       <div className="col-md-10 mx-auto pt-2 pb-1">
         <div className="row">
-          <segment>
+          <div>
             <h2>YOUTH RALLY 2021</h2>
             <p>
               We are excited to announce that Youth Rally will be transitioning
@@ -26,8 +26,8 @@ export default () => (
               the crisis that many of our communities currently face, we know
               this is the responsible choice.
             </p>
-          </segment>
-          <segment className="mx-auto">
+          </div>
+          <div className="mx-auto">
             <h2 className="text-center">
               THE 2021 YOUTH RALLY WILL TAKE PLACE VIRTUALLY JULY 14th-17th
             </h2>
@@ -35,17 +35,15 @@ export default () => (
               Volunteers should plan to hold July 13th for a mandatory virtual
               orientation
             </h5>
-          </segment>
-          <segment>
-            <h5>CAMPERS:</h5>
-            <p>
-              As always, sponsorship is available for those who may require
-              assistance – there is a page within the application that addresses
-              any sponsorship need.
-            </p>
-            <h5>FIRST TIME COUNSELORS (CITs):</h5>
-            <p>
-              Last year, with little advanced notice of a virtual setting, we
+          </div>
+          <div>
+            <ParaWithHeader
+              head="CAMPERS:"
+              content="As always, sponsorship is available for those who may require assistance – there is a page within the application that addresses any sponsorship need."
+            />
+            <ParaWithHeader
+              head="FIRST TIME COUNSELORS (CITs):"
+              content="Last year, with little advanced notice of a virtual setting, we
               invited all first-time applicants to join us as “observers,”
               knowing they would have to re-apply as “first time counselors” in
               2021. This year we intend to re-instate a more traditional
@@ -53,17 +51,18 @@ export default () => (
               first-time applicants. We anticipate the applications to be many
               and the open spots to be few and appreciate your understanding of
               the difficult decisions that need to be made in order to optimize
-              the experience for our campers.
-            </p>
-            <h5>EXPECTATIONS FOR ALL COUNSELORS, NURSES & VOLUNTEERS:</h5>
-            <p>
+              the experience for our campers."
+            />
+            <ParaWithHeader
+              head="EXPECTATIONS FOR ALL COUNSELORS, NURSES & VOLUNTEERS:"
+              content="
               It is our expectation that you will be present and available for
               all Youth Rally 2021 sessions, including orientation on the 13th
               of July. Please plan to be available July 13th-17th 3PM-10PM EST
               if you intend to volunteer. If you have ideas of particular
               sessions you would like to facilitate or see included, please
-              indicate that within your application.
-            </p>
+              indicate that within your application."
+            />
             <p>
               <span className="h5Font">2021 REGISTRATION FEES</span> – includes
               all materials and supplies needed for 2021 activities and events,
@@ -77,7 +76,7 @@ export default () => (
               <li>Volunteers - $50</li>
             </ul>
             <p className="font-weight-bold">SEE YOU IN JULY!</p>
-          </segment>
+          </div>
         </div>
         <p className="row">Mary Beth & Emily</p>
       </div>

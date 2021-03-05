@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { Header, ImageWithText } from "./../Elements";
+import { Header, TwoColTextImg } from "./../Elements";
 
 export default () => (
   <Fragment>
@@ -157,29 +157,39 @@ export default () => (
             Committee, Inc.:
           </p>
 
-          <p className="text-center">
-            <span className="font-weight-bold">Name of Charity:</span> Youth
-            Rally Committee, Inc
-          </p>
-          <p className="text-center">
-            <span className="font-weight-bold">Fed Tax ID#:</span> 20-3579812
-          </p>
-          <p className="text-center">
-            <span className="font-weight-bold">Address:</span> 949 Chestnut Oak
-            Dr
-          </p>
-          <p className="text-center">
-            <span className="font-weight-bold">City/State/Zip:</span> St.
-            Charles, MO 63303
-          </p>
-          <p className="text-center">
-            <span className="font-weight-bold">Phone:</span> (314)452-7759
-          </p>
-          <p className="text-center">
-            <span className="font-weight-bold">Contact:</span> Mary Beth Akers,
-            Treasurer
-          </p>
-          <h5 className="text-center">
+          <TwoColTextImg
+            colSize1={6}
+            colSize2={6}
+            content={[
+              {
+                head: "Name of Charity:",
+                class: "",
+                text: " Youth Rally Committee, Inc",
+              },
+              {
+                head: "Fed Tax ID#:",
+                class: "",
+                text: " 20-3579812",
+              },
+              { head: "Address:", class: "", text: " 949 Chestnut Oak Dr" },
+              {
+                head: "City/State/Zip:",
+                class: "",
+                text: " St. Charles, MO 63303",
+              },
+              { head: "Phone:", class: "", text: " (314)452-7759" },
+              {
+                head: "Contact:",
+                class: "",
+                text: " Mary Beth Akers, Treasurer",
+              },
+            ]}
+            src="/assets/images/18grpshot.JPG"
+            alt="2018 campers"
+            text="2018 Youth Rally Campers in Boulder, CO"
+          />
+
+          <h5>
             Please contact{" "}
             <span className="font-weight-bold purpleText">
               <a href="mailto:marybethakers13@gmail.com" className="links">
@@ -188,14 +198,6 @@ export default () => (
             </span>{" "}
             with any questions
           </h5>
-        </div>
-
-        <div className="col-md-4 mx-auto">
-          <ImageWithText
-            imageSource="/assets/images/18grpshot.JPG"
-            imageAlt="2018 campers"
-            imageText="2018 Youth Rally Campers in Boulder, CO"
-          />
         </div>
       </div>
     </div>

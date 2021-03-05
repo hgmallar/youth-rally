@@ -3,6 +3,11 @@
   --yrpurple: #662c91;
 }
 
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .links,
 .links:hover,
 .links:link,
@@ -24,7 +29,6 @@ head {
   font-family: "Roboto", sans-serif;
 }
 
-#content,
 #events-page {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -127,43 +131,58 @@ ol li {
 }
 
 .resource-img {
+  max-width: 100%;
+  height: auto;
   max-height: 100px;
-  width: auto;
+}
+
+.img-lg {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
 }
 
 .partner-img-lg {
+  width: 500px;
+  height: auto;
+}
+
+.img-md {
+  max-width: 100%;
+  height: auto;
   max-height: 150px;
-  width: auto;
 }
 
 .partner-img-md {
-  max-height: 125px;
-  width: auto;
+  width: 400px;
+  height: auto;
+}
+
+.img-sm {
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
 }
 
 .partner-img-sm {
-  max-height: 100px;
-  width: auto;
+  width: 300px;
+  height: auto;
 }
 
 #platinum {
-  background-color: grey;
-  color: white;
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 #gold {
-  background-color: gold;
-  color: white;
+  background-color: rgba(255, 215, 0, 0.5);
 }
 
 #silver {
-  background-color: silver;
-  color: white;
+  background-color: rgba(192, 192, 192, 0.5);
 }
 
 #green {
-  background-color: var(--yrgreen);
-  color: white;
+  background-color: rgba(51, 153, 102, 0.5);
 }
 
 .store-image {
