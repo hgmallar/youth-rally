@@ -123,6 +123,14 @@ export default () => (
                 Complications of Crohn's disease
               </a>
             </p>
+            <p className="purpleText text-center">
+              <a
+                href="https://www.drugwatch.com/health/digestive-health/"
+                className="links"
+              >
+                Digestive Health
+              </a>
+            </p>
             <div className="partner-img-sm mx-auto">
               <a href="https://www.spinabifidaassociation.org/">
                 <img
