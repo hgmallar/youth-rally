@@ -10,10 +10,10 @@ export default () => (
       <div className="row pt-2 pb-1">
         <div className="col-md-11 mx-auto">
           <h2 className="text-center">
-            July 13th, 2021 Virtual Youth Rally Volunteer Orientation
+            January 2022 Camper and Counselor applications go live!
           </h2>
           <h2 className="text-center">
-            July 14th - 17th, 2021 Virtual Youth Rally
+            July 11th - 16th, 2022 Youth Rally at San Diego State University in San Diego, CA
           </h2>
           <hr />
           <div className="row mx-auto">
