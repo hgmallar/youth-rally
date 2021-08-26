@@ -10,7 +10,7 @@ export default () => (
       <div className="row">
         <div className="col-md-10 mx-auto text-center pt-2 pb-1">
           <p>
-            Check back in January for applications for the 2022 Virtual Rally!
+            Check back in January for applications for the 2022 Youth Rally!
           </p>
           <p>
             The 2022 Youth Rally will take place at San Diego State University
