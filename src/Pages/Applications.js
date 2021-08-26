@@ -9,9 +9,14 @@ export default () => (
     <div id="content ">
       <div className="row">
         <div className="col-md-10 mx-auto text-center pt-2 pb-1">
-          {/* <p>Check back soon for applications for the 2021 Virtual Rally!</p> */}
-          <p>The 2021 Youth Rally will take place VIRTUALLY July 14th-17th.</p>
           <p>
+            Check back in January for applications for the 2022 Virtual Rally!
+          </p>
+          <p>
+            The 2022 Youth Rally will take place at San Diego State University
+            in San Diego, CA on July 11th-16th.
+          </p>
+          {/* <p>
             VOLUNTEERS will need to hold July 13th as well for mandatory
             orientation and should plan to be available 3pm-10pm throughout the
             duration of camp.
@@ -92,7 +97,7 @@ export default () => (
           <p>
             <span className="font-weight-bold">July 1st</span> – ALL
             Registration balances due
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

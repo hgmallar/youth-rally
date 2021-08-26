@@ -56,44 +56,37 @@ const donors = [
 const newsletters = [
   {
     id: 0,
-    link:
-      "https://mailchi.mp/19062fa274d5/youth-rally-newsletter-april-2020?e=77c92b6866",
+    link: "https://mailchi.mp/19062fa274d5/youth-rally-newsletter-april-2020?e=77c92b6866",
     name: "April, 2020",
   },
   {
     id: 1,
-    link:
-      "https://mailchi.mp/74a0995f9407/youth-rally-newsletter-sept-1373089?e=77c92b6866",
+    link: "https://mailchi.mp/74a0995f9407/youth-rally-newsletter-sept-1373089?e=77c92b6866",
     name: "September, 2018",
   },
   {
     id: 2,
-    link:
-      "https://mailchi.mp/34e905bb94e7/youth-rally-newsletter-mar-1351209?e=e3485ef522",
+    link: "https://mailchi.mp/34e905bb94e7/youth-rally-newsletter-mar-1351209?e=e3485ef522",
     name: "June, 2018",
   },
   {
     id: 3,
-    link:
-      "https://us6.campaign-archive.com/?u=06f008c274bd33a65f3c3db15&id=edea857885",
+    link: "https://us6.campaign-archive.com/?u=06f008c274bd33a65f3c3db15&id=edea857885",
     name: "March, 2018",
   },
   {
     id: 4,
-    link:
-      "http://mailchi.mp/29f24042630d/youth-rally-newsletter-sept-1288273?e=77c92b6866",
+    link: "http://mailchi.mp/29f24042630d/youth-rally-newsletter-sept-1288273?e=77c92b6866",
     name: "December, 2017",
   },
   {
     id: 5,
-    link:
-      "http://mailchi.mp/f5c896066c8e/youth-rally-newsletter-sept-2017?e=77c92b6866",
+    link: "http://mailchi.mp/f5c896066c8e/youth-rally-newsletter-sept-2017?e=77c92b6866",
     name: "September, 2017",
   },
   {
     id: 6,
-    link:
-      "http://us6.campaign-archive1.com/?u=06f008c274bd33a65f3c3db15&id=eafaf38dcf&e=77c92b6866",
+    link: "http://us6.campaign-archive1.com/?u=06f008c274bd33a65f3c3db15&id=eafaf38dcf&e=77c92b6866",
     name: "April, 2017",
   },
 ];
@@ -188,12 +181,11 @@ class Footer extends Component {
             <div className="row">
               <div className="col mb-md-5">
                 <h5 className="topBotBorder text-center">EVENTS</h5>
-                <p>March 31st, 2021 Counselor Applications due</p>
-                <p>June 1st, 2021 Camper Applications due</p>
-                <p>June 1st, 2021 Nurse Applications due</p>
-                <p>July 1st, 2021 All Registration balances due</p>
-                <p>July 13th, 2021 Virtual Youth Rally Volunteer Orientation</p>
-                <p>July 14th-17th, 2021 Virtual Youth Rally</p>
+                <p>January 2022 Counselor and Camper Applications go live</p>
+                <p>
+                  July 11th-16th, 2022 Youth Rally at San Diego State University
+                  in San Diego, CA
+                </p>
               </div>
             </div>
 
