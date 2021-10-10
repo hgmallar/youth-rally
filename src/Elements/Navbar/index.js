@@ -121,7 +121,7 @@ class YRNavbar extends Component {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="d-none d-md-block" id="store">
-              <Nav.Link as={Link} to="/store">
+              <Nav.Link as={Link} to="/store" disabled>
                 Store
               </Nav.Link>
             </Nav.Item>
