@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
-import PaypalExpressBtn from "react-paypal-express-checkout";
+import { PayPalButton } from "react-paypal-button-v2";
 
 import { Header, PaypalModal, TableRows } from "./../Elements";
 
@@ -21,42 +21,8 @@ class Cart extends Component {
 
   render() {
     let finalTotal = this.props.shipping + this.props.subtotal;
-    let env = "production";
-    const client = {
-      sandbox: process.env.REACT_APP_PAYPAL_CLIENT_ID_SANDBOX,
-      production: process.env.REACT_APP_PAYPAL_CLIENT_ID_PRODUCTION,
-    };
-    console.log(client);
-    const onSuccess = (payment) => {
-      // Congratulation, it came here means everything's fine!
-      console.log("The payment was succeeded!", payment);
-      this.setState({
-        show: true,
-        title: "Payment Successful",
-        message: `The payment was successful. Thank you ${payment.address.recipient_name} for your payment!`,
-      });
-      sessionStorage.clear();
-      this.props.updateCartTotal(0);
-      this.createArray();
-    };
-
-    const onCancel = (data) => {
-      // User pressed "cancel" or close Paypal's popup!
-      console.log("The payment was cancelled!", data);
-      this.setState({
-        show: true,
-        title: "Payment Cancelled",
-        message: `The payment was cancelled!`,
-      });
-    };
-
-    const onError = (err) => {
-      // The main Paypal's script cannot be loaded or somethings block the loading of that script!
-      console.log("Error!", err);
-      // Because the Paypal's main script is loaded asynchronously from "https://www.paypalobjects.com/api/checkout.js"
-      // => sometimes it may take about 0.5 second for everything to get set, or for the button to appear
-    };
-
+    let itemsArray = this.props.itemArray.filter((item) => item.quantity > 0);
+    console.log(itemsArray);
     return (
       <Fragment>
         <PaypalModal
@@ -125,43 +91,65 @@ class Cart extends Component {
                 </div>
                 <div className="col-md-6 text-center">
                   <div className="mb-2 float-md-right">
-                    <PaypalExpressBtn
-                      env={env}
-                      client={client}
-                      currency={"USD"}
-                      total={finalTotal}
-                      onError={onError}
-                      onSuccess={onSuccess}
-                      onCancel={onCancel}
-                      paymentOptions={{
-                        redirect_urls: {
-                          cancel_url: "https://youthrally.org/cart",
-                        },
-                        transactions: [
-                          {
-                            amount: {
-                              total: finalTotal,
-                              currency: "USD",
-                              details: {
-                                subtotal: this.props.cartTotal,
-                                tax: "0.00",
-                                shipping: this.props.shippingCharge,
-                                handling_fee: "0.00",
-                                shipping_discount: "0.00",
-                                insurance: "0.00",
+                    <PayPalButton
+                      amount={finalTotal}
+                      createOrder={(data, actions) => {
+                        return actions.order.create({
+                          purchase_units: [
+                            {
+                              amount: {
+                                value: finalTotal,
+                                currency_code: "USD",
+                                breakdown: {
+                                  item_total: {
+                                    currency_code: "USD",
+                                    value: this.props.subtotal,
+                                  },
+                                  shipping: {
+                                    currency_code: "USD",
+                                    value: this.props.shipping,
+                                  },
+                                },
                               },
+                              items: itemsArray,
                             },
-                            description: "Youth Rally Store Order.",
-                            payment_options: {
-                              allowed_payment_method: "INSTANT_FUNDING_SOURCE",
-                            },
-                            item_list: {
-                              items: this.state.itemArray,
-                            },
-                          },
-                        ],
-                        note_to_payer:
-                          "Contact info@youthrally.org for any questions on your order.",
+                          ],
+                        });
+                      }}
+                      onApprove={(data, actions) => {
+                        return actions.order.capture().then(function (details) {
+                          // OPTIONAL: Call your server to save the transaction
+                          return fetch("/paypal-transaction-complete", {
+                            method: "post",
+                            body: JSON.stringify({
+                              orderId: data.orderID,
+                            }),
+                          });
+                        });
+                      }}
+                      onSuccess={(details, data) => {
+                        console.log("The payment succeeded!");
+                        this.setState({
+                          show: true,
+                          title: "Payment Successful",
+                          message: `The payment was successful. Thank you ${details.payer.name.given_name} for your payment!`,
+                        });
+                        this.props.emptyCart();
+                      }}
+                      onCancel={(data) => {
+                        // User pressed "cancel" or close Paypal's popup!
+                        console.log("The payment was cancelled!", data);
+                        this.setState({
+                          show: true,
+                          title: "Payment Cancelled",
+                          message: `The payment was cancelled!`,
+                        });
+                      }}
+                      options={{
+                        //clientId: process.env.REACT_APP_PAYPAL_CLIENT_ID_SANDBOX,
+                        clientId:
+                          process.env.REACT_APP_PAYPAL_CLIENT_ID_PRODUCTION,
+                        currency: "USD",
                       }}
                     />
                   </div>

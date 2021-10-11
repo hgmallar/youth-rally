@@ -9,7 +9,7 @@ function TableRows(props) {
     .filter((item) => item.quantity > 0)
     .map((filteredItem) => (
       <tr key={filteredItem.id}>
-        <td>{filteredItem.description}</td>
+        <td>{filteredItem.name}</td>
         <td>
           <div className="row">
             <div className="col-8">
@@ -43,12 +43,17 @@ export default TableRows;
 
 TableRows.propTypes = {
   itemArray: PropTypes.arrayOf(
-    PropTypes.exact({
+    PropTypes.shape({
+      unit_amount: PropTypes.shape({
+        currency_code: PropTypes.string.isRequired,
+        value: PropTypes.string.isRequired,
+      }).isRequired,
       id: PropTypes.number.isRequired,
-      description: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
       item: PropTypes.string.isRequired,
       quantity: PropTypes.number.isRequired,
       price: PropTypes.number.isRequired,
+
     }).isRequired
   ).isRequired,
 };

@@ -38,173 +38,261 @@ class App extends Component {
     this.state = {
       itemArray: [
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "3.00",
+          },
           id: 0,
           item: "bracelets_yth",
-          description: "Bracelets (Youth)",
+          name: "Bracelets (Youth)",
           price: 3,
           quantity: parseInt(sessionStorage.getItem("bracelets_yth")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "3.00",
+          },
           id: 1,
           item: "bracelets_adlt",
-          description: "Bracelets (Adult)",
+          name: "Bracelets (Adult)",
           price: 3,
           quantity: parseInt(sessionStorage.getItem("bracelets_adlt")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "4.00",
+          },
           id: 2,
           item: "keychains",
-          description: "Keychains",
+          name: "Keychains",
           price: 4,
           quantity: parseInt(sessionStorage.getItem("keychains")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "3.00",
+          },
           id: 3,
           item: "patches",
-          description: "Patches",
+          name: "Patches",
           price: 4,
           quantity: parseInt(sessionStorage.getItem("patches")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 4,
           item: "blue_tshirts_yth_sm",
-          description: "Blue Tshirts Youth Small",
+          name: "Blue Tshirts Youth Small",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("blue_tshirts_yth_sm")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 5,
           item: "blue_tshirts_yth_md",
-          description: "Blue Tshirts Youth Medium",
+          name: "Blue Tshirts Youth Medium",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("blue_tshirts_yth_md")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 6,
           item: "blue_tshirts_yth_lg",
-          description: "Blue Tshirts Youth Large",
+          name: "Blue Tshirts Youth Large",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("blue_tshirts_yth_lg")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 7,
           item: "blue_tshirts_yth_xl",
-          description: "Blue Tshirts Youth Extra Large",
+          name: "Blue Tshirts Youth XL",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("blue_tshirts_yth_xl")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 8,
           item: "blue_tshirts_adlt_sm",
-          description: "Blue Tshirts Adult Small",
+          name: "Blue Tshirts Adult Small",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("blue_tshirts_adlt_sm")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 9,
           item: "blue_tshirts_adlt_md",
-          description: "Blue Tshirts Adult Medium",
+          name: "Blue Tshirts Adult Medium",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("blue_tshirts_adlt_md")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 10,
           item: "blue_tshirts_adlt_lg",
-          description: "Blue Tshirts Adult Large",
+          name: "Blue Tshirts Adult Large",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("blue_tshirts_adlt_lg")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 11,
           item: "blue_tshirts_adlt_xl",
-          description: "Blue Tshirts Adult Extra Large",
+          name: "Blue Tshirts Adult XL",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("blue_tshirts_adlt_xl")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 12,
           item: "blue_tshirts_adlt_xxl",
-          description: "Blue Tshirts Adult Extra Extra Large",
+          name: "Blue Tshirts Adult XXL",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("blue_tshirts_adlt_xxl")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 13,
           item: "purp_tshirts_yth_sm",
-          description: "Purple Tshirts Youth Small",
+          name: "Purple Tshirts Youth Small",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("purp_tshirts_yth_sm")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 14,
           item: "purp_tshirts_yth_md",
-          description: "Purple Tshirts Youth Medium",
+          name: "Purple Tshirts Youth Medium",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("purp_tshirts_yth_md")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 15,
           item: "purp_tshirts_yth_lg",
-          description: "Purple Tshirts Youth Large",
+          name: "Purple Tshirts Youth Large",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("purp_tshirts_yth_lg")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 16,
           item: "purp_tshirts_yth_xl",
-          description: "Purple Tshirts Youth Extra Large",
+          name: "Purple Tshirts Youth XL",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("purp_tshirts_yth_xl")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 17,
           item: "purp_tshirts_adlt_sm",
-          description: "Purple Tshirts Adult Small",
+          name: "Purple Tshirts Adult Small",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("purp_tshirts_adlt_sm")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 18,
           item: "purp_tshirts_adlt_md",
-          description: "Purple Tshirts Adult Medium",
+          name: "Purple Tshirts Adult Medium",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("purp_tshirts_adlt_md")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 19,
           item: "purp_tshirts_adlt_lg",
-          description: "Purple Tshirts Adult Large",
+          name: "Purple Tshirts Adult Large",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("purp_tshirts_adlt_lg")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 20,
           item: "purp_tshirts_adlt_xl",
-          description: "Purple Tshirts Adult Extra Large",
+          name: "Purple Tshirts Adult XL",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("purp_tshirts_adlt_xl")) || 0,
         },
         {
+          unit_amount: {
+            currency_code: "USD",
+            value: "20.00",
+          },
           id: 21,
           item: "purp_tshirts_adlt_xxl",
-          description: "Purple Tshirts Adult Extra Extra Large",
+          name: "Purple Tshirts Adult XXL",
           price: 20,
           quantity:
             parseInt(sessionStorage.getItem("purp_tshirts_adlt_xxl")) || 0,
