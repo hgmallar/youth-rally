@@ -1,4 +1,7 @@
 import React from "react";
+import { Tr, Td } from 'react-super-responsive-table';
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
+
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
@@ -8,9 +11,9 @@ function TableRows(props) {
   return props.itemArray
     .filter((item) => item.quantity > 0)
     .map((filteredItem) => (
-      <tr key={filteredItem.id}>
-        <td>{filteredItem.name}</td>
-        <td>
+      <Tr key={filteredItem.id}>
+        <Td>{filteredItem.name}</Td>
+        <Td>
           <div className="row">
             <div className="col-8">
               <input
@@ -29,13 +32,13 @@ function TableRows(props) {
               }
             />
           </div>
-        </td>
-        <td className="text-right">${filteredItem.price}.00</td>
-        <td className="text-right">
+        </Td>
+        <Td className="text-right">${filteredItem.price}.00</Td>
+        <Td className="text-right">
           ${filteredItem.price * filteredItem.quantity}
           .00
-        </td>
-      </tr>
+        </Td>
+      </Tr>
     ));
 }
 

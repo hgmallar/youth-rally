@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { PayPalButton } from "react-paypal-button-v2";
+import { Table, Thead, Tbody, Tr, Th} from "react-super-responsive-table";
+import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 
 import { Header, PaypalModal, TableRows } from "./../Elements";
 
@@ -22,7 +24,6 @@ class Cart extends Component {
   render() {
     let finalTotal = this.props.shipping + this.props.subtotal;
     let itemsArray = this.props.itemArray.filter((item) => item.quantity > 0);
-    console.log(itemsArray);
     return (
       <Fragment>
         <PaypalModal
@@ -37,58 +38,56 @@ class Cart extends Component {
         <div id="content">
           <div className="row">
             <div className="col-md-10 mx-auto pt-2 pb-1">
-              <table className="table" id="checkout-table">
-                <thead>
-                  <tr className="font-weight-bold" id="last-row">
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th className="text-right">Item Price</th>
-                    <th className="text-right">Subtotal</th>
-                  </tr>
-                </thead>
-                <tbody>
+              <Table className="table" id="checkout-table">
+                <Thead>
+                  <Tr className="font-weight-bold" id="last-row">
+                    <Th>Product</Th>
+                    <Th>Quantity</Th>
+                    <Th className="text-right">Item Price</Th>
+                    <Th className="text-right">Subtotal</Th>
+                  </Tr>
+                </Thead>
+                <Tbody>
                   <TableRows
                     itemArray={this.props.itemArray}
                     changeQuantity={this.props.changeQuantity}
                     deleteItem={this.props.deleteItem}
                   />
-                  <tr>
-                    <td />
-                    <td />
-                    <td className="font-weight-bold text-right">Subotal:</td>
-                    <td className="text-right"> ${this.props.subtotal}.00 </td>
-                  </tr>
-                  <tr>
-                    <td />
-                    <td />
-                    <td className="font-weight-bold text-right">Shipping:</td>
-                    <td className="text-right"> ${this.props.shipping}.00 </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button
-                        id="emptyCart"
-                        className="btn green-btn text-white mb-2 ml-1 float-left"
-                        onClick={() => this.props.emptyCart()}
-                      >
-                        Empty Cart
-                      </button>
-                    </td>
-                    <td />
-                    <td className="font-weight-bold text-right">Total:</td>
-                    <td className="text-right">${finalTotal}.00</td>
-                  </tr>
-                </tbody>
-              </table>
+                </Tbody>
+              </Table>
+              <p className="mr-2 text-right">
+                <span className="font-weight-bold">Subotal:</span> $
+                {this.props.subtotal}.00{" "}
+              </p>
+              <p className="mr-2 text-right">
+                <span className="font-weight-bold">Shipping:</span> $
+                {this.props.shipping}.00{" "}
+              </p>
+              <p className="mr-2 text-right">
+                <span className="font-weight-bold">Total:</span> ${finalTotal}
+                .00{" "}
+              </p>
               <div className="row">
+                <div className="col-md-6 text-center">
+                  <button
+                    id="emptyCart"
+                    className="btn green-btn text-white mb-2 ml-1 float-md-left"
+                    onClick={() => this.props.emptyCart()}
+                  >
+                    Empty Cart
+                  </button>
+                </div>
                 <div className="col-md-6 text-center">
                   <Link
                     to="/store"
-                    className="btn green-btn text-white mb-2 float-md-left"
+                    className="btn green-btn text-white mb-2 float-md-right"
                   >
                     Continue Shopping
                   </Link>
                 </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6 text-center"></div>
                 <div className="col-md-6 text-center">
                   <div className="mb-2 float-md-right">
                     <PayPalButton

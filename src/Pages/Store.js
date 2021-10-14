@@ -43,7 +43,7 @@ const Store = (props) => (
             { id: 3, title: "Blue Youth Large", size: "yth_lg" },
             {
               id: 4,
-              title: "Blue Youth Extra Large",
+              title: "Blue Youth XL",
               size: "yth_xl",
             },
             { id: 5, title: "Blue Adult Small", size: "adlt_sm" },
@@ -51,12 +51,12 @@ const Store = (props) => (
             { id: 7, title: "Blue Adult Large", size: "adlt_lg" },
             {
               id: 8,
-              title: "Blue Adult Extra Large",
+              title: "Blue Adult XL",
               size: "adlt_xl",
             },
             {
               id: 9,
-              title: "Blue Adult Extra Extra Large",
+              title: "Blue Adult XXL",
               size: "adlt_xxl",
             },
           ]}
@@ -82,7 +82,7 @@ const Store = (props) => (
             { id: 3, title: "Purple Youth Large", size: "yth_lg" },
             {
               id: 4,
-              title: "Purple Youth Extra Large",
+              title: "Purple Youth XL",
               size: "yth_xl",
             },
             { id: 5, title: "Purple Adult Small", size: "adlt_sm" },
@@ -94,12 +94,12 @@ const Store = (props) => (
             { id: 7, title: "Purple Adult Large", size: "adlt_lg" },
             {
               id: 8,
-              title: "Purple Adult Extra Large",
+              title: "Purple Adult XL",
               size: "adlt_xl",
             },
             {
               id: 9,
-              title: "Purple Adult Extra Extra Large",
+              title: "Purple Adult XXL",
               size: "adlt_xxl",
             },
           ]}
