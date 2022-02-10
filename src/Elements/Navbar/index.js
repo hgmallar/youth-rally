@@ -25,12 +25,6 @@ class YRNavbar extends Component {
           />
 
           <Nav>
-            <Nav.Item className="d-none d-md-block" id="virtualrally">
-              <Nav.Link as={Link} to="/virtualrally">
-                Virtual Rally
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item className="d-none d-md-block" id="applications">
               <Nav.Link as={Link} to="/applications">
                 Applications

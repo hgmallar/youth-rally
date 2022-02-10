@@ -10,11 +10,10 @@ export default () => (
       <div className="row">
         <div className="col-md-10 mx-auto text-center pt-2 pb-1">
           <p>
-            Check back in January for applications for the 2022 Youth Rally!
+            Check back in February for applications for the 2022 Youth Rally!
           </p>
           <p>
-            The 2022 Youth Rally will take place at San Diego State University
-            in San Diego, CA on July 11th-16th.
+            The 2022 Youth Rally will be virtual on July 15th-18th.
           </p>
           {/* <p>
             VOLUNTEERS will need to hold July 13th as well for mandatory

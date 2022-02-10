@@ -8,10 +8,10 @@ export default () => (
         <Card className="col-md-3 my-auto no-border">
           <Card.Body className="px-0">
             <Card.Title className="purpleText">
-              IMPORTANT 2021 UPDATE
+              IMPORTANT 2022 UPDATE
             </Card.Title>
-            <Card.Text>Our 2021 Dates and Plans have changed</Card.Text>
-            <Button href="/virtualrally" className="green-btn">
+            <Card.Text>Our 2022 Dates and Plans have changed</Card.Text>
+            <Button href="/assets/documents/2022_Virtual_Announcement.pdf" className="green-btn">
               CLICK HERE FOR MORE DETAILS
             </Button>
           </Card.Body>
@@ -33,14 +33,14 @@ export default () => (
         <Card className="col-md-3 my-auto no-border">
           <Card.Body className="px-0">
             <Card.Title className="purpleText">
-              Registration for the 2021 Virtual Rally is LIVE!
+              Check back in February for applications for the 2022 Youth Rally!
             </Card.Title>
-            <Button
+            {/* <Button
               href="/applications"
               className="green-btn mb-2"
             >
               Applications
-            </Button>
+            </Button> */}
           </Card.Body>
         </Card>
 

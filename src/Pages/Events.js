@@ -1,136 +1,83 @@
 import React, { Fragment } from "react";
 
-import { Header } from "./../Elements";
+import { Header, ParaWithHeader } from "./../Elements";
 
 export default () => (
   <Fragment>
     <Header title="Events" />
 
-    <div id="events-page">
-      <div className="row pt-2 pb-1">
-        <div className="col-md-11 mx-auto">
-          <h2 className="text-center">
-            January 2022 Camper and Counselor applications go live!
-          </h2>
-          <h2 className="text-center">
-            July 11th - 16th, 2022 Youth Rally at San Diego State University in San Diego, CA
-          </h2>
-          <hr />
-          <div className="row mx-auto">
-            <div id="event-contact">
-              <h2 className="purpleText">
-                INTERESTED IN HAVING YOUR EVENT(S) SHOWCASED HERE?
-              </h2>
-              <p>
-                Contact:{" "}
-                <span className="greenText">
-                  <a href="mailto:info@youthrally.org">Emily</a>
-                </span>{" "}
-                at{" "}
-                <span className="greenText">
-                  <a href="mailto:info@youthrally.org">info@youthrally.org</a>
-                </span>
-              </p>
-            </div>
+    <div id="content">
+      <div className="col-md-10 mx-auto pt-2 pb-1">
+        <div className="row">
+          <div>
+            <h2>YOUTH RALLY 2022</h2>
+            <p>
+              Youth Rally will be in a virtual setting again in 2022. While we’d
+              much rather be on-site, we’re excited to have the additional
+              planning time in 2022.
+            </p>
+            <p>
+              Thank you for your understanding and continued support. We
+              recognize that this is a trying time for many. Given the
+              availability of COVID-19 vaccine at this point (in particular for
+              adolescents), the fragility of both our camper and volunteer
+              populations, the continued restrictions on group gatherings, and
+              the crisis that many of our communities currently face, we know
+              this is the responsible choice.
+            </p>
           </div>
-          <hr />
-          <div className="row mx-auto d-block">
-            <h2 className="purpleText">PAST EVENTS:</h2>
-            <div className="col-md-12 text-center">
-              <h2 className="text-center">
-                June 9th, 2019 Pineapple's 2019 a'WEAR'ness Event
-              </h2>
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-md-6 mx-2">
-                <p>
-                  Formally Pineapple's Cruise for Crohn's & Colitis, this year's
-                  A"WEAR"NESS event will happen again at{" "}
-                  <a href="https://www.thewestyisabar.com/">The Westy</a> (516 W
-                  State St, Ithaca, New York). The Westy's opening the doors to
-                  kids for this event (they might even put out the water
-                  table!!!) on June 9th from 1PM - 4PM.{" "}
-                </p>
-                <p className="font-weight-bold">
-                  $20 ticket price at the door includes:
-                </p>
-                <ul>
-                  <li>Live music: Notorious Stringbusters </li>
-                  <li>Catered snacks: Red's Place </li>
-                  <li>Draft beer: Bacchus Brewing (+ cash bar OPEN) </li>
-                  <li>Infamous Silent Auction </li>
-                </ul>
-                <p>Kids 12 & under - $10 </p>
-                <p>Kids 4 & under - FREE </p>
-                <p>
-                  Once again, all proceeds will benefit the 2019 Youth Rally - a
-                  week long summer camp for youth ages 11-17 living with
-                  congenital birth defects, chronic illness, and others who have
-                  been victims of physical trauma, many of whom WEAR ostomies or
-                  other surgical openings as a result of life-saving/sustaining
-                  surgery.{" "}
-                </p>
-                <p>
-                  What each Youth Rally participant shares in common is some
-                  disruption/diversion to their bowel and/or bladder system(s)
-                  and a yearning to feel accepted among their peers. The Youth
-                  Rally is particularly unique in that the volunteer counselors
-                  live with the same conditions as the youth participants -
-                  (including Ithaca's favorite Pineapple, Ostomate
-                  extraordinaire!!!) creating an environment of mentor-ship and
-                  self-advocacy where these children of varying physical
-                  abilities gain independence and self-esteem while having fun
-                  and without fear of being ostracized for their
-                  medical/physical differences.{" "}
-                </p>
-                <p>Mark your calendar for this Sunday FUNday and JOIN US! </p>
-                <p className="text-center font-weight-bold mb-0">
-                  Can't make the event, but wish to contribute? Donate here:
-                </p>
-                <form
-                  action="https://www.paypal.com/cgi-bin/webscr"
-                  method="post"
-                  target="_top"
-                >
-                  <p className="text-center mb-0">
-                    <input name="cmd" type="hidden" value="_donations" />
-                    <input
-                      name="business"
-                      type="hidden"
-                      value="info@youthrally.org"
-                    />
-                    <input name="lc" type="hidden" value="US" />
-                    <input
-                      name="item_name"
-                      type="hidden"
-                      value="The Youth Rally Committee, Inc."
-                    />
-                    <input name="no_note" type="hidden" value="0" />
-                    <input name="currency_code" type="hidden" value="USD" />
-                    <input
-                      name="bn"
-                      type="hidden"
-                      value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest"
-                    />
-                    <input
-                      alt="PayPal - The safer, easier way to pay online!"
-                      name="submit"
-                      src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                      type="image"
-                    />
-                  </p>
-                </form>
-              </div>
-              <div className="col-md-5 text-center">
-                <img
-                  className="mb-2 flyer-image"
-                  src="/assets/images/aWEARness_Web.jpg"
-                  alt="pineapple's fundraising flyer"
-                />
-              </div>
-            </div>
+          <div className="mx-auto">
+            <h2 className="text-center">
+              THE 2022 YOUTH RALLY WILL TAKE PLACE VIRTUALLY JULY 15th-18th
+            </h2>
+            <h5 className="text-center">
+              Volunteers should plan to hold July 14th for a mandatory virtual
+              orientation
+            </h5>
+          </div>
+          <div>
+            <ParaWithHeader
+              head="CAMPERS:"
+              content="As always, sponsorship is available for those who may require assistance – there is a page within the application that addresses any sponsorship need."
+            />
+            <ParaWithHeader
+              head="FIRST TIME COUNSELORS (CITs):"
+              content="Last year, with little advanced notice of a virtual setting, we
+              invited all first-time applicants to join us as “observers,”
+              knowing they would have to re-apply as “first time counselors” in
+              2021. This year we intend to re-instate a more traditional
+              “Counselor in Training (CIT)” leadership program for our
+              first-time applicants. We anticipate the applications to be many
+              and the open spots to be few and appreciate your understanding of
+              the difficult decisions that need to be made in order to optimize
+              the experience for our campers."
+            />
+            <ParaWithHeader
+              head="EXPECTATIONS FOR ALL COUNSELORS, NURSES & VOLUNTEERS:"
+              content="
+              It is our expectation that you will be present and available for
+              all Youth Rally 2022 sessions, including orientation on the 14th
+              of July. Please plan to be available July 14th-18th 3PM-10PM EST
+              if you intend to volunteer. If you have ideas of particular
+              sessions you would like to facilitate or see included, please
+              indicate that within your application."
+            />
+            <p>
+              <span className="h5Font">2022 REGISTRATION FEES</span> – includes
+              all materials and supplies needed for 2022 activities and events,
+              including a signature tee and refillable water bottle:
+            </p>
+            <ul>
+              <li>
+                Campers - $100 (sponsorship is available – complete the
+                sponsorship page in your 2022 registration)
+              </li>
+              <li>Volunteers - $50</li>
+            </ul>
+            <p className="font-weight-bold">SEE YOU IN JULY!</p>
           </div>
         </div>
+        <p className="row">Mary Beth & Emily</p>
       </div>
     </div>
   </Fragment>

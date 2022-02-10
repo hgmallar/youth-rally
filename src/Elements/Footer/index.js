@@ -181,10 +181,9 @@ class Footer extends Component {
             <div className="row">
               <div className="col mb-md-5">
                 <h5 className="topBotBorder text-center">EVENTS</h5>
-                <p>January 2022 Camper and Counselor applications go live!</p>
+                <p>February 2022 Camper and Counselor applications go live!</p>
                 <p>
-                  July 11th-16th, 2022 Youth Rally at San Diego State University
-                  in San Diego, CA
+                  July 15th-18th, 2022 Virtual Youth Rally
                 </p>
               </div>
             </div>
