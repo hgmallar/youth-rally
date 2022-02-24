@@ -175,10 +175,6 @@ class YRNavbar extends Component {
             className="pl-4 py-1 d-xs-block d-md-none"
           >
             <Nav>
-              <Nav.Item id="virtualrally">
-                <Nav.Link href="/virtualrally">Virtual Rally</Nav.Link>
-              </Nav.Item>
-
               <Nav.Item id="applications">
                 <Nav.Link href="/applications">Applications</Nav.Link>
               </Nav.Item>
