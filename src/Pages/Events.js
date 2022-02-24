@@ -56,7 +56,7 @@ export default () => (
               head="EXPECTATIONS FOR ALL COUNSELORS, NURSES & VOLUNTEERS:"
               content="
               It is our expectation that you will be present and available for
-              all Youth Rally 2022 sessions, including orientation on the 14th
+              all Youth Rally 2022 sessions, including orientation on the 12th
               of July. Please plan to be available July 12th-16th 3PM-10PM EST
               if you intend to volunteer. If you have ideas of particular
               sessions you would like to facilitate or see included, please
