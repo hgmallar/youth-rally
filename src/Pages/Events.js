@@ -28,10 +28,10 @@ export default () => (
           </div>
           <div className="mx-auto">
             <h2 className="text-center">
-              THE 2022 YOUTH RALLY WILL TAKE PLACE VIRTUALLY JULY 15th-18th
+              THE 2022 YOUTH RALLY WILL TAKE PLACE VIRTUALLY JULY 13th-16th
             </h2>
             <h5 className="text-center">
-              Volunteers should plan to hold July 14th for a mandatory virtual
+              Volunteers should plan to hold July 12th for a mandatory virtual
               orientation
             </h5>
           </div>
@@ -57,7 +57,7 @@ export default () => (
               content="
               It is our expectation that you will be present and available for
               all Youth Rally 2022 sessions, including orientation on the 14th
-              of July. Please plan to be available July 14th-18th 3PM-10PM EST
+              of July. Please plan to be available July 12th-16th 3PM-10PM EST
               if you intend to volunteer. If you have ideas of particular
               sessions you would like to facilitate or see included, please
               indicate that within your application."

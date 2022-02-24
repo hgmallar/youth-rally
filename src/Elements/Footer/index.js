@@ -183,7 +183,7 @@ class Footer extends Component {
                 <h5 className="topBotBorder text-center">EVENTS</h5>
                 <p>February 2022 Camper and Counselor applications go live!</p>
                 <p>
-                  July 15th-18th, 2022 Virtual Youth Rally
+                  July 13th-16th, 2022 Virtual Youth Rally
                 </p>
               </div>
             </div>

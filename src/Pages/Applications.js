@@ -13,10 +13,10 @@ export default () => (
             Check back in February for applications for the 2022 Youth Rally!
           </p>
           <p>
-            The 2022 Youth Rally will be virtual on July 15th-18th.
+            The 2022 Youth Rally will be virtual on July 13th-16th.
           </p>
           {/* <p>
-            VOLUNTEERS will need to hold July 13th as well for mandatory
+            VOLUNTEERS will need to hold July 12th as well for mandatory
             orientation and should plan to be available 3pm-10pm throughout the
             duration of camp.
           </p>
