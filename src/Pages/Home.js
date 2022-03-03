@@ -11,7 +11,10 @@ export default () => (
               IMPORTANT 2022 UPDATE
             </Card.Title>
             <Card.Text>Our 2022 Dates and Plans have changed</Card.Text>
-            <Button href="/assets/documents/2022_Virtual_Announcement.pdf" className="green-btn">
+            <Button
+              href="/assets/documents/2022_Virtual_Announcement.pdf"
+              className="green-btn"
+            >
               CLICK HERE FOR MORE DETAILS
             </Button>
           </Card.Body>
@@ -33,14 +36,11 @@ export default () => (
         <Card className="col-md-3 my-auto no-border">
           <Card.Body className="px-0">
             <Card.Title className="purpleText">
-              Check back in February for applications for the 2022 Youth Rally!
+              Registration for the 2022 Virtual Rally is LIVE!
             </Card.Title>
-            {/* <Button
-              href="/applications"
-              className="green-btn mb-2"
-            >
+            <Button href="/applications" className="green-btn mb-2">
               Applications
-            </Button> */}
+            </Button>
           </Card.Body>
         </Card>
 

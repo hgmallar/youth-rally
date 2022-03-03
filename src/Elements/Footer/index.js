@@ -181,7 +181,8 @@ class Footer extends Component {
             <div className="row">
               <div className="col mb-md-5">
                 <h5 className="topBotBorder text-center">EVENTS</h5>
-                <p>February 2022 Camper and Counselor applications go live!</p>
+                <p>April 30th, 2022 Counselor Applications due</p>
+                <p>June 1st, 2022 Camper and Nurse Applications due</p>
                 <p>
                   July 13th-16th, 2022 Virtual Youth Rally
                 </p>
