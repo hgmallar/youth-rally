@@ -102,9 +102,7 @@ class Footer extends Component {
               <span className="greenText">For application assistance: </span>
               <br />{" "}
               <a className="links" href="mailto:registrar@youthrally.org">
-                Mary Beth Akers
-              </a>{" "}
-              – Youth Rally Registrar
+              registrar@youthrally.org</a>
             </p>
             <p className="mb-2">
               <span className="greenText">
@@ -112,9 +110,7 @@ class Footer extends Component {
               </span>
               <br />{" "}
               <a className="links" href="mailto:April@youthrally.org">
-                April Gimlen
-              </a>{" "}
-              – Director, Program & Outreach
+              April@youthrally.org</a>
             </p>
             <p className="mb-2">
               <span className="greenText">
@@ -123,25 +119,19 @@ class Footer extends Component {
               </span>
               <br />
               <a className="links" href="mailto:info@youthrally.org">
-                Emily Mallar
-              </a>{" "}
-              – Director, Public Relations & Outreach
+              info@youthrally.org</a>
             </p>
             <p className="mb-2">
               <span className="greenText">For travel related questions: </span>
               <br />{" "}
               <a className="links" href="mailto:Travel@youthrally.org">
-                Lina Smith
-              </a>{" "}
-              – Transportation Coordinator
+              Travel@youthrally.org</a>
             </p>
             <p className="mb-2">
               <span className="greenText">To request brochures: </span>
               <br />{" "}
               <a className="links" href="mailto:brochures@youthrally.org">
-                Abby Ryan
-              </a>{" "}
-              – Program Coordinator
+              brochures@youthrally.org</a>
             </p>
             <p className="mb-2">
               <span className="greenText">
@@ -150,9 +140,7 @@ class Footer extends Component {
               </span>
               <br />
               <a className="links" href="mailto:leak@youthrally.org">
-                Laura Sheppard
-              </a>{" "}
-              – Editor in Chief
+              leak@youthrally.org</a>
             </p>
             <p className="mb-2">
               <span className="greenText">
@@ -160,9 +148,7 @@ class Footer extends Component {
               </span>
               <br />
               <a className="links" href="mailto:webmaster@youthrally.org">
-                Hilary Mallar
-              </a>{" "}
-              - Webmaster
+              webmaster@youthrally.org</a>
             </p>
           </div>
 

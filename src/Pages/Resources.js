@@ -2,6 +2,9 @@ import React, { Fragment } from "react";
 
 import { Header } from "./../Elements";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
+
 export default () => (
   <Fragment>
     <Header title="Resources" />
@@ -16,8 +19,20 @@ export default () => (
             The 2022 Youth Rally Brochure:
           </h2>
           <p className="purpleText text-center">
-            <a href="/assets/documents/YRC2022.pdf" className="links">
-              2022 BROCHURE
+            <a href="/assets/documents/YRC2022.pdf" target="_blank" rel="noopener noreferrer" className="links">
+              Click here to open the 2022 BROCHURE
+            </a>
+            </p>
+            <p className="purpleText text-center">
+           <a href="/assets/documents/YRC2022.pdf" download className="links"> <FontAwesomeIcon
+                className="my-auto"
+                icon={faFileDownload}
+              />
+              {' '}Click here to download the 2022 BROCHURE{' '}
+              <FontAwesomeIcon
+                className="my-auto"
+                icon={faFileDownload}
+              />
             </a>
           </p>
           <h2 className="purpleText text-center">

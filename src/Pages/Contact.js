@@ -15,9 +15,7 @@ export default () => (
             </span>
             <br />{" "}
             <a className="links" href="mailto:registrar@youthrally.org">
-              Mary Beth Akers
-            </a>{" "}
-            – Youth Rally Registrar
+            registrar@youthrally.org – Mary Beth Akers – Youth Rally Registrar</a>
           </h5>
           <h5>
             <span className="greenText font-weight-bold">
@@ -25,9 +23,7 @@ export default () => (
             </span>
             <br />{" "}
             <a className="links" href="mailto:April@youthrally.org">
-              April Gimlen
-            </a>{" "}
-            – Director, Program & Outreach
+            April@youthrally.org – April Gimlen – Director, Program & Outreach</a>
           </h5>
           <h5>
             <span className="greenText font-weight-bold">
@@ -35,9 +31,7 @@ export default () => (
             </span>
             <br />
             <a className="links" href="mailto:info@youthrally.org">
-              Emily Mallar
-            </a>{" "}
-            – Director, Public Relations & Outreach
+            info@youthrally.org – Emily Mallar – Director, Public Relations & Outreach</a>
           </h5>
           <h5>
             <span className="greenText font-weight-bold">
@@ -45,9 +39,7 @@ export default () => (
             </span>
             <br />{" "}
             <a className="links" href="mailto:Travel@youthrally.org">
-              Lina Smith
-            </a>{" "}
-            – Transportation Coordinator
+            Travel@youthrally.org – Lina Smith – Transportation Coordinator</a>
           </h5>
           <h5>
             <span className="greenText font-weight-bold">
@@ -55,9 +47,7 @@ export default () => (
             </span>
             <br />{" "}
             <a className="links" href="mailto:brochures@youthrally.org">
-              Abby Ryan
-            </a>{" "}
-            – Program Coordinator
+            brochures@youthrally.org – Abby Ryan – Program Coordinator</a>
           </h5>
           <h5>
             <span className="greenText font-weight-bold">
@@ -65,9 +55,7 @@ export default () => (
             </span>
             <br />
             <a className="links" href="mailto:leak@youthrally.org">
-              Laura Sheppard
-            </a>{" "}
-            – Editor in Chief
+            leak@youthrally.org – Laura Sheppard – Editor in Chief</a>
           </h5>
           <h5>
             <span className="greenText font-weight-bold">
@@ -75,9 +63,7 @@ export default () => (
             </span>
             <br />
             <a className="links" href="mailto:webmaster@youthrally.org">
-              Hilary Mallar
-            </a>{" "}
-            - Webmaster
+            webmaster@youthrally.org – Hilary Mallar – Webmaster</a>
           </h5>
         </div>
       </div>
