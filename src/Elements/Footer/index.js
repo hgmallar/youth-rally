@@ -11,45 +11,15 @@ const donors = [
   },
   {
     id: 1,
-    href: "http://www.gilead.com/",
-    src: "/assets/images/sponsor_logos/slideshow/gilead.png",
-    alt: "Gilead",
-  },
-  {
-    id: 2,
     href: "https://www.convatec.com/",
-    src: "/assets/images/sponsor_logos/slideshow/Convatec.jpg",
+    src: "/assets/images/sponsor_logos/slideshow/convatec.png",
     alt: "Convatec",
   },
   {
-    id: 3,
+    id: 2,
     href: "http://www.coloplast.com/",
     src: "/assets/images/sponsor_logos/slideshow/ColoPlast.jpg",
     alt: "Coloplast",
-  },
-  {
-    id: 4,
-    href: "http://www.nwregionwocn.org/",
-    src: "/assets/images/sponsor_logos/slideshow/NW_WOCN.png",
-    alt: "NC WOCN",
-  },
-  {
-    id: 5,
-    href: "http://www.ostomy.org/",
-    src: "/assets/images/sponsor_logos/slideshow/goldengate.png",
-    alt: "UOAA Golden Gate",
-  },
-
-  {
-    id: 6,
-    href: "https://www.seattlechildrens.org/",
-    src: "/assets/images/sponsor_logos/slideshow/seattle-childrens.png",
-    alt: "seattle_childrens",
-  },
-  {
-    id: 7,
-    src: "/assets/images/sponsor_logos/slideshow/paulhastings.png",
-    alt: "Paul's Friends",
   },
 ];
 
