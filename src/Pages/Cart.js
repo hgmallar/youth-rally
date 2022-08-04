@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { PayPalButton } from "react-paypal-button-v2";
-import { Table, Thead, Tbody, Tr, Th} from "react-super-responsive-table";
+import { Table, Thead, Tbody, Tr, Th } from "react-super-responsive-table";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+import emailjs from "@emailjs/browser";
 
 import { Header, PaypalModal, TableRows } from "./../Elements";
 
@@ -24,6 +25,12 @@ class Cart extends Component {
   render() {
     let finalTotal = this.props.shipping + this.props.subtotal;
     let itemsArray = this.props.itemArray.filter((item) => item.quantity > 0);
+    let purchases = itemsArray.map(function(item) {
+      return `${item['item']}: ${item['quantity']}`;
+    });
+    let templateParams = {
+      message: purchases,
+    };
     return (
       <Fragment>
         <PaypalModal
@@ -134,6 +141,22 @@ class Cart extends Component {
                           message: `The payment was successful. Thank you ${details.payer.name.given_name} for your payment!`,
                         });
                         this.props.emptyCart();
+                        //send email here
+                        emailjs
+                          .send(
+                            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                            templateParams,
+                            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+                          )
+                          .then(
+                            (result) => {
+                              console.log(result.text);
+                            },
+                            (error) => {
+                              console.log(error.text);
+                            }
+                          );
                       }}
                       onCancel={(data) => {
                         // User pressed "cancel" or close Paypal's popup!
