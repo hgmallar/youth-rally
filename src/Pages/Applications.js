@@ -29,18 +29,23 @@ export default () => (
             receipt of registration acceptance/approval.
           </p>
           <p>
-            For assistance with registration please contact Mary Beth at <span className="greenText">
+            For assistance with registration please contact Mary Beth at{" "}
+            <span className="greenText">
               <a className="links" href="mailto:registrar@youthrally.org">
                 registrar@youthrally.org
               </a>
-            </span>.
+            </span>
           </p>
           <p>
-            For up to date announcements, visit us on FaceBook <span className="purpleText">
-              <a className="links" href="https://www.facebook.com/YouthRallyInc">
-              https://www.facebook.com/YouthRallyInc
+            For up to date announcements, visit us on FaceBook{" "}
+            <span className="purpleText">
+              <a
+                className="links"
+                href="https://www.facebook.com/YouthRallyInc"
+              >
+                https://www.facebook.com/YouthRallyInc
               </a>
-            </span>.
+            </span>
           </p>
           {/* <p> 
             The 2022 Youth Rally will take place VIRTUALLY July 13th-16th.
