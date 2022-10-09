@@ -9,10 +9,40 @@ export default () => (
     <div id="content ">
       <div className="row">
         <div className="col-md-10 mx-auto text-center pt-2 pb-1">
-          {/* <p>
-            Check back in February for applications for the 2022 Youth Rally!
-          </p>*/}
-          <p> 
+          <p>
+            Camper and volunteer registration application is currently
+            unavailable.
+          </p>
+          <p>
+            Registration for the 2023 Youth Rally should open by the end of
+            February, 20203.
+          </p>
+          <p>
+            The 2023 Youth Rally should take place at San Diego State University
+            in San Diego, California, July 10th-15th 2023.
+          </p>
+          <p>
+            Volunteers will be expected to be present on site July 8th-15th.
+          </p>
+          <p>
+            The Youth Rally does not recommend you book airfare without formal
+            receipt of registration acceptance/approval.
+          </p>
+          <p>
+            For assistance with registration please contact Mary Beth at <span className="greenText">
+              <a className="links" href="mailto:registrar@youthrally.org">
+                registrar@youthrally.org
+              </a>
+            </span>.
+          </p>
+          <p>
+            For up to date announcements, visit us on FaceBook <span className="purpleText">
+              <a className="links" href="https://www.facebook.com/YouthRallyInc">
+              https://www.facebook.com/YouthRallyInc
+              </a>
+            </span>.
+          </p>
+          {/* <p> 
             The 2022 Youth Rally will take place VIRTUALLY July 13th-16th.
           </p>
           <p>
@@ -79,7 +109,7 @@ export default () => (
           <p>
             <span className="font-weight-bold">June 1st</span> – NURSE
             Applications due
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
