@@ -414,7 +414,7 @@ class App extends Component {
           <Route path="/virtualrally" component={VirtualRally} />
           <Route component={Home} />
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     );
   }

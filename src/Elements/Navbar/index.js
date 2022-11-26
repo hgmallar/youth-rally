@@ -119,6 +119,11 @@ class YRNavbar extends Component {
                 Store
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item className="d-none d-md-block" id="contact">
+              <Nav.Link as={Link} to="/contact">
+                Contact
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
           <Nav className="ml-auto">
             <Nav.Item className="my-auto d-none d-md-block">

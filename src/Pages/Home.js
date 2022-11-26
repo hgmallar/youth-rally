@@ -1,11 +1,32 @@
 import React, { Fragment } from "react";
-import { Card, Button } from "react-bootstrap";
+//import { Card, Button } from "react-bootstrap";
+import Photograph from "./../Elements/Photograph";
 
 export default () => (
   <Fragment>
     <div id="content">
       <div className="row justify-content-center mx-auto text-center">
-        <Card className="col-md-3 my-auto no-border">
+        <div className="row mx-2">
+          <div className="col-md-4 d-none d-md-block">
+            <Photograph
+              imageSource={"/assets/images/yr_photo1.jpg"}
+              imageAlt={"youth_rally_kid_group1"}
+            />
+          </div>
+          <div className="col-md-4">
+            <Photograph
+              imageSource={"/assets/images/youth_rally_group_2019.jpg"}
+              imageAlt={"youth_rally_kid_group2"}
+            />
+          </div>
+          <div className="col-md-4 d-none d-md-block">
+            <Photograph
+              imageSource={"/assets/images/yr_photo3.jpg"}
+              imageAlt={"youth_rally_kid_group3"}
+            />
+          </div>
+        </div>
+        {/* <Card className="col-md-3 my-auto no-border">
           <Card.Body className="px-0">
             <Card.Title className="purpleText">
               IMPORTANT 2022 UPDATE
@@ -42,7 +63,7 @@ export default () => (
               Applications
             </Button>
           </Card.Body>
-        </Card>
+        </Card> */}
 
         {/* <Card className="col-md-3 my-auto no-border">
           <Card.Body>
