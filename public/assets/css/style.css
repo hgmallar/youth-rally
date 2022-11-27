@@ -3,6 +3,10 @@
   --yrpurple: #662c91;
 }
 
+.mainContainer {
+  min-height: calc(100vh - 54px);
+}
+
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -353,6 +357,15 @@ button:active {
 .header-line-gold {
   height: 20px;
   border-bottom: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+.footer {
+  display: flex;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  width: 100%;
 }
 
 @media (max-width: 768px) {

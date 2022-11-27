@@ -367,6 +367,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
+      <div className="mainContainer">
         <Jumbotron />
         <Navbar />
         <Switch>
@@ -414,7 +415,8 @@ class App extends Component {
           <Route path="/virtualrally" component={VirtualRally} />
           <Route component={Home} />
         </Switch>
-        {/* <Footer /> */}
+        </div>
+        <Footer />
       </BrowserRouter>
     );
   }

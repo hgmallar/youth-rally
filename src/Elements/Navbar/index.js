@@ -1,12 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { NavDropdown, Navbar, Button, Nav } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookSquare,
-  faTwitterSquare,
-  faYoutubeSquare,
-} from "@fortawesome/free-brands-svg-icons";
 
 class YRNavbar extends Component {
   state = {
@@ -67,18 +61,11 @@ class YRNavbar extends Component {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <NavDropdown
-              className="d-none d-md-block"
-              id="campers-dropdown"
-              title="Campers"
-            >
-              <NavDropdown.Item as={Link} to="/campers">
+            <Nav.Item className="d-none d-md-block" id="campers">
+              <Nav.Link as={Link} to="/campers">
                 Campers
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/photos">
-                Photo & Video
-              </NavDropdown.Item>
-            </NavDropdown>
+              </Nav.Link>
+            </Nav.Item>
 
             <NavDropdown
               className="d-none d-md-block"
@@ -126,33 +113,6 @@ class YRNavbar extends Component {
             </Nav.Item>
           </Nav>
           <Nav className="ml-auto">
-            <Nav.Item className="my-auto d-none d-md-block">
-              <Nav.Link href="https://www.facebook.com/YouthRallyInc">
-                <FontAwesomeIcon
-                  className="fontAwesome"
-                  icon={faFacebookSquare}
-                  size="2x"
-                />
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item className="my-auto d-none d-md-block">
-              <Nav.Link href="https://twitter.com/Youth_Rally">
-                <FontAwesomeIcon
-                  className="fontAwesome"
-                  icon={faTwitterSquare}
-                  size="2x"
-                />
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item className="my-auto d-none d-md-block">
-              <Nav.Link href="https://www.youtube.com/user/YRCMedia">
-                <FontAwesomeIcon
-                  className="fontAwesome"
-                  icon={faYoutubeSquare}
-                  size="2x"
-                />
-              </Nav.Link>
-            </Nav.Item>
             <form
               action="https://www.paypal.com/cgi-bin/webscr"
               method="post"
@@ -199,12 +159,9 @@ class YRNavbar extends Component {
                 <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
               </NavDropdown>
 
-              <NavDropdown id="campers-dropdown" title="Campers">
-                <NavDropdown.Item href="/campers">Campers</NavDropdown.Item>
-                <NavDropdown.Item href="/photos">
-                  Photo & Video
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Item id="campers">
+                <Nav.Link href="/campers">Campers</Nav.Link>
+              </Nav.Item>
 
               <NavDropdown id="volunteers-dropdown" title="Volunteers">
                 <NavDropdown.Item href="/callforleaders">
