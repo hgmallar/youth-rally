@@ -13,7 +13,7 @@ export default () => (
             Choose from several ways to give:
           </h1>
 
-          <h2>BECOME A YOUTH RALLY COMMUNITY PARTNER</h2>
+          {/* <h2>BECOME A YOUTH RALLY COMMUNITY PARTNER</h2>
           <p className="font-weight-bold">
             <a
               href="/assets/documents/Community-Partnership-Packet.pdf"
@@ -23,7 +23,7 @@ export default () => (
             </a>{" "}
             to download a copy of the Youth Rally Community Partnership Packet
             and learn about the various levels of sponsorship opportunities.
-          </p>
+          </p> */}
 
           <h2>SPONSOR A CAMPER (or a Counselor, or a Nurse!!)</h2>
           <p>

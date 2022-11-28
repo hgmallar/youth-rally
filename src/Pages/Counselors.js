@@ -15,7 +15,7 @@ export default () => (
               {
                 list: [],
                 text:
-                  "Youth Rally Counselors are adults of all ages (minimum age to apply is 19), most of whom live with the same bowel and/or bladder conditions as the camper participants. Through their own life experiences with medical and surgical challenges, counselors and CITs have first-hand knowledge of what the campers are or may be facing and can provide the needed support to promote self-confidence and independence. They are leaders and mentors.  Many Youth Rally Counselors/CITs were once campers themselves.",
+                  "Youth Rally Counselors are adults of all ages (minimum age to apply is 19), most of whom live with the same bowel and/or bladder conditions as the camper participants. Through their own life experiences with medical and surgical challenges, counselors have first-hand knowledge of what the campers are or may be facing and can provide the needed support to promote self-confidence and independence. They are leaders and mentors.  Many Youth Rally Counselors were once campers themselves.",
               },
               {
                 list: [],
@@ -37,19 +37,6 @@ export default () => (
             src="/assets/images/Counselors.jpg"
             alt="counselors"
           />
-          <h2>First time Counselors</h2>
-          <p className="mb-0">
-            All first-time Youth Rally Counselors will participate in an on-site
-            Counselor-in-Training (CIT) mentor-ship program - an extension of
-            the on-site orientation that will continue throughout the week while
-            at camp with specific focus on leadership. Read this{" "}
-            <span className="purpleText">
-              <a href="http://youthrally.org/callforleaders/" className="links">
-                call for leaders
-              </a>
-            </span>{" "}
-            written by YRC President and CEO, Paul Hastings.
-          </p>
         </div>
       </div>
     </div>

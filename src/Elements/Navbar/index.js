@@ -72,9 +72,6 @@ class YRNavbar extends Component {
               id="volunteers-dropdown"
               title="Volunteers"
             >
-              <NavDropdown.Item as={Link} to="/callforleaders">
-                Call for Leaders
-              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/counselors">
                 Counselors
               </NavDropdown.Item>
@@ -164,9 +161,6 @@ class YRNavbar extends Component {
               </Nav.Item>
 
               <NavDropdown id="volunteers-dropdown" title="Volunteers">
-                <NavDropdown.Item href="/callforleaders">
-                  Call for Leaders
-                </NavDropdown.Item>
                 <NavDropdown.Item href="/counselors">
                   Counselors
                 </NavDropdown.Item>

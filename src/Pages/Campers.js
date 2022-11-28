@@ -10,10 +10,10 @@ export default () => (
       <div className="row pt-2 pb-1">
         <div className="col-md-10 mx-auto">
           <ImageWithText
-            className="col-md-8 mx-auto"
-            imageSource="/assets/images/2017camps.png"
-            imageAlt="2017 campers"
-            imageText="Each year the Youth Rally hosts roughly 150 campers ages 11-17
+            className="col-md-8 mx-auto w-50"
+            imageSource="/assets/images/youth_rally_group_2019.jpg"
+            imageAlt="2019 campers"
+            imageText="Each year the Youth Rally hosts roughly 200 campers ages 11-17
                 from all over the United States and beyond! Many of our campers
                 grow up to become Youth Rally Counselors and/or find alternative
                 means to support their Rally Community."
