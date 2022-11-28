@@ -31,10 +31,8 @@ export default () => (
             and learn about the various levels of sponsorship opportunities.
           </h5> */}
         </div>
-        <div className="col-md-12 mx-auto text-center">
-          <div className="header-line-platinum">
-            <span className="mb-md-1 platinum px-2">PLATINUM Level Partners</span>
-          </div>
+        <div className="w-100 mx-auto text-center">
+        <Header title="Platinum Level" color="header-platinum font-weight-bold" size={2}/>
           <div className="partner-img-lg mx-auto mt-2 mb-1">
             <a href="https://www.hollister.com/">
               <img
@@ -53,9 +51,7 @@ export default () => (
               />
             </a>
           </div>
-          <div className="header-line-gold">
-            <span className="mb-md-1 gold px-2">GOLD Level Partners</span>
-          </div>
+          <Header title="Gold Level" color="header-gold" size={2}/>
           <div className="partner-img-md mx-auto mt-2 mb-2">
             <a href="https://www.coloplast.com/">
               <img

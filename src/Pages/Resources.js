@@ -2,9 +2,6 @@ import React, { Fragment } from "react";
 
 import { Header } from "./../Elements";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
-
 export default () => (
   <Fragment>
     <Header title="Resources" />
@@ -12,42 +9,6 @@ export default () => (
     <div id="content">
       <div className="row">
         <div className="col-md-10 mx-auto pt-2 pb-1">
-          <h2 className="greenText">
-            Use these tools to raise Youth Rally awareness:
-          </h2>
-          <h2 className="purpleText text-center">
-            The 2022 Youth Rally Brochure:
-          </h2>
-          <p className="purpleText text-center">
-            <a href="/assets/documents/YRC2022.pdf" target="_blank" rel="noopener noreferrer" className="links">
-              Click here to open the 2022 BROCHURE
-            </a>
-            </p>
-            <p className="purpleText text-center">
-           <a href="/assets/documents/YRC2022.pdf" download className="links"> <FontAwesomeIcon
-                className="my-auto"
-                icon={faFileDownload}
-              />
-              {' '}Click here to download the 2022 BROCHURE{' '}
-              <FontAwesomeIcon
-                className="my-auto"
-                icon={faFileDownload}
-              />
-            </a>
-          </p>
-          <h2 className="purpleText text-center">
-            Youth Rally Promotional Video:
-          </h2>
-          <p className="purpleText text-center">
-            <a
-              href="https://youthrallyphotos.smugmug.com/YouthRallyPhotos/AdditionalMaterials/OtherRallyInformation/i-mDm8qF3/A"
-              className="links"
-            >
-              Youth Rally Promotional Video
-            </a>
-          </p>
-
-          <h2 className="greenText">Links to Other Great Sites And Pages:</h2>
           <div className="text-center">
             <p className="font-weight-bold">
               Official Youth Rally (public) FaceBook page:
@@ -78,7 +39,7 @@ export default () => (
                 href="https://www.self.com/story/crohns-disease-symptoms-to-know/"
                 className="links"
               >
-                10 Crohn’s Disease Symptoms, From Diarrhea to Beyond
+                13 Crohn’s Disease Symptoms, From Diarrhea to Beyond
               </a>
             </p>
             <p className="purpleText text-center">
@@ -174,7 +135,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.ccfa.org/">
+              <a href="https://www.crohnscolitisfoundation.org/">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/CCFA.png"
@@ -210,15 +171,6 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://theacpa.org/">
-                <img
-                  className="resource-img rounded mx-auto d-block mb-md-1"
-                  src="/assets/images/resources/ACPA.png"
-                  alt="ACPA"
-                />
-              </a>
-            </div>
-            <div className="partner-img-sm mx-auto">
               <a href="https://globalgenes.org/">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
@@ -242,15 +194,6 @@ export default () => (
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/NORD.png"
                   alt="NORD"
-                />
-              </a>
-            </div>
-            <div className="partner-img-sm mx-auto">
-              <a href="https://growingpains.org/">
-                <img
-                  className="resource-img rounded mx-auto d-block mb-md-1"
-                  src="/assets/images/resources/GP.png"
-                  alt="GP"
                 />
               </a>
             </div>

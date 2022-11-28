@@ -50,9 +50,6 @@ class YRNavbar extends Component {
               <NavDropdown.Item as={Link} to="/partners">
                 Partners
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/newsletter">
-                Newsletters
-              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/resources">
                 Resources
               </NavDropdown.Item>
@@ -149,9 +146,6 @@ class YRNavbar extends Component {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/partners">Partners</NavDropdown.Item>
-                <NavDropdown.Item href="/newsletter">
-                  Newsletters
-                </NavDropdown.Item>
                 <NavDropdown.Item href="/resources">Resources</NavDropdown.Item>
                 <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
               </NavDropdown>

@@ -177,28 +177,6 @@ ol li {
   height: auto;
 }
 
-.platinum {
-  color: rgba(128, 128, 128, 0.5);
-  background-color: white;
-  font-weight: bold;
-  font-size: x-large;
-}
-
-.gold {
-  color: rgba(255, 215, 0, 0.5);
-  background-color: white;
-  font-weight: bold;
-  font-size: x-large;
-}
-
-.silver {
-  color: rgba(192, 192, 192, 0.5);
-}
-
-.green {
-  color: rgba(51, 153, 102, 0.5);
-}
-
 .store-image {
   height: 180px;
   width: auto;
@@ -349,14 +327,14 @@ button:active {
   background-color: var(--yrpurple);
 }
 
-.header-line-platinum {
-  height: 20px;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+.header-platinum {
+  background-color: #e5e4e2;
+  color: var(--yrgreen);
 }
 
-.header-line-gold {
-  height: 20px;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.5);
+.header-gold {
+  background-color: #d4af37;
+  color: var(--yrgreen);
 }
 
 .footer {
