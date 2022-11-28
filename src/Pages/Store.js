@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
-import { Header, SizedItemCard, ItemCard } from "./../Elements";
+import { Header, SizedItemCard } from "./../Elements";
 
 const Store = (props) => (
   <Fragment>
@@ -106,7 +106,7 @@ const Store = (props) => (
           baseName="purp_tshirts"
           incrementCart={props.incrementCart}
         />
-        <ItemCard
+        {/* <ItemCard
           imageSource="/assets/images/20150924_150546.jpg"
           imageAlt="YR Keychain"
           title="Keychain"
@@ -140,7 +140,7 @@ const Store = (props) => (
           ]}
           baseName="bracelets"
           incrementCart={props.incrementCart}
-        />
+        /> */}
       </div>
       <div className="text-center">
         <Button as={Link} to="/cart" className="btn mb-2 mx-auto purpleButton">
@@ -154,6 +154,5 @@ const Store = (props) => (
 export default Store;
 
 Store.propTypes = {
-  subtotal: PropTypes.number.isRequired
+  subtotal: PropTypes.number.isRequired,
 };
-

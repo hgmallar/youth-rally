@@ -37,50 +37,50 @@ class App extends Component {
     this.emptyCart = this.emptyCart.bind(this);
     this.state = {
       itemArray: [
-        {
-          unit_amount: {
-            currency_code: "USD",
-            value: "3.00",
-          },
-          id: 0,
-          item: "bracelets_yth",
-          name: "Bracelets (Youth)",
-          price: 3,
-          quantity: parseInt(sessionStorage.getItem("bracelets_yth")) || 0,
-        },
-        {
-          unit_amount: {
-            currency_code: "USD",
-            value: "3.00",
-          },
-          id: 1,
-          item: "bracelets_adlt",
-          name: "Bracelets (Adult)",
-          price: 3,
-          quantity: parseInt(sessionStorage.getItem("bracelets_adlt")) || 0,
-        },
-        {
-          unit_amount: {
-            currency_code: "USD",
-            value: "4.00",
-          },
-          id: 2,
-          item: "keychains",
-          name: "Keychains",
-          price: 4,
-          quantity: parseInt(sessionStorage.getItem("keychains")) || 0,
-        },
-        {
-          unit_amount: {
-            currency_code: "USD",
-            value: "3.00",
-          },
-          id: 3,
-          item: "patches",
-          name: "Patches",
-          price: 4,
-          quantity: parseInt(sessionStorage.getItem("patches")) || 0,
-        },
+        // {
+        //   unit_amount: {
+        //     currency_code: "USD",
+        //     value: "3.00",
+        //   },
+        //   id: 0,
+        //   item: "bracelets_yth",
+        //   name: "Bracelets (Youth)",
+        //   price: 3,
+        //   quantity: parseInt(sessionStorage.getItem("bracelets_yth")) || 0,
+        // },
+        // {
+        //   unit_amount: {
+        //     currency_code: "USD",
+        //     value: "3.00",
+        //   },
+        //   id: 1,
+        //   item: "bracelets_adlt",
+        //   name: "Bracelets (Adult)",
+        //   price: 3,
+        //   quantity: parseInt(sessionStorage.getItem("bracelets_adlt")) || 0,
+        // },
+        // {
+        //   unit_amount: {
+        //     currency_code: "USD",
+        //     value: "4.00",
+        //   },
+        //   id: 2,
+        //   item: "keychains",
+        //   name: "Keychains",
+        //   price: 4,
+        //   quantity: parseInt(sessionStorage.getItem("keychains")) || 0,
+        // },
+        // {
+        //   unit_amount: {
+        //     currency_code: "USD",
+        //     value: "3.00",
+        //   },
+        //   id: 3,
+        //   item: "patches",
+        //   name: "Patches",
+        //   price: 4,
+        //   quantity: parseInt(sessionStorage.getItem("patches")) || 0,
+        // },
         {
           unit_amount: {
             currency_code: "USD",

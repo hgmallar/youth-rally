@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { Header, ParaWithHeader } from "./../Elements";
+import { Header } from "./../Elements";
 
 export default () => (
   <Fragment>
@@ -19,7 +19,7 @@ export default () => (
               Volunteers will be expected to be present on site July 8th-15th.
             </p>
           </div>
-          <div>
+          {/* <div>
             <ParaWithHeader
               head="CAMPERS:"
               content="As always, sponsorship is available for those who may require assistance – there is a page within the registration that addresses any sponsorship need."
@@ -49,8 +49,8 @@ export default () => (
             </ul>
             <p className="font-weight-bold">SEE YOU IN JULY!</p>
           </div>
+        <p className="row">Mary Beth & Emily</p>  */}
         </div>
-        <p className="row">Mary Beth & Emily</p>
       </div>
     </div>
   </Fragment>
