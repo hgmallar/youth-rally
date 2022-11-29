@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import { Jumbotron, Footer, Navbar } from "./Elements";
 import {
+  About,
   Applications,
   Callforleaders,
   Campers,
@@ -11,9 +12,11 @@ import {
   Cost,
   Counselors,
   Events,
+  Faq,
   Getinvolved,
   Give,
   Home,
+  Leaders,
   Message,
   Mission,
   Newsletters,
@@ -371,6 +374,7 @@ class App extends Component {
         <Jumbotron />
         <Navbar />
         <Switch>
+          <Route path="/about" component={About} />
           <Route path="/applications" component={Applications} />
           <Route path="/callforleaders" component={Callforleaders} />
           <Route path="/campers" component={Campers} />
@@ -392,8 +396,10 @@ class App extends Component {
           <Route path="/cost" component={Cost} />
           <Route path="/counselors" component={Counselors} />
           <Route path="/events" component={Events} />
+          <Route path="/faq" component={Faq} />
           <Route path="/getinvolved" component={Getinvolved} />
           <Route path="/give" component={Give} />
+          <Route path="/leaders" component={Leaders} />
           <Route path="/message" component={Message} />
           <Route path="/mission" component={Mission} />
           <Route path="/newsletter" component={Newsletters} />

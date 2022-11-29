@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { NavDropdown, Navbar, Button, Nav } from "react-bootstrap";
 
 class YRNavbar extends Component {
@@ -30,31 +31,14 @@ class YRNavbar extends Component {
               title="About"
               id="about-nav-dropdown"
             >
-              <NavDropdown.Item
-                className="d-none d-md-block"
-                as={Link}
-                to="/mission"
-              >
-                Mission
+              <NavDropdown.Item as={HashLink} to="/about#top">
+                Our Mission
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/message">
-                Message
+              <NavDropdown.Item as={HashLink} to="/about#leaders">
+                Our Leadership
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/cost">
-                Cost
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/sponsorship">
-                Sponsorship
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/partners">
-                Partners
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/resources">
-                Resources
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/contact">
-                Contact
+              <NavDropdown.Item as={HashLink} to="/about#partners">
+                Our Community Partners
               </NavDropdown.Item>
             </NavDropdown>
 
@@ -95,14 +79,19 @@ class YRNavbar extends Component {
                 Events
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item className="d-none d-md-block" id="store">
-              <Nav.Link as={Link} to="/store">
-                Store
+            <Nav.Item className="d-none d-md-block" id="faq">
+              <Nav.Link as={Link} to="/faq">
+                FAQs
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="d-none d-md-block" id="contact">
               <Nav.Link as={Link} to="/contact">
                 Contact
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="d-none d-md-block" id="store">
+              <Nav.Link as={Link} to="/store">
+                Store
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -138,16 +127,36 @@ class YRNavbar extends Component {
                 <Nav.Link href="/applications">Applications</Nav.Link>
               </Nav.Item>
               <NavDropdown title="About" id="about-nav-dropdown">
-                <NavDropdown.Item href="/mission">Mission</NavDropdown.Item>
-                <NavDropdown.Item href="/message">Message</NavDropdown.Item>
-                <NavDropdown.Item href="/cost">Cost</NavDropdown.Item>
-                <NavDropdown.Item href="/sponsorship">
-                  Sponsorship
+                <NavDropdown.Item
+                  href="/about#top"
+                  onClick={() =>
+                    this.setState({
+                      hamburgerToggle: !this.state.hamburgerToggle,
+                    })
+                  }
+                >
+                  Our Mission
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/partners">Partners</NavDropdown.Item>
-                <NavDropdown.Item href="/resources">Resources</NavDropdown.Item>
-                <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
+                <NavDropdown.Item
+                  href="/about#leaders"
+                  onClick={() =>
+                    this.setState({
+                      hamburgerToggle: !this.state.hamburgerToggle,
+                    })
+                  }
+                >
+                  Our Leaders
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="/about#partners"
+                  onClick={() =>
+                    this.setState({
+                      hamburgerToggle: !this.state.hamburgerToggle,
+                    })
+                  }
+                >
+                  Our Community Partners
+                </NavDropdown.Item>
               </NavDropdown>
 
               <Nav.Item id="campers">
@@ -174,6 +183,12 @@ class YRNavbar extends Component {
               </Nav.Item>
               <Nav.Item id="events">
                 <Nav.Link href="/events">Events</Nav.Link>
+              </Nav.Item>
+              <Nav.Item id="faq">
+                <Nav.Link href="/faq">FAQs</Nav.Link>
+              </Nav.Item>
+              <Nav.Item id="contact">
+                <Nav.Link href="/contact">Contact</Nav.Link>
               </Nav.Item>
               <Nav.Item id="store">
                 <Nav.Link href="/store">Store</Nav.Link>

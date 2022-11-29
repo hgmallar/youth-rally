@@ -8,35 +8,24 @@ export default () => (
 
     <div id="content ">
       <div className="row">
-        <div className="col-md-10 mx-auto text-center pt-2 pb-1">
+        <div className="col-md-10 mx-auto pt-2 pb-1">
           <p>
             Camper and volunteer registration application is currently
-            unavailable.
-          </p>
-          <p>
-            Registration for the 2023 Youth Rally should open by the end of
-            February, 20203.
-          </p>
-          <p>
-            The 2023 Youth Rally should take place at San Diego State University
-            in San Diego, California, July 10th-15th 2023.
-          </p>
-          <p>
-            Volunteers will be expected to be present on site July 8th-15th.
-          </p>
-          <p>
-            The Youth Rally does not recommend you book airfare without formal
+            unavailable. Registration for the 2023 Youth Rally should open by the end of
+            February, 20203. The 2023 Youth Rally should take place at San Diego State University
+            in San Diego, California, July 10th-15th 2023. Volunteers will be expected to be present on site July 8th-15th. The Youth Rally does not recommend you book airfare without formal
             receipt of registration acceptance/approval.
           </p>
-          <p>
+          <p className="pt-2">
             For assistance with registration please contact Mary Beth at{" "}
             <span className="greenText">
               <a className="links" href="mailto:registrar@youthrally.org">
                 registrar@youthrally.org
               </a>
             </span>
+            .
           </p>
-          <p>
+          <p className="pt-2">
             For up to date announcements, visit us on FaceBook{" "}
             <span className="purpleText">
               <a
@@ -46,6 +35,7 @@ export default () => (
                 https://www.facebook.com/YouthRallyInc
               </a>
             </span>
+            .
           </p>
           {/* <p> 
             The 2022 Youth Rally will take place VIRTUALLY July 13th-16th.

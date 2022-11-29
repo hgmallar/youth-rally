@@ -10,7 +10,7 @@ import {
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
+      <div className="footer topBorder">
         <a href="https://www.facebook.com/YouthRallyInc">
           <FontAwesomeIcon
             className="fontAwesome mx-1"

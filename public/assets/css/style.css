@@ -218,7 +218,7 @@ ol li {
 }
 
 video {
-  width: 400px;
+  width: 500px;
   max-width: 100%;
   height: 100%;
 }
@@ -344,6 +344,12 @@ button:active {
   padding-bottom: 10px;
   justify-content: center;
   width: 100%;
+}
+
+.topBorder {
+  border-top-width: 1;
+  border-top-color: var(--yrgreen);
+  border-top-style: solid;
 }
 
 @media (max-width: 768px) {

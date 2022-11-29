@@ -4,7 +4,7 @@ import { Header } from "./../Elements";
 
 export default () => (
   <Fragment>
-    <Header title="Partners" />
+    <Header title="Our Community Partners" />
 
     <div id="content">
       <div className="row pt-2">

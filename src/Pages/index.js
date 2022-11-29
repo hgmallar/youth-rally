@@ -1,3 +1,4 @@
+import About from "./About";
 import Applications from "./Applications";
 import Callforleaders from "./Callforleaders";
 import Campers from "./Campers";
@@ -6,9 +7,11 @@ import Contact from "./Contact";
 import Cost from "./Cost";
 import Counselors from "./Counselors";
 import Events from "./Events";
+import Faq from "./Faq";
 import Getinvolved from "./Getinvolved";
 import Give from "./Give";
 import Home from "./Home";
+import Leaders from "./Leaders";
 import Message from "./Message";
 import Mission from "./Mission";
 import Newsletters from "./Newsletters";
@@ -21,6 +24,7 @@ import Store from "./Store";
 import VirtualRally from "./VirtualRally";
 
 export {
+  About,
   Applications,
   Callforleaders,
   Campers,
@@ -29,9 +33,11 @@ export {
   Cost,
   Counselors,
   Events,
+  Faq,
   Getinvolved,
   Give,
   Home,
+  Leaders,
   Message,
   Mission,
   Newsletters,
