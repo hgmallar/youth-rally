@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { Header, Photograph } from "./../Elements";
+import { Header, Photograph } from "../../Elements";
 
 export default () => (
   <Fragment>

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { Header, ParaWithHeader } from "./../Elements";
+import { Header, ParaWithHeader } from "../../Elements";
 
 export default () => (
   <Fragment>

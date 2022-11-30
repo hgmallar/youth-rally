@@ -196,7 +196,7 @@ export default () => (
                 Mary Beth
               </a>
             </span>{" "}
-            with any questions
+            with any questions.
           </h5>
         </div>
       </div>

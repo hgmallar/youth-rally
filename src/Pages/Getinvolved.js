@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { Header } from "./../Elements";
+import { Header } from "../Elements";
 
 export default () => (
   <Fragment>
@@ -18,11 +18,11 @@ export default () => (
           <ul>
             <li>
               Start a fundraising page through social media - ask your friends
-              and families to help sponsor a child to come to camp
+              and families to help sponsor a child to come to camp.
             </li>
             <li>
               Host a fundraiser (creativity is encouraged!) to support ongoing
-              Youth Rally sponsorship and programming
+              Youth Rally sponsorship and programming.
             </li>
             <li>
               Contact{" "}
@@ -30,23 +30,11 @@ export default () => (
                 <a href="mailto:ABS626@aol.com" className="links">Abby Ryan</a>
               </span>{" "}
               for brochures to distribute to local healthcare professionals;
-              please indicate “brochure request” in the subject line
+              please indicate “brochure request” in the subject line.
             </li>
             <li>
               Contact your local UOAA or WOCN (Wound, Ostomy and Continence
-              Nurses Society) chapter to help raise awareness
-            </li>
-            <li>
-              Visit our{" "}
-              <span className="purpleText">
-                <a href="/resources" className="links">RESOURCES</a>
-              </span>
-               or {' '}
-              <span className="purpleText">
-                <a href="/photos" className="links">PHOTOS & VIDEOS</a>
-              </span>{" "}
-              page to download promotional videos and presentations - use them
-              to help raise awareness (and funds!)
+              Nurses Society) chapter to help raise awareness.
             </li>
           </ul>
         </div>

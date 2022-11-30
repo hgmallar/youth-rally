@@ -5,11 +5,9 @@ import { Jumbotron, Footer, Navbar } from "./Elements";
 import {
   About,
   Applications,
-  Callforleaders,
   Campers,
   Cart,
   Contact,
-  Cost,
   Counselors,
   Events,
   Faq,
@@ -17,16 +15,11 @@ import {
   Give,
   Home,
   Leaders,
-  Message,
   Mission,
-  Newsletters,
   Nurses,
   Partners,
   Photos,
-  Resources,
-  Sponsorship,
   Store,
-  VirtualRally,
 } from "./Pages";
 
 import "./App.css";
@@ -370,57 +363,50 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <div className="mainContainer">
-        <Jumbotron />
-        <Navbar />
-        <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/applications" component={Applications} />
-          <Route path="/callforleaders" component={Callforleaders} />
-          <Route path="/campers" component={Campers} />
-          <Route
-            path="/cart"
-            render={(props) => (
-              <Cart
-                {...props}
-                itemArray={this.state.itemArray}
-                subtotal={this.state.subtotal}
-                shipping={this.state.shipping}
-                deleteItem={this.deleteItem}
-                changeQuantity={this.changeQuantity}
-                emptyCart={this.emptyCart}
-              />
-            )}
-          />
-          <Route path="/contact" component={Contact} />
-          <Route path="/cost" component={Cost} />
-          <Route path="/counselors" component={Counselors} />
-          <Route path="/events" component={Events} />
-          <Route path="/faq" component={Faq} />
-          <Route path="/getinvolved" component={Getinvolved} />
-          <Route path="/give" component={Give} />
-          <Route path="/leaders" component={Leaders} />
-          <Route path="/message" component={Message} />
-          <Route path="/mission" component={Mission} />
-          <Route path="/newsletter" component={Newsletters} />
-          <Route path="/nurses" component={Nurses} />
-          <Route path="/partners" component={Partners} />
-          <Route path="/photos" component={Photos} />
-          <Route path="/resources" component={Resources} />
-          <Route path="/sponsorship" component={Sponsorship} />
-          <Route
-            path="/store"
-            render={(props) => (
-              <Store
-                {...props}
-                subtotal={this.state.subtotal}
-                incrementCart={this.incrementCart}
-              />
-            )}
-          />
-          <Route path="/virtualrally" component={VirtualRally} />
-          <Route component={Home} />
-        </Switch>
+        <div className="mainContainer">
+          <Jumbotron />
+          <Navbar />
+          <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/applications" component={Applications} />
+            <Route path="/campers" component={Campers} />
+            <Route
+              path="/cart"
+              render={(props) => (
+                <Cart
+                  {...props}
+                  itemArray={this.state.itemArray}
+                  subtotal={this.state.subtotal}
+                  shipping={this.state.shipping}
+                  deleteItem={this.deleteItem}
+                  changeQuantity={this.changeQuantity}
+                  emptyCart={this.emptyCart}
+                />
+              )}
+            />
+            <Route path="/contact" component={Contact} />
+            <Route path="/counselors" component={Counselors} />
+            <Route path="/events" component={Events} />
+            <Route path="/faq" component={Faq} />
+            <Route path="/getinvolved" component={Getinvolved} />
+            <Route path="/give" component={Give} />
+            <Route path="/leaders" component={Leaders} />
+            <Route path="/mission" component={Mission} />
+            <Route path="/nurses" component={Nurses} />
+            <Route path="/partners" component={Partners} />
+            <Route path="/photos" component={Photos} />
+            <Route
+              path="/store"
+              render={(props) => (
+                <Store
+                  {...props}
+                  subtotal={this.state.subtotal}
+                  incrementCart={this.incrementCart}
+                />
+              )}
+            />
+            <Route component={Home} />
+          </Switch>
         </div>
         <Footer />
       </BrowserRouter>

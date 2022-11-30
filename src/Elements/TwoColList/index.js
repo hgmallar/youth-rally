@@ -2,20 +2,16 @@ import React from "react";
 
 const TwoColList = (props) => (
   <div className="row">
-    <div className="col-md-6">
-      <ul>
-        {props.list1.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
-    <div className="col-md-6">
-      <ul>
-        {props.list2.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
+    <ul className="col-md-6 mb-0 mb-md-3">
+      {props.list1.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+    <ul className="col-md-6">
+      {props.list2.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
   </div>
 );
 
