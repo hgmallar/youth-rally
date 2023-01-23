@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Button} from "react-bootstrap";
 
 import { Header, TwoColList } from "./../Elements";
 
@@ -7,7 +8,12 @@ export default () => (
     <Header title="FAQs" />
 
     <div id="content">
-      <div className="row pt-2">
+      {/* <div className="row pt-2">
+      <Button id="donate" type="submit" name="submit">
+                COST
+              </Button>
+              </div> */}
+              <div className="row pt-2">
         <div className="col-md-10 mx-auto">
           <h2>What might one expect to gain from their experience?</h2>
           <p>

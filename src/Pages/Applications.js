@@ -8,8 +8,8 @@ export default () => (
 
     <div id="content ">
       <div className="row">
-        <div className="col-md-10 mx-auto pt-2 pb-1">
-          <p>
+        <div className="col-md-10 mx-auto pt-2 pb-1 text-center">
+          {/* <p>
             Camper and volunteer registration application is currently
             unavailable. Registration for the 2023 Youth Rally should open by the end of
             February, 20203. The 2023 Youth Rally should take place at San Diego State University
@@ -36,33 +36,38 @@ export default () => (
               </a>
             </span>
             .
-          </p>
-          {/* <p> 
-            The 2022 Youth Rally will take place VIRTUALLY July 13th-16th.
-          </p>
-          <p>
-            VOLUNTEERS will need to hold July 12th as well for mandatory
-            orientation and should plan to be available 3pm-10pm (EST) throughout the
-            duration of camp.
-          </p>
-          <p>
-            ALL PARTICIPANTS, a more formal schedule will follow closer to the
-            time of camp.
-          </p>
-          <h3 className="font-weight-bold">
-            Click on the button below to complete your 2022 Registration TODAY!
+          </p> */}
+          <h3 className="font-weight-bold"> 
+            The 2023 Youth Rally will take place July 10th-15th at San Diego State University in San Diego, CA*.
+          </h3>
+          <h3 className="font-weight-bold greenText">
+            Registration is now OPEN! Click on the button below to complete your 2023 Registration TODAY!
           </h3>
           <a
-            href="http://app.campdoc.com/register/youthrally"
-            className="btn btn-primary green-btn mb-2"
+            href="https://app.campdoc.com/!/dn/login?r=youthrally"
+            className="btn btn-primary green-btn mb-2 mt-1"
             id="campers-btn"
             target="_blank"
             rel="noreferrer noopener"
           >
-            START 2022 Registration
+            START 2023 Registration
           </a>
-
+          <p className="font-weight-bold">IMPORTANT DATES: </p>
           <p>
+            <span className="font-weight-bold">April 1st, 2023</span> – Volunteer
+            applications due
+          </p>
+          <p>
+            <span className="font-weight-bold">June 1st, 2023</span> – Camper
+            applications due
+          </p>
+          <p>
+            <span className="font-weight-bold">*July 8th, 2023</span> – Arrival date for all volunteers
+          </p>
+          <p>
+            <span className="font-weight-bold">July 10th, 2023</span> – Arrival date for all campers
+          </p>
+            <p>
             <span className="font-weight-bold">APPLICATION PROCESS </span>Click
             on the button above. Begin the application process by selecting your
             intended REGISTRATION (Camper, Counselor, or Medical Team). Work to
@@ -84,27 +89,19 @@ export default () => (
           </p>
           <p>
             <span className="font-weight-bold">SPONSORSHIP </span>is available
-            for all campers in need. Should you need assistance with the registration costs due in 2022 please contact{" "}
+            for all campers in need. Should you need assistance with the registration costs due in 2023 please contact{" "}
             <span className="greenText">
               <a className="links" href="mailto:registrar@youthrally.org">
                 registrar@youthrally.org
               </a>
             </span>.
           </p>
-
-          <p className="font-weight-bold">IMPORTANT DATES: </p>
-          <p>
-            <span className="font-weight-bold">April 30th</span> – COUNSELOR
-            Applications due
-          </p>
-          <p>
-            <span className="font-weight-bold">June 1st</span> – CAMPER
-            Applications due
-          </p>
-          <p>
-            <span className="font-weight-bold">June 1st</span> – NURSE
-            Applications due
-          </p> */}
+          <p className="font-weight-bold">Questions about the application process? </p>
+          <p>Email <span className="greenText">
+              <a className="links" href="mailto:registrar@youthrally.org">
+                registrar@youthrally.org
+              </a>
+            </span> or call 607-592-3728 (ET)</p>
         </div>
       </div>
     </div>

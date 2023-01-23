@@ -12,6 +12,7 @@ import Photograph from "./Photograph";
 import SizedItemCard from "./SizedItemCard";
 import TableRows from "./TableRows";
 import TwoColList from "./TwoColList";
+import TwoColImgText from "./TwoColImgText";
 import TwoColTextImg from "./TwoColTextImg";
 import TwoColPhotoText from "./TwoColPhotoText";
 import TwoColTextPhoto from "./TwoColTextPhoto";
@@ -31,6 +32,7 @@ export {
   SizedItemCard,
   TableRows,
   TwoColList,
+  TwoColImgText,
   TwoColTextImg,
   TwoColPhotoText,
   TwoColTextPhoto,
