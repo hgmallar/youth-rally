@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 import { Header, TwoColList } from "./../Elements";
 
@@ -13,7 +13,7 @@ export default () => (
                 COST
               </Button>
               </div> */}
-              <div className="row pt-2">
+      <div className="row pt-2">
         <div className="col-md-10 mx-auto">
           <h2>What might one expect to gain from their experience?</h2>
           <p>
@@ -103,7 +103,7 @@ export default () => (
           <ol>
             <li>
               <span className="font-weight-bold">Registration.</span>{" "}
-               Registration cost for all campers is $500 and $350 for our
+               Registration cost for all campers is $500 and $250 for our
               volunteers.  We ask for $100 upfront with all applications to hold
               your spot, but also to help us with early costs associated with
               planning such a grand event.  Registration costs cover all
@@ -157,34 +157,23 @@ export default () => (
           </p>
           <h2>How do I fundraise on my own?</h2>
           <p>
-            The Youth Rally strongly encourages all participants to do some bit
-            of fundraising on their own. There are many local/regional charities
-            (Kiwanis, Rotary, church groups, WOCN affiliates, Hospitals,{" "}
+            The Youth Rally encourages all participants to do some
+          fundraising to support sponsorship for themselves or others. Often local/regional clubs and charitable organizations
+            (Kiwanis, Rotary, church groups, Nursing organizations, Hospitals,{" "}
             <a
               href="https://www.ostomy.org/ASGs_with_Websites.html/"
               className="links"
             >
               UOAA affilliates
             </a>
-            , etc.) that set aside funds for this very thing.
+            , etc.) are willing to partner to support this type of effort.
           </p>
           <p>
-            Many campers and volunteers have additional success through personal
-            fundraising sites. The Youth Rally is already establised with{" "}
-            <span className="font-weight-bold">FirstGiving</span>.{" "}
-            <span className="font-weight-bold greenText">
-              <a
-                href="http://info.firstgiving.com/individuals/create-a-page/"
-                className="links"
-              >
-                Click here
-              </a>
-            </span>
-             to create your own grassroots fundraising page with FirstGiving
-            today! Just set up your page, tell your story, and share it with
-            family and friends. Funds raised will be put towards your
-            registration/travel balance. Any funds raised above your own
-            registration/travel costs will go to support another camper in need.
+            Many Youth Rally participants will create Facebook fundraisers, or utilize
+            other online tools. There are many ways to raise funds - creativity is
+            encouraged! Host a dinner, have a yard sale, partner with a local
+            business, or simply ask friends and family for a
+            small donation to support an amazing cause!
           </p>
           <h2>How do I sponsor a camper?</h2>
           <p>There are two ways to sponsor a camper and/or volunteer:</p>

@@ -131,24 +131,6 @@ export default () => (
             />
           </a>
 
-          <h2>SET UP YOUR OWN FUNDRAISING PAGE </h2>
-          <p>
-            Set up a personal fund-raising page and share it with family and
-            friends, so they will also know about Youth Rally and have an
-            opportunity to donate directly, via your page! The Youth Rally is
-            already established with FirstGiving. 
-            <span className="font-weight-bold purpleText">
-              <a
-                href="https://www.firstgiving.com/organization/26064"
-                className="links"
-              >
-                Click here
-              </a>
-            </span>{" "}
-            to create your own grassroots fundraising page with FirstGiving
-            today!
-          </p>
-
           <h2>EARMARK UNITED WAY FUNDS</h2>
           <p>
             Opt to participate in the "Donor Choice" program that allows
