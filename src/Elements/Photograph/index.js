@@ -7,7 +7,7 @@ const Photograph = (props) => (
     src={props.imageSource}
     alt={props.imageAlt}
     thumbnail
-    className="mx-auto d-block"
+    className="mx-auto d-block mw-100 mh-100"
   />
 );
 

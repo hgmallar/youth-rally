@@ -21,7 +21,7 @@ export default () => (
       </Card>
     </section>
     <section id="leaders">
-      {/* <Leaders /> */}
+      <Leaders />
     </section> 
     <section id="partners">
       <Partners />
