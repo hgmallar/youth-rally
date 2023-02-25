@@ -27,7 +27,7 @@ export default () => (
         <TwoColImgText
           colSize1={8}
           colSize2={4}
-          header={"PAUL HASTINGS – Chairman of the Board of Directors"}
+          header={"PAUL HASTINGS – Chairman, Board of Directors"}
           content={[
             {
               class: "font-italic",
@@ -41,7 +41,9 @@ export default () => (
         <TwoColImgText
           colSize1={8}
           colSize2={4}
-          header={"EMILY MALLAR – President and Chief Executive Officer"}
+          header={
+            "EMILY MALLAR – President & CEO; Committee Chair, Fundraising"
+          }
           content={[
             {
               class: "font-italic",
@@ -56,7 +58,7 @@ export default () => (
           colSize1={8}
           colSize2={4}
           header={
-            "MARY BETH AKERS – Vice President and Chief Financial Officer"
+            "MARY BETH AKERS – Vice President, Registrar, Chief Financial Officer"
           }
           content={[
             {
@@ -71,7 +73,7 @@ export default () => (
         <TwoColImgText
           colSize1={8}
           colSize2={4}
-          header={"ERIC ENG – Board Member; Committee Chair, Recruitment"}
+          header={"ERIC ENG – Board of Directors; Committee Chair, Recruitment"}
           content={[
             {
               class: "font-italic",
@@ -85,7 +87,7 @@ export default () => (
         <TwoColImgText
           colSize1={8}
           colSize2={4}
-          header={"MICHAEL GERALD"}
+          header={"MICHAEL GERALD - Board of Directors"}
           content={[
             {
               class: "font-italic",
@@ -96,10 +98,10 @@ export default () => (
           alt="Michael Gerald"
         />
 
-<TwoColImgText
+        <TwoColImgText
           colSize1={8}
           colSize2={4}
-          header={"APRIL GIMLEN"}
+          header={"APRIL GIMLEN - Board of Directors"}
           content={[
             {
               class: "font-italic",
@@ -108,6 +110,46 @@ export default () => (
           ]}
           src="/assets/images/leaders/april.png"
           alt="April Gimlen"
+        />
+
+        <TwoColImgText
+          colSize1={8}
+          colSize2={4}
+          header={"BRET CROMER - Board of Directors"}
+          content={[
+            {
+              class: "font-italic",
+              text: " ",
+            },
+          ]}
+          src=""
+          alt=""
+        />
+        <TwoColImgText
+          colSize1={8}
+          colSize2={4}
+          header={"JAY PACITTI - Board of Directors"}
+          content={[
+            {
+              class: "font-italic",
+              text: " ",
+            },
+          ]}
+          src=""
+          alt=""
+        />
+        <TwoColImgText
+          colSize1={8}
+          colSize2={4}
+          header={"JACQUELINE DUNNE - Committee Chair, Program"}
+          content={[
+            {
+              class: "font-italic",
+              text: " ",
+            },
+          ]}
+          src=""
+          alt=""
         />
       </div>
     </div>
