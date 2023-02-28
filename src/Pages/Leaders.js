@@ -115,6 +115,20 @@ export default () => (
         <TwoColImgText
           colSize1={8}
           colSize2={4}
+          header={"JAY PACITTI - Board of Directors"}
+          content={[
+            {
+              class: "font-italic",
+              text: "Jay first joined Youth Rally as a counselor in 2016.  Diagnosed with Crohn's disease in 1999, Jay spent many years working to benefit the inflammatory bowel disease community, first as the founder and Executive Director of Get Your Guts in Gear - the Ride for Crohn's and Colitis, and later as the Executive Director of the United Ostomy Associations of America.  Jay is now a donor relations professional and enjoys sporting what can best be described as a unique orange hat while at Youth Rally, making it easy for campers assigned to his group to find him in a crowd.",
+            },
+          ]}
+          src="/assets/images/leaders/jay.png"
+          alt="Jay Pacitti"
+        />
+
+        <TwoColImgText
+          colSize1={8}
+          colSize2={4}
           header={"BRET CROMER - Board of Directors"}
           content={[
             {
@@ -125,19 +139,7 @@ export default () => (
           src=""
           alt=""
         />
-        <TwoColImgText
-          colSize1={8}
-          colSize2={4}
-          header={"JAY PACITTI - Board of Directors"}
-          content={[
-            {
-              class: "font-italic",
-              text: " ",
-            },
-          ]}
-          src=""
-          alt=""
-        />
+
         <TwoColImgText
           colSize1={8}
           colSize2={4}
