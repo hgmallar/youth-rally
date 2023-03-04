@@ -129,11 +129,11 @@ export default () => (
         <TwoColImgText
           colSize1={8}
           colSize2={4}
-          header={"BRET CROMER - Board of Directors"}
+          header={"JACQUELYN DUNNE - Committee Chair, Program"}
           content={[
             {
               class: "font-italic",
-              text: " ",
+              text: "Jackie first joined the Youth Rally as a counselor in 2003 after learning about it through the pediatric surgical team at the University of Maryland Medical Center while completing a project on pediatric urology for her undergraduate degree in psychology. Jackie was quick to join the program team - she enjoys the opportunity to shape the fun youth rally participants will have during the week. Jackie was born imperforate and is thankful to have found such a supportive community of folks with similar medical journeys. She and her family reside in Maryland where serves as a civilian for the federal US government. ",
             },
           ]}
           src=""
@@ -143,7 +143,7 @@ export default () => (
         <TwoColImgText
           colSize1={8}
           colSize2={4}
-          header={"JACQUELINE DUNNE - Committee Chair, Program"}
+          header={"BRET CROMER - Board of Directors"}
           content={[
             {
               class: "font-italic",
