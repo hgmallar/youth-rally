@@ -248,7 +248,7 @@ export default () => (
               Official Youth Rally (public) FaceBook page:
             </p>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.facebook.com/YouthRallyInc/">
+              <a href="https://www.facebook.com/YouthRallyInc/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/youth_rallyrounded-1.png"
@@ -260,7 +260,7 @@ export default () => (
               Other great resources for information:
             </p>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.ostomy.org/">
+              <a href="https://www.ostomy.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/uoaa.jpg"
@@ -270,7 +270,7 @@ export default () => (
             </div>
             <p className="purpleText text-center">
               <a
-                href="https://www.self.com/story/crohns-disease-symptoms-to-know/"
+                href="https://www.self.com/story/crohns-disease-symptoms-to-know/" target="_blank"
                 className="links"
               >
                 13 Crohn’s Disease Symptoms, From Diarrhea to Beyond
@@ -278,7 +278,7 @@ export default () => (
             </p>
             <p className="purpleText text-center">
               <a
-                href="https://www.crohnsandcolitis.com/find-a-gastroenterologist"
+                href="https://www.crohnsandcolitis.com/find-a-gastroenterologist" target="_blank"
                 className="links"
               >
                 Find a Gastroenterologist
@@ -286,7 +286,7 @@ export default () => (
             </p>
             <p className="purpleText text-center">
               <a
-                href="https://www.medicareadvantage.com/resources/health-care-cost-assistance-resource-guide"
+                href="https://www.medicareadvantage.com/resources/health-care-cost-assistance-resource-guide" target="_blank"
                 className="links"
               >
                 Health Care Cost Assistance Guide
@@ -294,7 +294,7 @@ export default () => (
             </p>
             <p className="purpleText text-center">
               <a
-                href="https://www.verywellhealth.com/crohns-disease-treatment-options-1943057"
+                href="https://www.verywellhealth.com/crohns-disease-treatment-options-1943057" target="_blank"
                 className="links"
               >
                 How Crohn's Disease Is Treated
@@ -302,7 +302,7 @@ export default () => (
             </p>
             <p className="purpleText text-center">
               <a
-                href="https://www.crohnscolitisfoundation.org/what-is-ibd/medication/complementary-alternative-medicine"
+                href="https://www.crohnscolitisfoundation.org/what-is-ibd/medication/complementary-alternative-medicine" target="_blank"
                 className="links"
               >
                 Complementary Medicine
@@ -310,7 +310,7 @@ export default () => (
             </p>
             <p className="purpleText text-center">
               <a
-                href="https://www.homeadvisor.com/r/how-to-create-a-healthy-home-for-autoimmune-disease-symptoms/"
+                href="https://www.homeadvisor.com/r/how-to-create-a-healthy-home-for-autoimmune-disease-symptoms/" target="_blank"
                 className="links"
               >
                 How to Create a Healthy Home Environment that Will Soothe
@@ -319,7 +319,7 @@ export default () => (
             </p>
             <p className="purpleText text-center">
               <a
-                href="https://www.ucsfhealth.org/education/nutrition-tips-for-inflammatory-bowel-disease"
+                href="https://www.ucsfhealth.org/education/nutrition-tips-for-inflammatory-bowel-disease" target="_blank"
                 className="links"
               >
                 Nutrition Tips for Inflammatory Bowel Disease
@@ -327,7 +327,7 @@ export default () => (
             </p>
             <p className="purpleText text-center">
               <a
-                href="https://www.ibdrelief.com/learn/complications-of-ibd/complications-of-crohns-disease"
+                href="https://www.ibdrelief.com/learn/complications-of-ibd/complications-of-crohns-disease" target="_blank"
                 className="links"
               >
                 Complications of Crohn's disease
@@ -335,23 +335,23 @@ export default () => (
             </p>
             <p className="purpleText text-center">
               <a
-                href="https://www.drugwatch.com/health/digestive-health/"
+                href="https://www.drugwatch.com/health/digestive-health/" target="_blank"
                 className="links"
               >
                 Digestive Health
               </a>
             </p>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.spinabifidaassociation.org/">
+              <a href="https://www.spinabifidaassociation.org/" target="_blank">
                 <img
-                  className="resource-img rounded mx-auto d-block mb-md-1"
+                  className="resource-img rounded mx-auto d-block mb-md-1" 
                   src="/assets/images/resources/SBA.png"
                   alt="SBA"
                 />
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.wocn.org/">
+              <a href="https://www.wocn.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/WOC.png"
@@ -360,7 +360,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.bladderexstrophy.com/">
+              <a href="https://www.bladderexstrophy.com/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/ABE.png"
@@ -369,7 +369,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.crohnscolitisfoundation.org/">
+              <a href="https://www.crohnscolitisfoundation.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/CCFA.png"
@@ -378,7 +378,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.j-pouch.org/">
+              <a href="https://www.j-pouch.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/JPG.png"
@@ -387,7 +387,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.ostogroup.org/">
+              <a href="https://www.ostogroup.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/OG.png"
@@ -396,7 +396,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://pullthrough.org/">
+              <a href="https://www.pullthrunetwork.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/PTN.png"
@@ -405,7 +405,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://globalgenes.org/">
+              <a href="https://globalgenes.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/GG.png"
@@ -414,7 +414,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.acscan.org/">
+              <a href="https://www.acscan.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/ACSAN.png"
@@ -423,7 +423,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://rarediseases.org/">
+              <a href="https://rarediseases.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/NORD.png"
@@ -432,7 +432,7 @@ export default () => (
               </a>
             </div>
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.stomabags.com/">
+              <a href="https://www.stomabags.com/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/stoma.png"
@@ -442,7 +442,7 @@ export default () => (
             </div>
 
             <div className="partner-img-sm mx-auto">
-              <a href="https://www.simplymedical.com/">
+              <a href="https://www.simplymedical.com/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/simpmed.png"
