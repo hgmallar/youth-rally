@@ -399,7 +399,7 @@ export default () => (
               <a href="https://www.pullthrunetwork.org/" target="_blank">
                 <img
                   className="resource-img rounded mx-auto d-block mb-md-1"
-                  src="/assets/images/resources/PTN.png"
+                  src="/assets/images/resources/PTN1.png"
                   alt="PTN"
                 />
               </a>
