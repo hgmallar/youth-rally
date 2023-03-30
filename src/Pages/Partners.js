@@ -32,8 +32,12 @@ export default () => (
           </h5> */}
         </div>
         <div className="w-100 mx-auto text-center">
-        <Header title="Platinum Level" color="header-platinum font-weight-bold" size={2}/>
-          <div className="partner-img-lg mx-auto mt-2 mb-1">
+          <Header
+            title="2023 Platinum Level Sponsor"
+            color="header-platinum font-weight-bold"
+            size={2}
+          />
+          {/* <div className="partner-img-lg mx-auto mt-2 mb-1">
             <a href="https://www.hollister.com/">
               <img
                 className="img-lg mb-md-1 rounded"
@@ -41,7 +45,7 @@ export default () => (
                 alt="hollister"
               />
             </a>
-          </div>
+          </div> */}
           <div className="partner-img-lg mx-auto mb-2 mt-1">
             <a href="https://www.convatec.com/">
               <img
@@ -51,7 +55,7 @@ export default () => (
               />
             </a>
           </div>
-          <Header title="Gold Level" color="header-gold" size={2}/>
+          {/* <Header title="Gold Level" color="header-gold" size={2}/>
           <div className="partner-img-md mx-auto mt-2 mb-2">
             <a href="https://www.coloplast.com/">
               <img
@@ -60,7 +64,7 @@ export default () => (
                 alt="coloplast"
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
