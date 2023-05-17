@@ -147,11 +147,11 @@ export default () => (
           content={[
             {
               class: "font-italic",
-              text: " ",
+              text: "Bret started volunteering at the Youth Rally in 2002 as a counselor and wishes he had known about the camp when he had ostomy surgery as a result of Crohn's Disease at age 16. Bret has served the Youth Rally in many ways including fundraising, coordinating travel, and facilitating group sessions. Bret lives in Aurora, IL. He enjoys traveling and snow/water skiing with his wife and son while traveling as much as possible. Bret currently works in the healthcare industry as Director of Customer Service for an organization that supports optimizing quality of life for those living with ostomies. ",
             },
           ]}
-          src=""
-          alt=""
+          src="/assets/images/leaders/bret.png"
+          alt="Bret Comer"
         />
       </div>
     </div>

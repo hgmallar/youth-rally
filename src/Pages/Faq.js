@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { Button } from "react-bootstrap";
 
 import { Header, TwoColList } from "./../Elements";
 
