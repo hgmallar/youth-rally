@@ -2,6 +2,9 @@ import React, { Fragment } from "react";
 
 import { Header } from "./../Elements";
 
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+
 export default () => (
   <Fragment>
     <Header title="Events" />
@@ -10,10 +13,37 @@ export default () => (
       <div className="col-md-10 mx-auto pt-2 pb-1">
         <div className="row">
           <div>
+            <h2>YOUTH RALLY 2024</h2>
+            <p>
+              The 2024 Youth Rally should take place at the University of
+              Colorado at Boulder in Boulder, CO, July 8th-13th 2024.
+            </p>
+            <p>
+              Volunteers will be expected to be present on site July 6th-13th.
+            </p>
+            <h2>Pineapple's Ostomy A-wear-ness Youth Rally Fundraiser</h2>
+            <img
+              className="row mx-auto poster mb-2"
+              src={"/assets/images/PinePoster.jpg"}
+              alt={"Pineapple's Fundraiser Poster"}
+            />
+            <p className="text-center">
+              Unable to attend but wish to contribute to support camper travel
+              and registration costs?
+            </p>
+            <div className="text-center">
+              <Button
+                as={Link}
+                to="/give"
+                className="btn mx-auto purpleButton"
+              >
+                Give
+              </Button>
+            </div>
             <h2>YOUTH RALLY 2023</h2>
             <p>
-              The 2023 Youth Rally should take place at San Diego State
-              University in San Diego, California, July 10th-15th 2023.
+              The 2023 Youth Rally will take place at San Diego State University
+              in San Diego, California, July 10th-15th 2023.
             </p>
             <p>
               Volunteers will be expected to be present on site July 8th-15th.

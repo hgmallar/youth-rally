@@ -352,6 +352,12 @@ button:active {
   border-top-style: solid;
 }
 
+.poster {
+  width: 450px;
+  height: auto;
+  max-width: 100%;
+}
+
 @media (max-width: 768px) {
   #header-logo {
     display: none;
