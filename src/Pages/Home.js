@@ -26,17 +26,18 @@ export default () => (
             />
           </div>
         </div>
-        <div className="row justify-content-center">
-          <h3 className="font-weight-bold">
-            The 2023 Youth Rally will take place July 10th-15th at San Diego
-            State University in San Diego, CA.
-          </h3>
-          <h3 className="font-weight-bold greenText">
+      </div>
+      <div className="row justify-content-center">
+        <h3 className="font-weight-bold">
+          The 2023 Youth Rally will take place July 10th-15th at San Diego State
+          University in San Diego, CA.
+        </h3>
+        {/* <h3 className="font-weight-bold greenText">
             Registration is now OPEN! Click on the button below to complete your
             2023 Registration TODAY!
-          </h3>
-        </div>
-        <div className="row mx-auto">
+          </h3> */}
+      </div>
+      {/* <div className="row mx-auto">
           <a
             href="https://app.campdoc.com/!/dn/login?r=youthrally"
             className="btn btn-primary green-btn mb-2 mt-1"
@@ -46,7 +47,17 @@ export default () => (
           >
             START 2023 Registration
           </a>
-        </div>
+        </div> */}
+      <div className="row justify-content-center">
+        <a
+          href="https://youthrally.smugmug.com/2023YouthRallyPhotos"
+          className="btn btn-primary green-btn mb-2 mt-1"
+          id="campers-btn"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          2023 Youth Rally Photos
+        </a>
       </div>
     </div>
 
