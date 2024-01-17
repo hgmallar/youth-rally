@@ -89,7 +89,7 @@ export default () => (
           </p>
           <p>
             <span className="font-weight-bold">SPONSORSHIP </span>is available
-            for all campers in need. Should you need assistance with the registration costs due in 2023 please contact{" "}
+            for all campers in need. Should you need assistance with the registration costs due in 2024 please contact{" "}
             <span className="greenText">
               <a className="links" href="mailto:registrar@youthrally.org">
                 registrar@youthrally.org
