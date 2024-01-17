@@ -10,6 +10,7 @@ import {
   Contact,
   Counselors,
   Events,
+  Extras,
   Faq,
   Getinvolved,
   Give,
@@ -361,11 +362,12 @@ class App extends Component {
   }
 
   render() {
+    
     return (
       <BrowserRouter>
         <div className="mainContainer">
-          <Jumbotron />
-          <Navbar />
+          {window.location.pathname !== '/extras' && <Jumbotron />}
+          {window.location.pathname !== '/extras' && <Navbar />}
           <Switch>
             <Route path="/about" component={About} />
             <Route path="/applications" component={Applications} />
@@ -387,6 +389,7 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             <Route path="/counselors" component={Counselors} />
             <Route path="/events" component={Events} />
+            <Route path="/extras" component={Extras} />
             <Route path="/faq" component={Faq} />
             <Route path="/getinvolved" component={Getinvolved} />
             <Route path="/give" component={Give} />
@@ -408,7 +411,7 @@ class App extends Component {
             <Route component={Home} />
           </Switch>
         </div>
-        <Footer />
+        {window.location.pathname !== '/extras' && <Footer />}
       </BrowserRouter>
     );
   }

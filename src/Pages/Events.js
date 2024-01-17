@@ -15,7 +15,7 @@ export default () => (
           <div>
             <h2>YOUTH RALLY 2024</h2>
             <p>
-              The 2024 Youth Rally should take place at the University of
+              The 2024 Youth Rally will take place at the University of
               Colorado at Boulder in Boulder, CO, July 8th-13th 2024.
             </p>
             <p>
@@ -40,14 +40,14 @@ export default () => (
                 Give
               </Button>
             </div>
-            <h2>YOUTH RALLY 2023</h2>
+            {/* <h2>YOUTH RALLY 2023</h2>
             <p>
               The 2023 Youth Rally will take place at San Diego State University
               in San Diego, California, July 10th-15th 2023.
             </p>
             <p>
               Volunteers will be expected to be present on site July 8th-15th.
-            </p>
+            </p> */}
           </div>
           {/* <div>
             <ParaWithHeader

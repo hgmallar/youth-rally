@@ -38,11 +38,11 @@ export default () => (
             .
           </p> */}
           <h3 className="font-weight-bold"> 
-            The 2023 Youth Rally will take place July 10th-15th at San Diego State University in San Diego, CA*.
+            The 2024 Youth Rally will take place July 8th-13th at the University of Colorado at Boulder in Boulder, CO*.
           </h3>
           <h3 className="font-weight-bold greenText">
-            Registration is now OPEN! Click on the button below to complete your 2023 Registration TODAY!
-          </h3>
+            Registration is now OPEN! Click on the button below to complete your 2024 Registration TODAY!
+          </h3> 
           <a
             href="https://app.campdoc.com/!/dn/login?r=youthrally"
             className="btn btn-primary green-btn mb-2 mt-1"
@@ -50,22 +50,22 @@ export default () => (
             target="_blank"
             rel="noreferrer noopener"
           >
-            START 2023 Registration
+            START 2024 Registration
           </a>
           <p className="font-weight-bold">IMPORTANT DATES: </p>
           <p>
-            <span className="font-weight-bold">April 1st, 2023</span> – Volunteer
+            <span className="font-weight-bold">April 1st, 2024</span> – Volunteer
             applications due
           </p>
           <p>
-            <span className="font-weight-bold">June 1st, 2023</span> – Camper
+            <span className="font-weight-bold">June 1st, 2024</span> – Camper
             applications due
           </p>
           <p>
-            <span className="font-weight-bold">*July 8th, 2023</span> – Arrival date for all volunteers
+            <span className="font-weight-bold">*July 6th, 2024</span> – Arrival date for all volunteers
           </p>
           <p>
-            <span className="font-weight-bold">July 10th, 2023</span> – Arrival date for all campers
+            <span className="font-weight-bold">July 8th, 2024</span> – Arrival date for all campers
           </p>
             <p>
             <span className="font-weight-bold">APPLICATION PROCESS </span>Click

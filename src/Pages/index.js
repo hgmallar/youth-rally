@@ -5,6 +5,7 @@ import Cart from "./Cart";
 import Contact from "./Contact";
 import Counselors from "./Counselors";
 import Events from "./Events";
+import Extras from "./Extras";
 import Faq from "./Faq";
 import Getinvolved from "./Getinvolved";
 import Give from "./Give";
@@ -24,6 +25,7 @@ export {
   Contact,
   Counselors,
   Events,
+  Extras,
   Faq,
   Getinvolved,
   Give,
