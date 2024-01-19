@@ -81,30 +81,7 @@ export default () => (
             </form>
           </div>
 
-          <h2>AMAZON SMILE</h2>
-          <p>
-            Shop at Amazon?? Use{" "}
-            <span className="font-weight-bold purpleText">
-              <a href="http://smile.amazon.com" className="links">
-                Amazon Smile
-              </a>
-            </span>{" "}
-            to start your next purchase and Amazon will donate 0.5% of the price
-            of your eligible purchases to Youth Rally. Just sign in, select the
-            <span className="font-weight-bold font-italic">
-              Youth Rally Committee, Inc.
-            </span>{" "}
-            from the list of charitable organizations, and start shopping!
-          </p>
-          <a href="https://smile.amazon.com/" className="links">
-            <img
-              className="mx-auto d-block resource-img"
-              src="/assets/images/amazon.smile.jpg"
-              alt="amazon smile"
-            />
-          </a>
-
-          <h2>AMAZON WISH LIST</h2>
+          {/* <h2>AMAZON WISH LIST</h2>
           <p>
             Wish to donate, but not sure how to give?  Consider a purchase from
             our{" "}
@@ -129,7 +106,7 @@ export default () => (
               src="/assets/images/wishlist.png"
               alt="wishlist"
             />
-          </a>
+          </a> */}
 
           <h2>EARMARK UNITED WAY FUNDS</h2>
           <p>
