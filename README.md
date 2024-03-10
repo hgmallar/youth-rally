@@ -1,6 +1,6 @@
 # Youth Rally
 
-[Start your search here.](https://youthrally.org/)
+[View the site here.](https://youthrally.org/)
 
 ### React web application for non-profit with custom store.
 
