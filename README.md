@@ -15,4 +15,4 @@
  * Responsive Bootstrap design
 
 
- ![frontpage image](/public/assets/images/frontpage.PNG)
+ ![frontpage image](/public/assets/images/frontpage.png)
