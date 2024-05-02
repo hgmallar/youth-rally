@@ -205,9 +205,7 @@ export default () => (
                   className="btn btn-primary green-btn mb-2 mt-1"
                   id="campers-btn"
                   rel="noreferrer noopener"
-                >
-                  DONATE
-                </a>
+                >DONATE</a>
               </div>
             </li>
           </ol>
