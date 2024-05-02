@@ -102,7 +102,7 @@ export default () => (
           <ol>
             <li>
               <span className="font-weight-bold">Registration.</span>{" "}
-               Registration cost for all campers is $500 and $250 for our
+              Registration cost for all campers is $500 and $250 for our
               volunteers.  We ask for $100 upfront with all applications to hold
               your spot, but also to help us with early costs associated with
               planning such a grand event.  Registration costs cover all
@@ -157,7 +157,7 @@ export default () => (
           <h2>How do I fundraise on my own?</h2>
           <p>
             The Youth Rally encourages all participants to do some
-          fundraising to support sponsorship for themselves or others. Often local/regional clubs and charitable organizations
+            fundraising to support sponsorship for themselves or others. Often local/regional clubs and charitable organizations
             (Kiwanis, Rotary, church groups, Nursing organizations, Hospitals,{" "}
             <a
               href="https://www.ostomy.org/ASGs_with_Websites.html/"
@@ -195,35 +195,19 @@ export default () => (
             </li>
             <li>
               <span className="font-weight-bold greenText">
-                DONATE USING YOUR CREDIT CARD OR PAYPAL ACCOUNT{" "}
+                DONATE USING YOUR CREDIT CARD OR BANK ACCOUNT{" "}
               </span>
-              Credit Card and PayPal donations can be made via the link below.
-              If sponsoring a child or volunteer, please indicate who upon
-              "checkout".
-              <div className="row justify-content-center">
-                <form
-                  action="https://www.paypal.com/cgi-bin/webscr"
-                  method="post"
-                  target="_top"
+              Credit Card and Babk Account donations can be made via the link below.
+              If sponsoring a child or volunteer, please add a donation note/comment and indicate the person.
+              <div className="row justify-content-center mx-auto text-center">
+                <a
+                  href="#donate"
+                  className="btn btn-primary green-btn mb-2 mt-1"
+                  id="campers-btn"
+                  rel="noreferrer noopener"
                 >
-                  <input type="hidden" name="cmd" value="_s-xclick" />
-                  <input
-                    type="hidden"
-                    name="hosted_button_id"
-                    value="PWWKYKVHHVD7E"
-                  />
-                  <input
-                    type="image"
-                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-                    name="submit"
-                    alt="PayPal - The safer, easier way to pay online!"
-                  />
-                  <img
-                    alt="paypal"
-                    className="mx-auto d-block"
-                    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                  />
-                </form>
+                  DONATE
+                </a>
               </div>
             </li>
           </ol>
@@ -343,7 +327,7 @@ export default () => (
             <div className="partner-img-sm mx-auto">
               <a href="https://www.spinabifidaassociation.org/" target="_blank">
                 <img
-                  className="resource-img rounded mx-auto d-block mb-md-1" 
+                  className="resource-img rounded mx-auto d-block mb-md-1"
                   src="/assets/images/resources/SBA.png"
                   alt="SBA"
                 />

@@ -95,25 +95,6 @@ class YRNavbar extends Component {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-          <Nav className="ml-auto">
-            <form
-              action="https://www.paypal.com/cgi-bin/webscr"
-              method="post"
-              target="_top"
-              className="my-auto px-1 form-inline"
-              id="donate-button"
-            >
-              <input type="hidden" name="cmd" value="_s-xclick" />
-              <input
-                type="hidden"
-                name="hosted_button_id"
-                value="PWWKYKVHHVD7E"
-              />
-              <Button id="donate" type="submit" name="submit">
-                DONATE
-              </Button>
-            </form>
-          </Nav>
         </Navbar>
         {this.state.hamburgerToggle && (
           <Navbar

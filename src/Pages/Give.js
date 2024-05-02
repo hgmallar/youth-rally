@@ -49,36 +49,20 @@ export default () => (
           <p className="text-center purpleText">949 Chestnut Oak Dr</p>
           <p className="text-center purpleText">St. Charles, MO 63303</p>
 
-          <h2>DONATE USING YOUR CREDIT CARD OR PAYPAL ACCOUNT</h2>
+          <h2>DONATE USING YOUR CREDIT CARD OR BANK ACCOUNT</h2>
           <p>
-            Credit Card and PayPal donations can be made via the link below. If
-            sponsoring a child or volunteer, please indicate who upon
-            "checkout".
+            Credit Card and Bank Account donations can be made via the link below. If
+            sponsoring a child or volunteer, please add a donation note/comment and indicate the person.
           </p>
-          <div className="row justify-content-center">
-            <form
-              action="https://www.paypal.com/cgi-bin/webscr"
-              method="post"
-              target="_top"
+          <div className="row justify-content-center mx-auto text-center">
+            <a
+              href="#donate"
+              className="btn btn-primary green-btn mb-2 mt-1"
+              id="campers-btn"
+              rel="noreferrer noopener"
             >
-              <input type="hidden" name="cmd" value="_s-xclick" />
-              <input
-                type="hidden"
-                name="hosted_button_id"
-                value="PWWKYKVHHVD7E"
-              />
-              <input
-                type="image"
-                src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-                name="submit"
-                alt="PayPal - The safer, easier way to pay online!"
-              />
-              <img
-                alt="paypal"
-                className="mx-auto d-block"
-                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-              />
-            </form>
+              DONATE
+            </a>
           </div>
 
           {/* <h2>AMAZON WISH LIST</h2>
