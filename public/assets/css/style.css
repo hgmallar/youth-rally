@@ -82,7 +82,7 @@ head {
   border: none !important;
   box-shadow: none !important;
   white-space: normal !important;
-  text-indent: 0;
+  text-indent: 0 !important;
 }
 
 .green-btn:hover,
