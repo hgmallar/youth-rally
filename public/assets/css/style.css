@@ -73,6 +73,22 @@ head {
   border: none !important;
 }
 
+ul {
+  list-style: disc inside;
+}
+
+ol {
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+
+ol li {
+  margin: 0px;
+  padding: 0px;
+  text-indent: -2.2em;
+  margin-left: 3.4em;
+}
+
 .green-btn,
 .green-btn:hover,
 .green-btn:active,
@@ -117,22 +133,6 @@ iframe {
 
 .purpleText {
   color: var(--yrpurple);
-}
-
-ul {
-  list-style: disc inside;
-}
-
-ol {
-  list-style-position: inside;
-  list-style-type: decimal;
-}
-
-ol li {
-  margin: 0px;
-  padding: 0px;
-  text-indent: -2.2em;
-  margin-left: 3.4em;
 }
 
 .resource-img {
