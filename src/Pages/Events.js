@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 
 import { Header } from "./../Elements";
 
-import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
 export default () => (
@@ -22,23 +21,31 @@ export default () => (
               Volunteers will be expected to be present on site July 6th-13th.
             </p>
             <h2>Pineapple's Ostomy A-wear-ness Youth Rally Fundraiser</h2>
-            <img
+            <a
+                href="https://youthrally.harnessgiving.org/events/1793"
+                target="_blank"
+                rel="noreferrer"
+                ><img
               className="row mx-auto poster mb-2"
-              src={"/assets/images/PinePoster.jpg"}
+              src={"/assets/images/Pineapple24.jpg"}
               alt={"Pineapple's Fundraiser Poster"}
             />
+            </a>
             <p className="text-center">
               Unable to attend but wish to contribute to support camper travel
               and registration costs?
             </p>
             <div className="text-center">
-              <Button
-                as={Link}
-                to="/give"
+            <a
+                href="https://youthrally.harnessgiving.org/events/1793"
+                target="_blank"
+                rel="noreferrer"
+                ><Button
                 className="btn mx-auto purpleButton"
               >
                 Give
               </Button>
+              </a>
             </div>
             {/* <h2>YOUTH RALLY 2023</h2>
             <p>
