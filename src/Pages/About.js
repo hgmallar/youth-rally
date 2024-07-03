@@ -25,6 +25,7 @@ export default () => (
     </section> 
     <section id="partners">
       <Partners />
+      
     </section>
   </Fragment>
 );
