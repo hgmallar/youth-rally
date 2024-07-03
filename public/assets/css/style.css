@@ -49,7 +49,7 @@ head {
   color: #fff;
 }
 
-.dropdown-item,
+.dropdown-menu,
 .dropdown-item:hover,
 .dropdown-item:active,
 .dropdown-item:checked {
@@ -233,14 +233,6 @@ Nav.Link,
 Nav.Link:visited,
 Nav.Link:hover,
 Nav.Link:active {
-  background-color: inherit !important;
-  border: none !important;
-}
-
-Nav.Dropdown,
-Nav.Dropdown:visited,
-Nav.Dropdown:hover,
-Nav.Dropdown:active {
   background-color: inherit !important;
   border: none !important;
 }
