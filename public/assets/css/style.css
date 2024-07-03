@@ -237,6 +237,14 @@ Nav.Link:active {
   border: none !important;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  background-color: inherit !important;
+  border: none !important;
+}
+
 button:focus {
   outline-width: 0px !important;
 }
