@@ -32,21 +32,21 @@ class YRNavbar extends Component {
             >
               <NavDropdown.Item
                 href="/about#top"
-                // onClick={() =>
-                //   this.setState({
-                //     hamburgerToggle: !this.state.nonHamburgerToggle,
-                //   })
-                // }
+                onClick={() =>
+                  this.setState({
+                    hamburgerToggle: !this.state.nonHamburgerToggle,
+                  })
+                }
               >
                 Our Mission
               </NavDropdown.Item>
               <NavDropdown.Item
                 href="/about#leaders"
-                // onClick={() =>
-                //   this.setState({
-                //     hamburgerToggle: !this.state.nonHamburgerToggle,
-                //   })
-                // }
+                onClick={() =>
+                  this.setState({
+                    hamburgerToggle: !this.state.nonHamburgerToggle,
+                  })
+                }
               >
                 Our Leaders
               </NavDropdown.Item>
