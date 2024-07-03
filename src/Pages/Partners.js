@@ -38,7 +38,7 @@ export default () => (
             size={2}
           />
           {/* <div className="partner-img-lg mx-auto mt-2 mb-1">
-            <a href="https://www.hollister.com/">
+            <a href="https://www.hollister.com/" target="_blank" rel="noreferrer">
               <img
                 className="img-lg mb-md-1 rounded"
                 src="/assets/images/sponsor_logos/Hollister-2016.jpg"
@@ -47,7 +47,7 @@ export default () => (
             </a>
           </div> */}
           <div className="partner-img-lg mx-auto mb-2 mt-1">
-          <a href="https://www.coloplast.com/">
+          <a href="https://www.coloplast.com/" target="_blank" rel="noreferrer">
               <img
                 className="img-md mb-md-1 rounded"
                 src="/assets/images/sponsor_logos/Coloplast.png"
@@ -57,7 +57,7 @@ export default () => (
           </div>
           <Header title="2024 Gold Level Sponsor" color="header-gold" size={2}/>
           <div className="partner-img-md mx-auto mt-2 mb-2">
-          <a href="https://www.convatec.com/">
+          <a href="https://www.convatec.com/" target="_blank" rel="noreferrer">
               <img
                 className="img-lg mb-md-1 rounded"
                 src="/assets/images/sponsor_logos/Convatec.jpg"

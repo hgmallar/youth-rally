@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-import { NavDropdown, Navbar, Button, Nav } from "react-bootstrap";
+import { NavDropdown, Navbar, Nav } from "react-bootstrap";
 
 class YRNavbar extends Component {
   state = {
     hamburgerToggle: false,
+    nonHamburgerToggle: false,
   };
 
   render() {
@@ -25,21 +25,50 @@ class YRNavbar extends Component {
                 Applications
               </Nav.Link>
             </Nav.Item>
-
             <NavDropdown
               className="d-none d-md-block"
               title="About"
               id="about-nav-dropdown"
             >
-              <NavDropdown.Item as={HashLink} to="/about#top">
+              <NavDropdown.Item
+                href="/about#top"
+                onClick={() =>
+                  this.setState({
+                    hamburgerToggle: !this.state.nonHamburgerToggle,
+                  })
+                }
+              >
                 Our Mission
               </NavDropdown.Item>
-              <NavDropdown.Item as={HashLink} to="/about#leaders">
-                Our Leadership
+              <NavDropdown.Item
+                href="/about#leaders"
+                onClick={() =>
+                  this.setState({
+                    hamburgerToggle: !this.state.nonHamburgerToggle,
+                  })
+                }
+              >
+                Our Leaders
               </NavDropdown.Item>
-              <NavDropdown.Item as={HashLink} to="/about#partners">
+              <NavDropdown.Item
+                href="/about#partners"
+                onClick={() =>
+                  this.setState({
+                    hamburgerToggle: !this.state.nonHamburgerToggle,
+                  })
+                }
+              >
                 Our Community Partners
               </NavDropdown.Item>
+              {/* <NavDropdown.Item as={Link} to="/about#top">
+                Our Mission
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about#leaders">
+                Our Leadership
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about#partners">
+                Our Community Partners
+              </NavDropdown.Item> */}
             </NavDropdown>
 
             <Nav.Item className="d-none d-md-block" id="campers">
