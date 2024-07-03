@@ -9,6 +9,7 @@ export default () => (
     <div id="content ">
       <div className="row">
         <div className="col-md-10 mx-auto pt-2 pb-1 text-center">
+          <p>Registration for the 2024 Youth Rally is now closed. Check back in January/February to register for the 2025 Youth Rally.</p>
           {/* <p>
             Camper and volunteer registration application is currently
             unavailable. Registration for the 2023 Youth Rally should open by the end of
@@ -24,7 +25,7 @@ export default () => (
               </a>
             </span>
             .
-          </p>
+          </p> */}
           <p className="pt-2">
             For up to date announcements, visit us on FaceBook{" "}
             <span className="purpleText">
@@ -36,8 +37,8 @@ export default () => (
               </a>
             </span>
             .
-          </p> */}
-          <h3 className="font-weight-bold"> 
+          </p>
+          {/* <h3 className="font-weight-bold"> 
             The 2024 Youth Rally will take place July 8th-13th at the University of Colorado at Boulder in Boulder, CO*.
           </h3>
           <h3 className="font-weight-bold greenText">
@@ -101,7 +102,7 @@ export default () => (
               <a className="links" href="mailto:registrar@youthrally.org">
                 registrar@youthrally.org
               </a>
-            </span> or call 607-592-3728 (ET)</p>
+            </span> or call 607-592-3728 (ET)</p> */}
         </div>
       </div>
     </div>

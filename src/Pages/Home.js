@@ -31,12 +31,16 @@ export default () => (
         <h4 className="font-weight-bold">
           The 2024 Youth Rally will take place July 8th-13th at the University of Colorado at Boulder in Boulder, CO.
         </h4>
-        <h3 className="font-weight-bold greenText mx-auto text-center">
+        <h3 className="font-weight-bold greenText mx-2">
+          Registration for the 2024 Youth Rally is now closed. Check back in January/February to register for the 2025 Youth Rally.
+        </h3>
+        {/* <h3 className="font-weight-bold greenText mx-auto text-center">
             Registration is now OPEN! Click on the button below to complete your
             2024 Registration TODAY!
-          </h3>
+          </h3> */}
+          
       </div>
-      <div className="row justify-content-center mx-auto text-center">
+      {/* <div className="row justify-content-center mx-auto text-center">
           <a
             href="https://app.campdoc.com/!/dn/login?r=youthrally"
             className="btn btn-primary green-btn mb-2 mt-1"
@@ -46,7 +50,7 @@ export default () => (
           >
             START 2024 Registration
           </a>
-        </div>
+        </div> */}
       {/* <div className="row justify-content-center">
         <a
           href="https://youthrally.smugmug.com/2023YouthRallyPhotos"

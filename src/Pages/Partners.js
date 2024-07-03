@@ -33,7 +33,7 @@ export default () => (
         </div>
         <div className="w-100 mx-auto text-center">
           <Header
-            title="2023 Platinum Level Sponsor"
+            title="2024 Platinum Level Sponsor"
             color="header-platinum font-weight-bold"
             size={2}
           />
@@ -47,7 +47,17 @@ export default () => (
             </a>
           </div> */}
           <div className="partner-img-lg mx-auto mb-2 mt-1">
-            <a href="https://www.convatec.com/">
+          <a href="https://www.coloplast.com/">
+              <img
+                className="img-md mb-md-1 rounded"
+                src="/assets/images/sponsor_logos/Coloplast.png"
+                alt="coloplast"
+              />
+            </a>
+          </div>
+          <Header title="2024 Gold Level Sponsor" color="header-gold" size={2}/>
+          <div className="partner-img-md mx-auto mt-2 mb-2">
+          <a href="https://www.convatec.com/">
               <img
                 className="img-lg mb-md-1 rounded"
                 src="/assets/images/sponsor_logos/Convatec.jpg"
@@ -55,16 +65,6 @@ export default () => (
               />
             </a>
           </div>
-          {/* <Header title="Gold Level" color="header-gold" size={2}/>
-          <div className="partner-img-md mx-auto mt-2 mb-2">
-            <a href="https://www.coloplast.com/">
-              <img
-                className="img-md mb-md-1 rounded"
-                src="/assets/images/sponsor_logos/ColoPlast.jpg"
-                alt="coloplast"
-              />
-            </a>
-          </div> */}
         </div>
       </div>
     </div>
