@@ -38,7 +38,7 @@ export default () => (
             Registration is now OPEN! Click on the button below to complete your
             2024 Registration TODAY!
           </h3> */}
-          
+
       </div>
       {/* <div className="row justify-content-center mx-auto text-center">
           <a
@@ -51,17 +51,17 @@ export default () => (
             START 2024 Registration
           </a>
         </div> */}
-      {/* <div className="row justify-content-center">
+      <div className="row justify-content-center">
         <a
-          href="https://youthrally.smugmug.com/2023YouthRallyPhotos"
+          href="https://youthrally.smugmug.com/Youth-Rally-2024-Photos/n-vvj8j5"
           className="btn btn-primary green-btn mb-2 mt-1"
           id="campers-btn"
           target="_blank"
           rel="noreferrer noopener"
         >
-          2023 Youth Rally Photos
+          2024 Youth Rally Photos
         </a>
-      </div> */}
+      </div>
     </div>
 
     <div className="text-center p-2 banner">
