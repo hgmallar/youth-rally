@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import { Mission, Leaders, Partners } from "./";
+import { Mission, Leaders, Partners, Financials } from "./";
 import { Card } from "react-bootstrap";
 
 export default () => (
@@ -22,10 +22,13 @@ export default () => (
     </section>
     <section id="leaders">
       <Leaders />
-    </section> 
+    </section>
     <section id="partners">
       <Partners />
-      
+
+    </section>
+    <section id="financials">
+      <Financials />
     </section>
   </Fragment>
 );

@@ -60,6 +60,16 @@ class YRNavbar extends Component {
               >
                 Our Community Partners
               </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/about#financials"
+                onClick={() =>
+                  this.setState({
+                    hamburgerToggle: !this.state.nonHamburgerToggle,
+                  })
+                }
+              >
+                Our Financials
+              </NavDropdown.Item>
               {/* <NavDropdown.Item as={Link} to="/about#top">
                 Our Mission
               </NavDropdown.Item>
@@ -166,6 +176,16 @@ class YRNavbar extends Component {
                   }
                 >
                   Our Community Partners
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="/about#financials"
+                  onClick={() =>
+                    this.setState({
+                      hamburgerToggle: !this.state.hamburgerToggle,
+                    })
+                  }
+                >
+                  Our Financials
                 </NavDropdown.Item>
               </NavDropdown>
 

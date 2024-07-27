@@ -9,28 +9,28 @@ export default () => (
         <div className="row mx-2">
           <div className="col-md-4 d-none d-md-block">
             <Photograph
-              imageSource={"/assets/images/yr_photo1.jpg"}
+              imageSource={"/assets/images/yr_photo1-min.jpg"}
               imageAlt={"youth_rally_kid_group1"}
             />
           </div>
           <div className="col-md-4">
             <Photograph
-              imageSource={"/assets/images/youth_rally_group_2019.jpg"}
+              imageSource={"/assets/images/youth_rally_group_2019-min.jpg"}
               imageAlt={"youth_rally_kid_group2"}
             />
           </div>
           <div className="col-md-4 d-none d-md-block">
             <Photograph
-              imageSource={"/assets/images/yr_photo3.jpg"}
+              imageSource={"/assets/images/yr_photo3-min.jpg"}
               imageAlt={"youth_rally_kid_group3"}
             />
           </div>
         </div>
       </div>
       <div className="row justify-content-center mx-auto text-center">
-        <h4 className="font-weight-bold">
+        {/* <h4 className="font-weight-bold">
           The 2024 Youth Rally will take place July 8th-13th at the University of Colorado at Boulder in Boulder, CO.
-        </h4>
+        </h4> */}
         <h3 className="font-weight-bold greenText mx-2">
           Registration for the 2024 Youth Rally is now closed. Check back in January/February to register for the 2025 Youth Rally.
         </h3>

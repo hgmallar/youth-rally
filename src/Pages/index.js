@@ -7,6 +7,7 @@ import Counselors from "./Counselors";
 import Events from "./Events";
 import Extras from "./Extras";
 import Faq from "./Faq";
+import Financials from "./Financials";
 import Getinvolved from "./Getinvolved";
 import Give from "./Give";
 import Home from "./Home";
@@ -27,6 +28,7 @@ export {
   Events,
   Extras,
   Faq,
+  Financials,
   Getinvolved,
   Give,
   Home,
