@@ -241,7 +241,6 @@ a,
 a:visited,
 a:hover,
 a:active {
-  background-color: inherit !important;
   border: none !important;
 }
 
