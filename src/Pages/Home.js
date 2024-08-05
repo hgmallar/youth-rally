@@ -15,7 +15,7 @@ export default () => (
           </div>
           <div className="col-md-4">
             <Photograph
-              imageSource={"/assets/images/group_2024_sm.jpg"}
+              imageSource={"/assets/images/group_2024_sm.JPG"}
               imageAlt={"youth_rally_kid_group2"}
             />
           </div>
