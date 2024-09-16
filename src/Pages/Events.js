@@ -12,13 +12,12 @@ export default () => (
       <div className="col-md-10 mx-auto pt-2 pb-1">
         <div className="row">
           <div>
-            <h2>YOUTH RALLY 2024</h2>
+            <h2>YOUTH RALLY 2025</h2>
             <p>
-              The 2024 Youth Rally will take place at the University of
-              Colorado at Boulder in Boulder, CO, July 8th-13th 2024.
+              The 2025 Youth Rally will take place in San Diego, CA, July 14th-19th 2025.
             </p>
             <p>
-              Volunteers will be expected to be present on site July 6th-13th.
+              Volunteers will be expected to be present on site July 12th-19th.
             </p>
             <h2>Pineapple's Ostomy A-wear-ness Youth Rally Fundraiser</h2>
             <a

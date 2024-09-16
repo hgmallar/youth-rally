@@ -28,12 +28,15 @@ export default () => (
         </div>
       </div>
       <div className="row justify-content-center mx-auto text-center">
-        {/* <h4 className="font-weight-bold">
-          The 2024 Youth Rally will take place July 8th-13th at the University of Colorado at Boulder in Boulder, CO.
-        </h4> */}
-        <h3 className="font-weight-bold greenText mx-2">
+        <h4 className="font-weight-bold">
+          The 2025 Youth Rally will take place July 14th-19th in San Diego, CA.
+        </h4>
+        <h5 className="font-weight-bold">
+          Volunteers will be expected to be present on site July 12th-19th.
+        </h5>
+        {/* <h3 className="font-weight-bold greenText mx-2">
           Registration for the 2024 Youth Rally is now closed. Check back in January/February to register for the 2025 Youth Rally.
-        </h3>
+        </h3> */}
         {/* <h3 className="font-weight-bold greenText mx-auto text-center">
             Registration is now OPEN! Click on the button below to complete your
             2024 Registration TODAY!
