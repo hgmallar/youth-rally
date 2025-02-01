@@ -110,7 +110,7 @@ const FaqSearch = () => {
       <ol>
         <li>
           <span className="font-weight-bold">Registration.</span>{" "}
-          Registration cost for all campers is $500 and $250 for our
+          Registration cost for all campers is $600 and $250 for our
           volunteers.  We ask for $100 upfront with all applications to hold
           your spot, but also to help us with early costs associated with
           planning such a grand event.  Registration costs cover all
@@ -138,7 +138,7 @@ const FaqSearch = () => {
         turned away due to lack of financial resources. The sponsorship
         application form is embedded in the camper application. Simply
         complete the application and state your need as prompted for
-        registration ($500) and/or travel (variable) assistance. No coupon
+        registration ($600) and/or travel (variable) assistance. No coupon
         code required.
       </p>
       <p>

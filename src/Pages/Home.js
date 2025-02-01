@@ -37,24 +37,24 @@ export default () => (
         {/* <h3 className="font-weight-bold greenText mx-2">
           Registration for the 2024 Youth Rally is now closed. Check back in January/February to register for the 2025 Youth Rally.
         </h3> */}
-        {/* <h3 className="font-weight-bold greenText mx-auto text-center">
+        <h3 className="font-weight-bold greenText mx-auto text-center">
             Registration is now OPEN! Click on the button below to complete your
-            2024 Registration TODAY!
-          </h3> */}
+            2025 Registration TODAY!
+          </h3>
 
       </div>
-      {/* <div className="row justify-content-center mx-auto text-center">
+      <div className="row justify-content-center mx-auto text-center">
           <a
-            href="https://app.campdoc.com/!/dn/login?r=youthrally"
+            href="http://app.campdoc.com/register/youthrally"
             className="btn btn-primary green-btn mb-2 mt-1"
             id="campers-btn"
             target="_blank"
             rel="noreferrer noopener"
           >
-            START 2024 Registration
+            START 2025 Registration
           </a>
-        </div> */}
-      <div className="row justify-content-center">
+        </div>
+      {/* <div className="row justify-content-center">
         <a
           href="https://youthrally.smugmug.com/Youth-Rally-2024-Photos/n-vvj8j5"
           className="btn btn-primary green-btn mb-2 mt-1"
@@ -64,7 +64,7 @@ export default () => (
         >
           2024 Youth Rally Photos
         </a>
-      </div>
+      </div> */}
     </div>
 
     <div className="text-center p-2 banner">
