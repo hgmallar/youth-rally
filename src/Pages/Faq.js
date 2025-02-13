@@ -341,6 +341,15 @@ const FaqSearch = () => {
           </a>
         </p>
         <div className="partner-img-sm mx-auto">
+          <a href="https://www.mitrofanoffsupport.org.uk/" target="_blank">
+            <img
+              className="resource-img rounded mx-auto d-block mb-md-1"
+              src="/assets/images/resources/mitrofanoff.png"
+              alt="Mitrofanoff Support"
+            />
+          </a>
+        </div>
+        <div className="partner-img-sm mx-auto">
           <a href="https://www.spinabifidaassociation.org/" target="_blank">
             <img
               className="resource-img rounded mx-auto d-block mb-md-1"
