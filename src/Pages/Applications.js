@@ -80,8 +80,8 @@ export default () => (
           </p>
           <p className="font-weight-bold">Questions about the application process? </p>
           <p>Email <span className="greenText">
-              <a className="links" href="mailto:registrar@youthrally.org">
-                registrar@youthrally.org
+              <a className="links" href="mailto:info@youthrally.org">
+                info@youthrally.org
               </a>
             </span> or call 607-592-3728 (ET)</p>
         </div>
