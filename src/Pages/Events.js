@@ -26,7 +26,7 @@ export default () => (
                 rel="noreferrer"
                 ><img
               className="row mx-auto poster mb-2"
-              src={"/assets/images/Pineapple24.jpg"}
+              src={"/assets/images/pineapple2025.jpg"}
               alt={"Pineapple's Fundraiser Poster"}
             />
             </a>
