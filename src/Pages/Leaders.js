@@ -11,22 +11,6 @@ export default () => (
         <TwoColImgText
           colSize1={8}
           colSize2={4}
-          header={
-            "ANNIE CARVER - Committee Chair, Diversity Equity and Inclusion"
-          }
-          content={[
-            {
-              class: "font-italic",
-              text: "Annie first joined the Youth Rally as a camper in 2013 and as a counselor in 2017. In her time as a counselor she has helped to include LGBTQIA+ as a program offering at Youth Rally for those who choose to participate. Annie was born with cloacal malformation and had a kidney transplant at 18. Annie lives in Baltimore with her partner and dog where she works as a special education attorney at a local hospital.",
-            },
-          ]}
-          src="/assets/images/leaders/anna.png"
-          alt="Annie Carver"
-        />
-
-        <TwoColImgText
-          colSize1={8}
-          colSize2={4}
           header={"PAUL HASTINGS – Chairman, Board of Directors"}
           content={[
             {
@@ -152,6 +136,22 @@ export default () => (
           ]}
           src="/assets/images/leaders/bret.png"
           alt="Bret Comer"
+        />
+
+        <TwoColImgText
+          colSize1={8}
+          colSize2={4}
+          header={
+            "ANNIE CARVER - Committee Chair, Diversity Equity and Inclusion"
+          }
+          content={[
+            {
+              class: "font-italic",
+              text: "Annie first joined the Youth Rally as a camper in 2013 and as a counselor in 2017. In her time as a counselor she has helped to include LGBTQIA+ as a program offering at Youth Rally for those who choose to participate. Annie was born with cloacal malformation and had a kidney transplant at 18. Annie lives in Baltimore with her partner and dog where she works as a special education attorney at a local hospital.",
+            },
+          ]}
+          src="/assets/images/leaders/anna.png"
+          alt="Annie Carver"
         />
       </div>
     </div>
