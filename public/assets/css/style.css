@@ -155,14 +155,14 @@ iframe {
 }
 
 .img-md {
-  width: 350px;
+  width: 300px;
   height: auto;
   max-height: 150px;
   max-width: 100%;
 }
 
 .partner-img-md {
-  width: 350px;
+  width: 300px;
   height: auto;
   max-width: 100%;
 }
@@ -342,6 +342,11 @@ button:active {
 
 .header-gold {
   background-color: #d4af37;
+  color: var(--yrgreen);
+}
+
+.header-silver {
+  background-color: #C0C0C0;
   color: var(--yrgreen);
 }
 
