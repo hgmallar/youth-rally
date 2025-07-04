@@ -33,8 +33,8 @@ export default () => (
               To request brochures:{" "}
             </span>
             <br />{" "}
-            <a className="links" href="mailto:brochures@youthrally.org">
-              brochures@youthrally.org – Abby Ryan – Program Coordinator
+            <a className="links" href="mailto:info@youthrally.org">
+              info@youthrally.org
             </a>
           </h5>
           <h5>
