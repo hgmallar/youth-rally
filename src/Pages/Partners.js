@@ -69,13 +69,13 @@ export default () => (
               alt="WOCN"
             />
           </div>
-          <Header title="2025 Silver Level Sponsor" color="header-silver" size={2} />
+          <Header title="2025 Gold Level Sponsor" color="header-gold" size={2} />
           <div className="partner-img-md mx-auto mt-2 mb-2">
             <a href="https://www.convatec.com/" target="_blank" rel="noreferrer">
               <img
                 className="img-md mb-md-1 rounded"
                 src="/assets/images/sponsor_logos/Convatec.jpg"
-                alt="Silve Sponsors"
+                alt="Convatec"
               />
             </a>
           </div>
