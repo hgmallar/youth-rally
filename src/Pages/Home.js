@@ -26,9 +26,9 @@ export default () => (
             />
           </div> */}
           <div className="col-md-6 d-flex align-items-center justify-content-center px-0 py-0 my-0 mx-auto">
-            <video autoPlay muted controls>
+            <video autoPlay muted loop playsInline controls>
               <source
-                src="/assets/images/videos/video1.mp4"
+                src="/assets/images/Videos/Mergedvideos.mp4"
                 type="video/mp4"
                 className="my-auto"
               />
