@@ -267,79 +267,6 @@ const FaqSearch = () => {
             />
           </a>
         </div>
-        <p className="purpleText text-center">
-          <a
-            href="https://www.self.com/story/crohns-disease-symptoms-to-know/" target="_blank"
-            className="links"
-          >
-            13 Crohn’s Disease Symptoms, From Diarrhea to Beyond
-          </a>
-        </p>
-        <p className="purpleText text-center">
-          <a
-            href="https://www.crohnsandcolitis.com/find-a-gastroenterologist" target="_blank"
-            className="links"
-          >
-            Find a Gastroenterologist
-          </a>
-        </p>
-        <p className="purpleText text-center">
-          <a
-            href="https://www.medicareadvantage.com/resources/health-care-cost-assistance-resource-guide" target="_blank"
-            className="links"
-          >
-            Health Care Cost Assistance Guide
-          </a>
-        </p>
-        <p className="purpleText text-center">
-          <a
-            href="https://www.verywellhealth.com/crohns-disease-treatment-options-1943057" target="_blank"
-            className="links"
-          >
-            How Crohn's Disease Is Treated
-          </a>
-        </p>
-        <p className="purpleText text-center">
-          <a
-            href="https://www.crohnscolitisfoundation.org/what-is-ibd/medication/complementary-alternative-medicine" target="_blank"
-            className="links"
-          >
-            Complementary Medicine
-          </a>
-        </p>
-        <p className="purpleText text-center">
-          <a
-            href="https://www.homeadvisor.com/r/how-to-create-a-healthy-home-for-autoimmune-disease-symptoms/" target="_blank"
-            className="links"
-          >
-            How to Create a Healthy Home Environment that Will Soothe
-            Autoimmune Disease Symptoms
-          </a>
-        </p>
-        <p className="purpleText text-center">
-          <a
-            href="https://www.ucsfhealth.org/education/nutrition-tips-for-inflammatory-bowel-disease" target="_blank"
-            className="links"
-          >
-            Nutrition Tips for Inflammatory Bowel Disease
-          </a>
-        </p>
-        <p className="purpleText text-center">
-          <a
-            href="https://www.ibdrelief.com/learn/complications-of-ibd/complications-of-crohns-disease" target="_blank"
-            className="links"
-          >
-            Complications of Crohn's disease
-          </a>
-        </p>
-        <p className="purpleText text-center">
-          <a
-            href="https://www.drugwatch.com/health/digestive-health/" target="_blank"
-            className="links"
-          >
-            Digestive Health
-          </a>
-        </p>
         <div className="partner-img-sm mx-auto">
           <a href="https://www.mitrofanoffsupport.org.uk/" target="_blank">
             <img
@@ -448,7 +375,6 @@ const FaqSearch = () => {
             />
           </a>
         </div>
-
         <div className="partner-img-sm mx-auto">
           <a href="https://www.simplymedical.com/" target="_blank">
             <img
@@ -458,6 +384,18 @@ const FaqSearch = () => {
             />
           </a>
         </div>
+        <div className="partner-img-sm mx-auto">
+          <a href="https://www.doublehranch.org/" target="_blank">
+            <img
+              className="resource-img rounded mx-auto d-block mb-md-1"
+              src="/assets/images/resources/double-h-ranch-2025.png"
+              alt="double h ranch"
+            />
+          </a>
+        </div>
+        <a className="links" href="https://maddiemainphotofilm.mypixieset.com/" target="_blank">
+          <span className="purpleText">Maddie Main Photography + Journal Films</span>
+        </a>
       </div>
     </div>
   };
