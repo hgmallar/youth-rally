@@ -25,7 +25,7 @@ export default () => (
               imageAlt={"youth_rally_kid_group3"}
             />
           </div> */}
-          <div className="col-md-6 d-flex align-items-center justify-content-center px-0 py-0 my-0 mx-auto">
+          <div className="col-md-6 d-flex flex-column align-items-center justify-content-center mx-auto">
             <video autoPlay muted loop playsInline controls>
               <source
                 src="/assets/images/bothvideos.mp4"
@@ -33,6 +33,9 @@ export default () => (
                 className="my-auto"
               />
             </video>
+            <div>
+              <p className="mb-2 credit purpleText">Video Credits: <a className="links" target="_blank" href="https://maddiemainphotofilm.mypixieset.com/" ><strong className="purpleText links">Maddie Main Photography + Journal Fims</strong></a></p>
+            </div>
           </div>
         </div>
       </div>
