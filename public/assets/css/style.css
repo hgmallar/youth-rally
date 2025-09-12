@@ -206,7 +206,10 @@ iframe {
 }
 
 .credit {
-  font-size: 10pt;
+  white-space: nowrap;
+  font-size: clamp(6px, 2vw, 10px); 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .purpleButton,
