@@ -101,8 +101,22 @@ ol li {
   text-indent: 0 !important;
 }
 
+.gold-btn,
+.gold-btn:hover,
+.gold-btn:active,
+.gold-btn:checked {
+  background-color: goldenrod !important;
+  color: black !important;
+  border: none !important;
+  box-shadow: none !important;
+  white-space: normal !important;
+  text-indent: 0 !important;
+}
+
 .green-btn:hover,
 .green-btn:active,
+.gold-btn:hover,
+.gold-btn:active,
 .dropdown-item:hover,
 .dropdown-item:active {
   font-weight: bolder !important;

@@ -9,6 +9,7 @@ import {
   Cart,
   Contact,
   Counselors,
+  Goldenticket,
   Events,
   Extras,
   Faq,
@@ -388,6 +389,7 @@ class App extends Component {
             />
             <Route path="/contact" component={Contact} />
             <Route path="/counselors" component={Counselors} />
+            <Route path="/goldenticket" component={Goldenticket} />
             <Route path="/events" component={Events} />
             <Route path="/extras" component={Extras} />
             <Route path="/faq" component={Faq} />

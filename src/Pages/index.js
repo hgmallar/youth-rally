@@ -10,6 +10,7 @@ import Faq from "./Faq";
 import Financials from "./Financials";
 import Getinvolved from "./Getinvolved";
 import Give from "./Give";
+import Goldenticket from "./Goldenticket";
 import Home from "./Home";
 import Leaders from "./Leaders";
 import Mission from "./Mission";
@@ -31,6 +32,7 @@ export {
   Financials,
   Getinvolved,
   Give,
+  Goldenticket,
   Home,
   Leaders,
   Mission,
