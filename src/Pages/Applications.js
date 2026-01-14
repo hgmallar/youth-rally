@@ -9,7 +9,8 @@ export default () => (
     <div id="content ">
       <div className="row">
         <div className="col-md-10 mx-auto pt-2 pb-1 text-center">
-          <p>Registration for the 2025 Youth Rally is now closed. Check back in January/February to register for the 2026 Youth Rally.</p>
+          {/* <p>Registration for the 2025 Youth Rally is now closed. Check back in January/February to register for the 2026 Youth Rally.</p> */}
+          <p>2026 Youth Rally Camper and Volunteer applications coming soon!</p>
           
           {/* <p>
             Camper and volunteer registration application is currently

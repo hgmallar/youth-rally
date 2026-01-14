@@ -13,7 +13,7 @@ export default () => (
               imageAlt={"youth_rally_kid_group1"}
             />
           </div> */}
-          <div>
+          {/* <div>
             <img src="/assets/images/goldenticket/goldenticket.png" alt="golden_ticket" style={{ maxWidth: "300px", height: "auto" }} />
             <h5>YOUTH RALLY GOLDEN TICKET FUNDRAISER</h5>
             <div className="row justify-content-center">
@@ -38,7 +38,7 @@ export default () => (
               CLICK HERE
             </span></a> for more details and prize packages!</p>
             <p>Winning tickets will be drawn December 5th, 2025</p>
-          </div>
+          </div> */}
           <div className="row mx-2 flex-row justify-content-center">
             <div className="col-md-6">
               <Photograph
@@ -70,9 +70,11 @@ export default () => (
       </div>
       <div className="row justify-content-center mx-auto text-center">
         <h4 className="font-weight-bold">
-          The 2026 Youth Rally will take place at the University of Colorado
-          in Boulder, CO from July 6th-11th.
+          COMING SOON - 2026 Camper and Volunteer Applications!
         </h4>
+        <h5 className="font-weight-bold">
+        The 2026 Youth Rally will take place at the University of Colorado
+          in Boulder, CO from July 6th-11th.</h5>
         <h5 className="font-weight-bold">
           Volunteers will be expected to be present on site July 4th-11th.
         </h5>
