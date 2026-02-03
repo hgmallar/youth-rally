@@ -10,8 +10,8 @@ export default () => (
       <div className="row">
         <div className="col-md-10 mx-auto pt-2 pb-1 text-center">
           {/* <p>Registration for the 2025 Youth Rally is now closed. Check back in January/February to register for the 2026 Youth Rally.</p> */}
-          <p>2026 Youth Rally Camper and Volunteer applications coming soon!</p>
-          
+          {/* <p>2026 Youth Rally Camper and Volunteer applications coming soon!</p> */}
+
           {/* <p>
             Camper and volunteer registration application is currently
             unavailable. Registration for the 2023 Youth Rally should open by the end of
@@ -42,12 +42,12 @@ export default () => (
             .
           </p> */}
 
-          {/* <h3 className="font-weight-bold"> 
-            The 2025 Youth Rally will take place July 14th-19th at San Diego State University in San Diego, CA**.
+          <h3 className="font-weight-bold">
+            The 2026 Youth Rally will take place July 6th-11th at the University of Colorado at Boulder (CU Boulder), Colorado.
           </h3>
           <h3 className="font-weight-bold greenText">
             Registration is now OPEN!
-          </h3> 
+          </h3>
           <a
             href="http://app.campdoc.com/register/youthrally"
             className="btn btn-primary green-btn mb-2 mt-1"
@@ -55,9 +55,9 @@ export default () => (
             target="_blank"
             rel="noreferrer noopener"
           >
-            CLICK HERE to start your 2025 Registration TODAY!
+            CLICK HERE to start your 2026 Registration TODAY!
           </a>
-          <p className="font-weight-bold">IMPORTANT 2025 DATES: </p>
+          <p className="font-weight-bold">IMPORTANT 2026 DATES: </p>
           <p>
             <span className="font-weight-bold">April 1st</span> – Counselor
             registrations due
@@ -67,28 +67,36 @@ export default () => (
             registrations due
           </p>
           <p>
-            <span className="font-weight-bold">July 1st</span> – All payments/balances 
+            <span className="font-weight-bold">July 1st</span> – All payments/balances
             due
           </p>
           <p>
-            <span className="font-weight-bold">**July 12th</span> – Arrival date for all volunteers**
+            <span className="font-weight-bold">**July 4th</span> – Arrival date for all volunteers**
           </p>
           <p>
-            <span className="font-weight-bold">July 14th</span> – Arrival date for all campers
+            <span className="font-weight-bold">July 6th</span> – Arrival date for all campers
           </p>
-            <p>
-            <span className="font-weight-bold">Notification of Registration Approval: </span>Once the “Health Profile” section of your registration is 100% complete your registration will be reviewed by a member of our volunteer team for formal approval. We may reach out to you with additional questions. Once your registration is approved you will receive notification from the Youth Rally with specific information including specific travel dates, times, and locations as well as contact information for our preferred travel agent. All notifications will be sent to the email address associated with the registration profile. For more information visit our <a
-            href="../faq"
-            className="links"
-          ><span className="greenText font-weight-bold ">FAQ page</span></a>.
+          <p>
+            <span className="font-weight-bold">SPONSORSHIP: </span>Sponsorship is available for all campers who request it. You can request airfare of registration sponsorship within the application. </p>
+          <p>
+            <span className="font-weight-bold">$100 Registration Hold </span>is due at the time of registration – this is fully refundable if you cannot attend the 2026 Youth Rally for any reason. If sponsorship is needed for this, please contact <span className="greenText">
+              <a className="links" href="mailto:registrar@youthrally.org">
+                registrar@youthrally.org
+              </a>
+            </span>. </p>
+          <p>
+            <span className="font-weight-bold">NEXT STEPS: </span>Once the “Health Profile” section of your registration is 100% complete your registration will be reviewed by a member of our volunteer team for formal approval. We may reach out to you with additional questions. Once your registration is approved you will receive notification from the Youth Rally with specific information including specific travel dates, times, and locations as well as contact information for our preferred travel agent. All notifications will be sent to the email address associated with the registration profile. For more information visit our <a
+              href="../faq"
+              className="links"
+            ><span className="greenText font-weight-bold ">FAQ page</span></a>.
           </p>
           <p className="font-weight-bold">Questions about the application process? </p>
           <p>Email <span className="greenText">
-              <a className="links" href="mailto:info@youthrally.org">
-                info@youthrally.org
-              </a>
-            </span> or call 607-592-3728 (ET)</p> */}
-        </div> 
+            <a className="links" href="mailto:registrar@youthrally.org">
+              registrar@youthrally.org
+            </a>
+          </span> or call 607-592-3728 (ET)</p>
+        </div>
       </div>
     </div>
   </Fragment>

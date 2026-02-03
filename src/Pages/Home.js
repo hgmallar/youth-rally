@@ -69,36 +69,39 @@ export default () => (
         </div>
       </div>
       <div className="row justify-content-center mx-auto text-center">
-        <h4 className="font-weight-bold">
+        {/* <h4 className="font-weight-bold">
           COMING SOON - 2026 Camper and Volunteer Applications!
-        </h4>
+        </h4> */}
+        {/* <h3 className="font-weight-bold greenText mx-2">
+          Registration for the 2024 Youth Rally is now closed. Check back in January/February to register for the 2025 Youth Rally.
+        </h3>  */}
+        <h5 className="font-weight-bold greenText mx-auto text-center">
+          Registration is now OPEN! Click on the button below to complete your
+          2026 Registration TODAY!
+        </h5>
+
+      </div>
+      <div className="row justify-content-center mx-auto text-center">
+        <a
+          href="http://app.campdoc.com/register/youthrally"
+          className="btn btn-primary green-btn mb-2 mt-1"
+          id="campers-btn"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          START 2026 Registration
+        </a>
+      </div>
+      <div className="row justify-content-center mx-auto text-center">
+
         <h5 className="font-weight-bold">
-        The 2026 Youth Rally will take place at the University of Colorado
+          The 2026 Youth Rally will take place at the University of Colorado
           in Boulder, CO from July 6th-11th.</h5>
         <h5 className="font-weight-bold">
           Volunteers will be expected to be present on site July 4th-11th.
         </h5>
-        {/* <h3 className="font-weight-bold greenText mx-2">
-          Registration for the 2024 Youth Rally is now closed. Check back in January/February to register for the 2025 Youth Rally.
-        </h3>  */}
-        {/* <h3 className="font-weight-bold greenText mx-auto text-center">
-            Registration is now OPEN! Click on the button below to complete your
-            2025 Registration TODAY!
-          </h3>  */}
-
       </div>
-      {/* <div className="row justify-content-center mx-auto text-center">
-          <a
-            href="http://app.campdoc.com/register/youthrally"
-            className="btn btn-primary green-btn mb-2 mt-1"
-            id="campers-btn"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            START 2025 Registration
-          </a>
-        </div> */}
-      <div className="row justify-content-center">
+      {/* <div className="row justify-content-center">
         <a
           href="https://youthrally.smugmug.com/Youth-Rally-2025-Photos-1"
           className="btn btn-primary green-btn mb-2 mt-1"
@@ -108,7 +111,7 @@ export default () => (
         >
           2025 Youth Rally Photos
         </a>
-      </div>
+      </div> */}
     </div>
 
     <div className="text-center p-2 banner">
