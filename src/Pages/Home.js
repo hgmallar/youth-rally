@@ -98,7 +98,7 @@ export default () => (
           The 2026 Youth Rally will take place at the University of Colorado
           in Boulder, CO from July 6th-11th.</h5>
         <h5 className="font-weight-bold">
-          Volunteers will be expected to be present on site July 4th-11th.
+          All volunteers need to be onsite July 4th-11th.
         </h5>
       </div>
       {/* <div className="row justify-content-center">
