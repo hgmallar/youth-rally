@@ -22,20 +22,30 @@ export default () => (
             </p>
             <h2>Pineapple's Ostomy A-wear-ness Youth Rally Fundraiser</h2>
             <div className="mx-auto text-center"><h5 className="purpleText">June 14th, 2026 1pm-4pm at The Westy in Ithaca NY</h5></div>
-            <a
-              href="https://youthrally.harnessgiving.org/events/1793"
-              target="_blank"
-              rel="noreferrer"
-            ><img
-                className="row mx-auto poster mb-2"
-                src={"/assets/images/pineapple2026.jpg"}
-                alt={"Pineapple's Fundraiser Poster"}
-              />
-            </a>
+            <img
+              className="row mx-auto poster mb-2"
+              src={"/assets/images/pineapple2026.jpg"}
+              alt={"Pineapple's Fundraiser Poster"}
+            />
             <p className="text-center">
               Donations can be made at <span className="greenText font-weight-bold"><a href="www.youthrally.org" target="_blank"
                 rel="noreferrer" className="links">www.youthrally.org</a></span> - click the Donate button and select Pineapple's Pink Party
             </p>
+            <h2>Golden Ticket Reboot</h2>
+            <a
+              href="https://youthrally.harnessgiving.org/events/3790"
+              target="_blank"
+              rel="noreferrer"
+            ><img
+                className="row mx-auto poster mb-2"
+                src={"/assets/images/GoldenTicketReboot.png"}
+                alt={"Golden Ticket Reboot poster"}
+              />
+            </a>
+            <p className="text-center">
+              <span className="greenText font-weight-bold"><a href="www.youthrally.org" target="_blank"
+                rel="noreferrer" className="links">Golden Ticket Reboot!! | The Youth Rally</a></span></p>
+            <p className="text-center">Tickets available through June 30th!</p>
             {/* <h2>YOUTH RALLY 2023</h2>
             <p>
               The 2023 Youth Rally will take place at San Diego State University
