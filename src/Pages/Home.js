@@ -112,6 +112,17 @@ export default () => (
           2025 Youth Rally Photos
         </a>
       </div> */}
+      <div className="row justify-content-center">
+        <a
+          href="https://youthrally.harnessgiving.org/events/3790"
+          className="btn btn-primary gold-btn mb-2 mt-1"
+          id="campers-btn"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          CLICK HERE to purchase your Golden Ticket Raffle Tickets
+        </a>
+      </div>
     </div>
 
     <div className="text-center p-2 banner">
