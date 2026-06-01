@@ -21,32 +21,21 @@ export default () => (
               Volunteers will be expected to be present on site July 4th-11th.
             </p>
             <h2>Pineapple's Ostomy A-wear-ness Youth Rally Fundraiser</h2>
+            <div className="mx-auto text-center"><h5 className="purpleText">June 14th, 2026 1pm-4pm at The Westy in Ithaca NY</h5></div>
             <a
-                href="https://youthrally.harnessgiving.org/events/1793"
-                target="_blank"
-                rel="noreferrer"
-                ><img
-              className="row mx-auto poster mb-2"
-              src={"/assets/images/pineapple2025.jpg"}
-              alt={"Pineapple's Fundraiser Poster"}
-            />
+              href="https://youthrally.harnessgiving.org/events/1793"
+              target="_blank"
+              rel="noreferrer"
+            ><img
+                className="row mx-auto poster mb-2"
+                src={"/assets/images/pineapple2026.jpg"}
+                alt={"Pineapple's Fundraiser Poster"}
+              />
             </a>
             <p className="text-center">
-              Unable to attend but wish to contribute to support camper travel
-              and registration costs?
+              Donations can be made at <span className="greenText font-weight-bold"><a href="www.youthrally.org" target="_blank"
+                rel="noreferrer" className="links">www.youthrally.org</a></span> - click the Donate button and select Pineapple's Pink Party
             </p>
-            <div className="text-center">
-            <a
-                href="https://youthrally.harnessgiving.org/events/1793"
-                target="_blank"
-                rel="noreferrer"
-                ><Button
-                className="btn mx-auto purpleButton"
-              >
-                Give
-              </Button>
-              </a>
-            </div>
             {/* <h2>YOUTH RALLY 2023</h2>
             <p>
               The 2023 Youth Rally will take place at San Diego State University
