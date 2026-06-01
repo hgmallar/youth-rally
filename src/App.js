@@ -14,7 +14,7 @@ import {
   Extras,
   Faq,
   Getinvolved,
-  Give,
+  Donate,
   Home,
   Leaders,
   Mission,
@@ -394,7 +394,7 @@ class App extends Component {
             <Route path="/extras" component={Extras} />
             <Route path="/faq" component={Faq} />
             <Route path="/getinvolved" component={Getinvolved} />
-            <Route path="/give" component={Give} />
+            <Route path="/donate" component={Donate} />
             <Route path="/leaders" component={Leaders} />
             <Route path="/mission" component={Mission} />
             <Route path="/nurses" component={Nurses} />

@@ -2,8 +2,6 @@ import React, { Fragment } from "react";
 
 import { Header } from "./../Elements";
 
-import { Button } from "react-bootstrap";
-
 export default () => (
   <Fragment>
     <Header title="Events" />

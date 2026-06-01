@@ -108,9 +108,9 @@ class YRNavbar extends Component {
                 Photos
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item className="d-none d-md-block" id="give">
-              <Nav.Link as={Link} to="/give">
-                Give
+            <Nav.Item className="d-none d-md-block" id="donate">
+              <Nav.Link as={Link} to="/donate">
+                Donate
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="d-none d-md-block" id="events">
@@ -208,8 +208,8 @@ class YRNavbar extends Component {
               <Nav.Item id="photos">
                 <Nav.Link href="/photos">Photos</Nav.Link>
               </Nav.Item>
-              <Nav.Item id="give">
-                <Nav.Link href="/give">Give</Nav.Link>
+              <Nav.Item id="donate">
+                <Nav.Link href="/donate">Donate</Nav.Link>
               </Nav.Item>
               <Nav.Item id="events">
                 <Nav.Link href="/events">Events</Nav.Link>

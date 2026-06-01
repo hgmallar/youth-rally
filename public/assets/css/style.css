@@ -65,14 +65,6 @@ head {
   color: var(--yrgreen);
 }
 
-#donate,
-#donate:hover,
-#donate:active {
-  font-weight: bolder;
-  background-color: var(--yrgreen);
-  border: none !important;
-}
-
 ul {
   list-style: disc inside;
 }

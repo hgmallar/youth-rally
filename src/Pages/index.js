@@ -9,7 +9,7 @@ import Extras from "./Extras";
 import Faq from "./Faq";
 import Financials from "./Financials";
 import Getinvolved from "./Getinvolved";
-import Give from "./Give";
+import Donate from "./Donate";
 import Goldenticket from "./Goldenticket";
 import Home from "./Home";
 import Leaders from "./Leaders";
@@ -31,7 +31,7 @@ export {
   Faq,
   Financials,
   Getinvolved,
-  Give,
+  Donate,
   Goldenticket,
   Home,
   Leaders,
