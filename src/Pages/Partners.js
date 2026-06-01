@@ -47,29 +47,39 @@ export default () => (
             </a>
           </div> */}
           <div className="partner-img-lg mx-auto mb-2 mt-1">
-            <img
-              className="img-lg mb-lg-1 rounded"
-              src="/assets/images/sponsor_logos/Paul.jpg"
-              alt="Paul"
-            />
-          </div>
-          <div className="partner-img-lg mx-auto mb-2 mt-1">
-            <a href="https://www.coloplast.us/" target="_blank" rel="noreferrer">
+            <a href="https://www.convatec.com/" target="_blank" rel="noreferrer">
               <img
                 className="img-lg mb-lg-1 rounded"
-                src="/assets/images/sponsor_logos/Coloplast.png"
-                alt="Coloplast"
+                src="/assets/images/sponsor_logos/convatec.png"
+                alt="Convatec logo"
               />
             </a>
           </div>
-          <div className="partner-img-lg mx-auto mb-2 mt-1">
+          <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 mb-2 mt-1">
             <img
-              className="img-lg mb-lg-1 rounded"
-              src="/assets/images/sponsor_logos/wocn2025.png"
-              alt="WOCN"
+              className="img-lg rounded"
+              src="/assets/images/sponsor_logos/daviddebhartley.jpg"
+              alt="DavidDebHartley logo"
+            />
+            <img
+              className="img-lg rounded"
+              src="/assets/images/sponsor_logos/paul.jpg"
+              alt="Paul Hastings logo"
             />
           </div>
-          <Header title="2025 Gold Level Sponsor" color="header-gold" size={2} />
+          <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 mb-2 mt-1">
+            <img
+              className="img-lg rounded"
+              src="/assets/images/sponsor_logos/northwest.jpg"
+              alt="Northwest WOCN logo"
+            />
+            <img
+              className="img-lg rounded"
+              src="/assets/images/sponsor_logos/pacificcoast.jpg"
+              alt="Pacific Coast WOCN logo"
+            />
+          </div>
+          {/* <Header title="2025 Gold Level Sponsor" color="header-gold" size={2} />
           <div className="partner-img-md mx-auto mt-2 mb-2">
             <a href="https://www.convatec.com/" target="_blank" rel="noreferrer">
               <img
@@ -78,9 +88,9 @@ export default () => (
                 alt="Convatec"
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
-  </Fragment>
+  </Fragment >
 );
