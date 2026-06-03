@@ -33,7 +33,7 @@ export default () => (
         </div>
         <div className="w-100 mx-auto text-center">
           <Header
-            title="2025 Platinum Level Sponsors"
+            title="2026 Platinum Level Sponsors"
             color="header-platinum font-weight-bold"
             size={2}
           />
