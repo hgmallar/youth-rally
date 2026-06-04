@@ -10,6 +10,7 @@
 .h-widget-button, .h-widget-button:hover {
   border: 2px solid #339966 !important;
   border-radius: 8px !important;
+  box-shadow: 0 10px 0 #1e1b4b;
 }
 
 .row {
