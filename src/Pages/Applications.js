@@ -9,13 +9,13 @@ export default () => (
     <div id="content ">
       <div className="row">
         <div className="col-md-10 mx-auto pt-2 pb-1 text-center">
-          {/* <p>Registration for the 2025 Youth Rally is now closed. Check back in January/February to register for the 2026 Youth Rally.</p> */}
+          <p>Registration for the 2026 Youth Rally is now closed. Check back in January/February to register for the 2027 Youth Rally.</p>
           {/* <p>2026 Youth Rally Camper and Volunteer applications coming soon!</p> */}
 
           {/* <p>
             Camper and volunteer registration application is currently
             unavailable. Registration for the 2023 Youth Rally should open by the end of
-            February, 20203. The 2023 Youth Rally should take place at San Diego State University
+            February, 2023. The 2023 Youth Rally should take place at San Diego State University
             in San Diego, California, July 10th-15th 2023. Volunteers will be expected to be present on site July 8th-15th. The Youth Rally does not recommend you book airfare without formal
             receipt of registration acceptance/approval.
           </p>
@@ -42,7 +42,7 @@ export default () => (
             .
           </p> */}
 
-          <h3 className="font-weight-bold">
+          {/* <h3 className="font-weight-bold">
             The 2026 Youth Rally will take place July 6th-11th at the University of Colorado at Boulder (CU Boulder), Colorado.
           </h3>
           <h3 className="font-weight-bold greenText">
@@ -95,7 +95,7 @@ export default () => (
             <a className="links" href="mailto:registrar@youthrally.org">
               registrar@youthrally.org
             </a>
-          </span> or call 607-592-3728 (ET)</p>
+          </span> or call 607-592-3728 (ET)</p> */}
         </div>
       </div>
     </div>

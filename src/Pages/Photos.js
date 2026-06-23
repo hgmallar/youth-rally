@@ -8,7 +8,16 @@ export default () => (
 
     <div id="content">
       <div className="col-md-10 mx-auto text-center font-weight-bold pt-2 pb-1">
-      <h5 className="purpleText font-weight-bold">
+      <h5 className="greenText font-weight-bold">
+          <a
+            href="https://youthrally.smugmug.com/Youth-Rally-2026-Photos"
+            target="_blank"
+            className="links"
+          >
+            2026 Youth Rally Photos and Videos
+          </a>
+        </h5>
+        <h5 className="purpleText font-weight-bold">
           <a
             href="https://youthrally.smugmug.com/Youth-Rally-2025-Photos-1"
             target="_blank"

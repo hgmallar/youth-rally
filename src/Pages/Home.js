@@ -75,13 +75,13 @@ export default () => (
         {/* <h3 className="font-weight-bold greenText mx-2">
           Registration for the 2024 Youth Rally is now closed. Check back in January/February to register for the 2025 Youth Rally.
         </h3>  */}
-        <h5 className="font-weight-bold greenText mx-auto text-center">
+        {/* <h5 className="font-weight-bold greenText mx-auto text-center">
           Registration is now OPEN! Click on the button below to complete your
           2026 Registration TODAY!
-        </h5>
+        </h5> */}
 
       </div>
-      <div className="row justify-content-center mx-auto text-center">
+      {/* <div className="row justify-content-center mx-auto text-center">
         <a
           href="http://app.campdoc.com/register/youthrally"
           className="btn btn-primary green-btn mb-2 mt-1"
@@ -91,28 +91,28 @@ export default () => (
         >
           START 2026 Registration
         </a>
-      </div>
+      </div> */}
       <div className="row justify-content-center mx-auto text-center">
 
         <h5 className="font-weight-bold">
-          The 2026 Youth Rally will take place at the University of Colorado
+          The 2026 Youth Rally is at the University of Colorado
           in Boulder, CO from July 6th-11th.</h5>
-        <h5 className="font-weight-bold">
+        {/* <h5 className="font-weight-bold">
           All volunteers need to be onsite July 4th-11th.
-        </h5>
+        </h5> */}
       </div>
-      {/* <div className="row justify-content-center">
+      <div className="row justify-content-center">
         <a
-          href="https://youthrally.smugmug.com/Youth-Rally-2025-Photos-1"
+          href="https://youthrally.smugmug.com/Youth-Rally-2026-Photos"
           className="btn btn-primary green-btn mb-2 mt-1"
           id="campers-btn"
           target="_blank"
           rel="noreferrer noopener"
         >
-          2025 Youth Rally Photos
+          2026 Youth Rally Photos
         </a>
-      </div> */}
-      <div className="row justify-content-center">
+      </div>
+      {/* <div className="row justify-content-center">
         <a
           href="https://youthrally.harnessgiving.org/events/3790"
           className="btn btn-primary gold-btn mb-2 mt-1"
@@ -122,7 +122,7 @@ export default () => (
         >
           CLICK HERE to purchase your Golden Ticket Raffle Tickets
         </a>
-      </div>
+      </div> */}
     </div>
 
     <div className="text-center p-2 banner">

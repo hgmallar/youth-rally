@@ -9,15 +9,24 @@ export default () => (
     <div id="content">
       <div className="col-md-10 mx-auto pt-2 pb-1">
         <div className="row">
-          <div>
-            <h2>YOUTH RALLY 2026</h2>
-            <p>
-              The 2026 Youth Rally will take place at the University of Colorado
-              in Boulder, CO, July 6th-11th 2026.
-            </p>
-            <p>
-              Volunteers will be expected to be present on site July 4th-11th.
-            </p>
+          <h2>YOUTH RALLY 2027</h2>
+          <div className="row">
+            <div className="d-flex col-md-4 align-items-center">
+              <img
+                className="row mx-auto poster mb-2"
+                src={"/assets/images/UMSL.png"}
+                alt={"UMSL logo"}
+              />
+            </div>
+            <div className="d-flex col-md-8 align-items-center mx-auto text-center">
+              <p>
+                The 2027 Youth Rally will take place at the University of Missouri
+                in St. Louis, MO, July 12th-17th 2027. 
+                Volunteers will be expected to be present on site July 10th-17th.
+              </p>
+            </div>
+          </div>
+          <div className="col-md-12">
             <h2>Pineapple's Ostomy A-wear-ness Youth Rally Fundraiser</h2>
             <div className="mx-auto text-center"><h5 className="purpleText">June 14th, 2026 1pm-4pm at The Westy in Ithaca NY</h5></div>
             <img
@@ -29,7 +38,8 @@ export default () => (
               Donations can be made at <span className="greenText font-weight-bold"><a href="www.youthrally.org" target="_blank"
                 rel="noreferrer" className="links">www.youthrally.org</a></span> - click the Donate button and select Pineapple's Pink Party
             </p>
-            <h2>Golden Ticket Reboot</h2>
+
+            {/* <h2>Golden Ticket Reboot</h2>
             <a
               href="https://youthrally.harnessgiving.org/events/3790"
               target="_blank"
@@ -43,7 +53,8 @@ export default () => (
             <p className="text-center">
               <span className="greenText font-weight-bold"><a href="www.youthrally.org" target="_blank"
                 rel="noreferrer" className="links">Golden Ticket Reboot!! | The Youth Rally</a></span></p>
-            <p className="text-center">Tickets available through June 30th!</p>
+            <p className="text-center">Tickets available through June 30th!</p> */}
+
             {/* <h2>YOUTH RALLY 2023</h2>
             <p>
               The 2023 Youth Rally will take place at San Diego State University
