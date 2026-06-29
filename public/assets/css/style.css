@@ -167,14 +167,14 @@ iframe {
 }
 
 .img-md {
-  width: 350px;
+  max-width: 450px;
   height: auto;
-  max-height: 150px;
+  max-height: 200px;
   max-width: 100%;
 }
 
 .partner-img-md {
-  width: 350px;
+  max-width: 450px;
   height: auto;
   max-width: 100%;
 }

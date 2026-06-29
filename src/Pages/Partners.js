@@ -79,16 +79,14 @@ export default () => (
               alt="Pacific Coast WOCN logo"
             />
           </div>
-          {/* <Header title="2025 Gold Level Sponsor" color="header-gold" size={2} />
+          <Header title="2025 Gold Level Sponsor" color="header-gold" size={2} />
           <div className="partner-img-md mx-auto mt-2 mb-2">
-            <a href="https://www.convatec.com/" target="_blank" rel="noreferrer">
-              <img
+            <img
                 className="img-md mb-md-1 rounded"
-                src="/assets/images/sponsor_logos/Convatec.jpg"
-                alt="Convatec"
+                src="/assets/images/sponsor_logos/pinkparty.png"
+                alt="Pineapple's Pink Party"
               />
-            </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
