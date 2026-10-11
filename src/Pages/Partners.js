@@ -72,7 +72,7 @@ export default () => (
             />
             <img
               className="img-lg rounded"
-              src="/assets/images/sponsor_logos/paul.jpg"
+              src="/assets/images/sponsor_logos/Paul.jpg"
               alt="Paul Hastings logo"
             />
           </div>
