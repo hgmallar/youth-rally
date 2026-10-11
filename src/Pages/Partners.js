@@ -55,6 +55,15 @@ export default () => (
               />
             </a>
           </div>
+          <div className="partner-img-lg mx-auto mb-2 mt-1">
+            <a href="https://www.coloplast.com/" target="_blank" rel="noreferrer">
+              <img
+                className="img-lg mb-lg-1 rounded"
+                src="/assets/images/sponsor_logos/Coloplast.png"
+                alt="Coloplast logo"
+              />
+            </a>
+          </div>
           <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 mb-2 mt-1">
             <img
               className="img-lg rounded"
