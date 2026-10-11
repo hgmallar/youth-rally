@@ -95,8 +95,8 @@ export default () => (
       <div className="row justify-content-center mx-auto text-center">
 
         <h5 className="font-weight-bold">
-          The 2026 Youth Rally is at the University of Colorado
-          in Boulder, CO from July 6th-11th.</h5>
+          The 2027 Youth Rally is at the University of Missouri in St. Louis, MO
+          from July 12th-17th.</h5>
         {/* <h5 className="font-weight-bold">
           All volunteers need to be onsite July 4th-11th.
         </h5> */}
